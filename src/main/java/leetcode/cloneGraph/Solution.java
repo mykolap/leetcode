@@ -1,9 +1,6 @@
 package leetcode.cloneGraph;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/clone-graph/
@@ -159,22 +156,26 @@ public class Solution {
             return null;
         }
         Map<Node, Node> clonedNodes = new HashMap<>();
-        return cloneGraph(node, clonedNodes);
-    }
+        Queue<Node> queue = new LinkedList<>();
 
-    private Node cloneGraph(Node node, Map<Node, Node> clonedNodes) {
-        if (clonedNodes.containsKey(node)) {
-            return clonedNodes.get(node);
+        queue.add(node);
+        clonedNodes.put(node, new Node(node.val));
+
+        while (!queue.isEmpty()) {
+            Node currentNode = queue.poll();
+            Node clonedCurrentNode = clonedNodes.get(currentNode);
+
+            for (Node neighbor : currentNode.neighbors) {
+                if (!clonedNodes.containsKey(neighbor)) {
+                    clonedNodes.put(neighbor, new Node(neighbor.val));
+                    queue.add(neighbor);
+                }
+
+                clonedCurrentNode.neighbors.add(clonedNodes.get(neighbor));
+            }
         }
 
-        Node clonedNode = new Node(node.val);
-        clonedNodes.put(node, clonedNode);
-
-        for (Node neighbor : node.neighbors) {
-            clonedNode.neighbors.add(cloneGraph(neighbor, clonedNodes));
-        }
-
-        return clonedNode;
+        return clonedNodes.get(node);
     }
 
 }
