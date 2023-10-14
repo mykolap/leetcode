@@ -1,0 +1,180 @@
+package leetcode.cloneGraph;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * https://leetcode.com/problems/clone-graph/
+ * 133. Clone Graph
+ * <p>
+ * Given a reference of a node in a connected undirected graph.
+ * <p>
+ * Return a deep copy (clone) of the graph.
+ * <p>
+ * Each node in the graph contains a value (int) and a list (List[Node]) of its neighbors.
+ * <p>
+ * class Node {
+ * public int val;
+ * public List<Node> neighbors;
+ * }
+ * <p>
+ * Test case format:
+ * <p>
+ * For simplicity, each node's value is the same as the node's index (1-indexed).
+ * For example, the first node with val == 1, the second node with val == 2, and so on.
+ * The graph is represented in the test case using an adjacency list.
+ * <p>
+ * An adjacency list is a collection of unordered lists used to represent a finite graph.
+ * Each list describes the set of neighbors of a node in the graph.
+ * <p>
+ * The given node will always be the first node with val = 1.
+ * You must return the copy of the given node as a reference to the cloned graph.
+ * <p>
+ * Example 1:
+ * <p>
+ * Input: adjList = [[2,4],[1,3],[2,4],[1,3]]
+ * Output: [[2,4],[1,3],[2,4],[1,3]]
+ * <p>
+ * Explanation: There are 4 nodes in the graph.
+ * 1st node (val = 1) has neighbors 2 and 4.
+ * 2nd node (val = 2) has neighbors 1 and 3.
+ * 3rd node (val = 3) has neighbors 2 and 4.
+ * 4th node (val = 4) has neighbors 1 and 3.
+ * <p>
+ * Example 2:
+ * <p>
+ * Input: adjList = [[]]
+ * Output: [[]]
+ * <p>
+ * Explanation: Note that the input contains one empty list.
+ * The graph consists of only one node with val = 1 and it does not have any neighbors.
+ * <p>
+ * Example 3:
+ * <p>
+ * Input: adjList = []
+ * Output: []
+ * <p>
+ * Explanation: This an empty graph, it does not have any nodes.
+ *
+ *
+ * Constraints:
+ *
+ * The number of nodes in the graph is in the range [0, 100].
+ * 1 <= Node.val <= 100
+ * Node.val is unique for each node.
+ * There are no repeated edges and no self-loops in the graph.
+ * The Graph is connected and all nodes can be visited starting from the given node.
+ */
+public class Solution {
+    public static void main(String[] args) {
+        Node node1 = new Node(1);
+        Node node2 = new Node(2,
+                new Node(4),
+                new Node(5));
+        Node node3 = new Node(3,
+                new Node(6),
+                new Node(7));
+        Node node4 = new Node(4,
+                new Node(8),
+                new Node(9));
+        Node node5 = new Node(5,
+                new Node(10),
+                new Node(11));
+        Node node6 = new Node(6,
+                new Node(12),
+                new Node(13));
+        Node node7 = new Node(7,
+                new Node(14),
+                new Node(15));
+        Node node8 = new Node(8,
+                new Node(16),
+                new Node(17));
+        Node node9 = new Node(9,
+                new Node(18),
+                new Node(19));
+        Node node10 = new Node(10,
+                new Node(20),
+                new Node(21));
+        Node node11 = new Node(11,
+                new Node(22),
+                new Node(23));
+        Node node12 = new Node(12,
+                new Node(24),
+                new Node(25));
+        Node node13 = new Node(13,
+                new Node(26),
+                new Node(27));
+        Node node14 = new Node(14,
+                new Node(28),
+                new Node(29));
+        Node node15 = new Node(15,
+                new Node(30),
+                new Node(31));
+
+        node1.neighbors.add(node2);
+        node1.neighbors.add(node3);
+        node1.neighbors.add(node4);
+        node1.neighbors.add(node5);
+        node1.neighbors.add(node6);
+        node1.neighbors.add(node7);
+        node1.neighbors.add(node8);
+        node1.neighbors.add(node9);
+        node1.neighbors.add(node10);
+        node1.neighbors.add(node11);
+        node1.neighbors.add(node12);
+        node1.neighbors.add(node13);
+        node1.neighbors.add(node14);
+        node1.neighbors.add(node15);
+
+        Node clonedNode = new Solution().cloneGraph(node1);
+
+        System.out.println(clonedNode);
+    }
+
+    static class Node {
+        public int val;
+        public List<Node> neighbors;
+        public Node() {
+            val = 0;
+            neighbors = new ArrayList<Node>();
+        }
+        public Node(int _val) {
+            val = _val;
+            neighbors = new ArrayList<Node>();
+        }
+        public Node(int _val, Node node1, Node node2) {
+            val = _val;
+            neighbors = new ArrayList<Node>();
+            neighbors.add(node1);
+            neighbors.add(node2);
+        }
+    }
+
+    // Time: O(n)
+    // Space: O(n)
+    public Node cloneGraph(Node node) {
+        if (node == null) {
+            return null;
+        }
+        Map<Node, Node> clonedNodes = new HashMap<>();
+        return cloneGraph(node, clonedNodes);
+    }
+
+    private Node cloneGraph(Node node, Map<Node, Node> clonedNodes) {
+        if (clonedNodes.containsKey(node)) {
+            return clonedNodes.get(node);
+        }
+
+        Node clonedNode = new Node(node.val);
+        clonedNodes.put(node, clonedNode);
+
+        for (Node neighbor : node.neighbors) {
+            clonedNode.neighbors.add(cloneGraph(neighbor, clonedNodes));
+        }
+
+        return clonedNode;
+    }
+
+}
