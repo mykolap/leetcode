@@ -59,7 +59,7 @@ public class Solution {
         Arrays.sort(intervals, Comparator.comparingInt(interval -> interval[0]));
 
         // Create a list to store the merged intervals.
-        List<int[]> mergedIntervals = new ArrayList<>();
+        List<int[]> mergedIntervals = new ArrayList<>(intervals.length);
 
         // Add the first interval to the list.
         mergedIntervals.add(intervals[0]);
