@@ -49,27 +49,29 @@ public class Solution {
         System.out.println(new Solution().canFinish(numCourses, prerequisites));
     }
 
-    // Time: O(n)
-    // Space: O(n)
+    // Time complexity: O(V + E)
+    // Space complexity: O(V)
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        // Create a map to store the prerequisites for each course.
-        Map<Integer, List<Integer>> preMap = new HashMap<>();
-        for (int[] prerequisite : prerequisites) {
-            preMap.putIfAbsent(prerequisite[0], new ArrayList<>());
-            preMap.get(prerequisite[0]).add(prerequisite[1]);
+        // Create an adjacency list to represent the prerequisites graph.
+        List<List<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < numCourses; i++) {
+            adj.add(new ArrayList<>());
         }
 
+        // Add the prerequisites to the adjacency list.
+        for (int[] prerequisite : prerequisites) {
+            adj.get(prerequisite[0]).add(prerequisite[1]);
+        }
+
+        // Create an array to track the status of each course.
         int[] visited = new int[numCourses];
 
-        // 0: The course has not been visited yet.
-        // 1: The course has been visited and there is no cycle.
-        // 2: The course is currently being visited and there is a cycle.
-
-        // Perform a depth-first search on the graph starting from each course.
-        for (int course = 0; course < numCourses; course++) {
-            if (visited[course] == 0 &&
-                cycleDetected(preMap, visited, course)) {
-                return false;
+        // Recursively check for cycles in the prerequisites graph.
+        for (int i = 0; i < numCourses; i++) {
+            if (visited[i] == 0) {
+                if (isCyclic(adj, visited, i)) {
+                    return false;
+                }
             }
         }
 
@@ -77,29 +79,26 @@ public class Solution {
         return true;
     }
 
-    private boolean cycleDetected(Map<Integer, List<Integer>> preMap, int[] visited, int course) {
-        // If the course is currently being visited, then there is a cycle.
-        if (visited[course] == 2) {
+    private boolean isCyclic(List<List<Integer>> adj, int[] visited, int curr) {
+        // If the course is currently being visited and there is a cycle, then return true.
+        if (visited[curr] == 2) {
             return true;
         }
 
-        // If the course has no prerequisites, then there is no cycle.
-        if (!preMap.containsKey(course)) {
-            return false;
-        }
-
         // Mark the course as currently being visited.
-        visited[course] = 2;
+        visited[curr] = 2;
 
-        // Recursively perform a depth-first search on all of the prerequisites of the course.
-        for (int prerequisite : preMap.get(course)) {
-            if (cycleDetected(preMap, visited, prerequisite)) {
-                return true;
+        // Recursively check for cycles in the prerequisites graph for all of the prerequisites of the current course.
+        for (int i = 0; i < adj.get(curr).size(); i++) {
+            if (visited[adj.get(curr).get(i)] != 1) {
+                if (isCyclic(adj, visited, adj.get(curr).get(i))) {
+                    return true;
+                }
             }
         }
 
-        // Remove the course from the set of courses that are currently being visited.
-        visited[course] = 1;
+        // Mark the course as visited without a cycle.
+        visited[curr] = 1;
 
         // Return false to indicate that no cycle was found.
         return false;
