@@ -33,9 +33,14 @@ import java.util.List;
 public class Solution {
 
     public static void main(String[] args) {
-        int[][] matrix = {{1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}};
+        /*
+        int[][] matrix = {{1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9 ,10, 11, 12}};
+         */
+        int[][] matrix = {{7},
+                {9},
+                {6}};
 
         final List<Integer> result = new Solution().spiralOrder(matrix);
         System.out.println(result);
@@ -54,46 +59,39 @@ public class Solution {
         int left = 0;
         int right = columns - 1;
 
-        // Initialize the direction.
-        int direction = 0;
-
         // Iterate through the matrix.
         while (top <= bottom && left <= right) {
-            // If the direction is 0, iterate from left to right.
-            if (direction == 0) {
-                for (int i = left; i <= right; i++) {
-                    result.add(matrix[top][i]);
-                }
-                // Increment the top boundary.
-                top++;
+            // first from left to right.
+            for (int i = left; i <= right; i++) {
+                result.add(matrix[top][i]);
             }
-            // If the direction is 1, iterate from top to bottom.
-            else if (direction == 1) {
-                for (int i = top; i <= bottom; i++) {
-                    result.add(matrix[i][right]);
-                }
-                // Decrement the right boundary.
-                right--;
+            // Increment the top boundary.
+            top++;
+
+            // second from top to bottom.
+            for (int i = top; i <= bottom; i++) {
+                result.add(matrix[i][right]);
             }
-            // If the direction is 2, iterate from right to left.
-            else if (direction == 2) {
+            // Decrement the right boundary.
+            right--;
+
+            // third from right to left.
+            if (top <= bottom) { // for last iteration - only left to right should be done (not right to left
                 for (int i = right; i >= left; i--) {
                     result.add(matrix[bottom][i]);
                 }
-                // Decrement the bottom boundary.
-                bottom--;
             }
-            // If the direction is 3, iterate from bottom to top.
-            else if (direction == 3) {
+            // Decrement the bottom boundary.
+            bottom--;
+
+            // last bottom to top.
+            if (left <= right) { // for last iteration - only top to bottom should be done (not bottom to top)
                 for (int i = bottom; i >= top; i--) {
                     result.add(matrix[i][left]);
                 }
-                // Increment the left boundary.
-                left++;
             }
-
-            // Update the direction.
-            direction = (direction + 1) % 4;
+            // Increment the left boundary.
+            left++;
         }
 
         return result;
