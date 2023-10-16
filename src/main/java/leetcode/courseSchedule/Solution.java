@@ -49,59 +49,64 @@ public class Solution {
         System.out.println(new Solution().canFinish(numCourses, prerequisites));
     }
 
-    // Time complexity: O(V + E)
+// Time complexity: O(V + E)
     // Space complexity: O(V)
+
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        // Create an adjacency list to represent the prerequisites graph.
-        List<List<Integer>> adj = new ArrayList<>();
-        for (int i = 0; i < numCourses; i++) {
-            adj.add(new ArrayList<>());
-        }
+        // Create a map to store the prerequisites for each course.
+        Map<Integer, List<Integer>> graph = new HashMap<>();
 
-        // Add the prerequisites to the adjacency list.
+        // Create an array to store the in-degree of each course.
+        int[] inDegree = new int[numCourses];
+
+        // Iterate over all of the prerequisites and add them to the map and the in-degree array.
         for (int[] prerequisite : prerequisites) {
-            adj.get(prerequisite[0]).add(prerequisite[1]);
+            int course = prerequisite[0];
+            int prerequisiteCourse = prerequisite[1];
+
+            graph.computeIfAbsent(prerequisiteCourse, k -> new ArrayList<>()).add(course);
+            inDegree[course]++;
         }
 
-        // Create an array to track the status of each course.
-        int[] visited = new int[numCourses];
+        // Create a queue to store the courses that have no prerequisites.
+        Queue<Integer> queue = new LinkedList<>();
 
-        // Recursively check for cycles in the prerequisites graph.
+        // Add all of the courses that have no prerequisites to the queue.
         for (int i = 0; i < numCourses; i++) {
-            if (visited[i] == 0) {
-                if (isCyclic(adj, visited, i)) {
-                    return false;
+            if (inDegree[i] == 0) {
+                queue.add(i);
+            }
+        }
+
+        // Initialize a counter to track the number of courses that have been completed.
+        int count = 0;
+
+        // While the queue is not empty, do the following:
+        while (!queue.isEmpty()) {
+
+            // Remove a course from the queue.
+            int course = queue.poll();
+
+            // Increment the counter.
+            count++;
+
+            // Iterate over all of the prerequisites of the course.
+            if (graph.containsKey(course)) {
+                for (int nextCourse : graph.get(course)) {
+
+                    // Decrement the in-degree of the prerequisite course.
+                    inDegree[nextCourse]--;
+
+                    // If the in-degree of the prerequisite course is now 0, then add it to the queue.
+                    if (inDegree[nextCourse] == 0) {
+                        queue.add(nextCourse);
+                    }
                 }
             }
         }
 
-        // If all of the courses have been visited without finding a cycle, then all of the courses can be completed.
-        return true;
-    }
-
-    private boolean isCyclic(List<List<Integer>> adj, int[] visited, int curr) {
-        // If the course is currently being visited and there is a cycle, then return true.
-        if (visited[curr] == 2) {
-            return true;
-        }
-
-        // Mark the course as currently being visited.
-        visited[curr] = 2;
-
-        // Recursively check for cycles in the prerequisites graph for all of the prerequisites of the current course.
-        for (int i = 0; i < adj.get(curr).size(); i++) {
-            if (visited[adj.get(curr).get(i)] != 1) {
-                if (isCyclic(adj, visited, adj.get(curr).get(i))) {
-                    return true;
-                }
-            }
-        }
-
-        // Mark the course as visited without a cycle.
-        visited[curr] = 1;
-
-        // Return false to indicate that no cycle was found.
-        return false;
+        // If all of the courses have been completed, then return true. Otherwise, return false.
+        return count == numCourses;
     }
 
 }
