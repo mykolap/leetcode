@@ -33,17 +33,22 @@ import java.util.List;
 public class Solution {
 
     public static void main(String[] args) {
-        /*
         int[][] matrix = {{1, 2, 3, 4},
                 {5, 6, 7, 8},
-                {9 ,10, 11, 12}};
-         */
-        int[][] matrix = {{7},
+                {9, 10, 11, 12}};
+
+        System.out.println(new Solution().spiralOrder(matrix));
+
+        int[][] matrix2 = {{7},
                 {9},
                 {6}};
 
-        final List<Integer> result = new Solution().spiralOrder(matrix);
-        System.out.println(result);
+        System.out.println(new Solution().spiralOrder(matrix2));
+
+        int[][] matrix3 = {{2, 5, 8},
+                {4, 0, -1}};
+
+        System.out.println(new Solution().spiralOrder(matrix3));
     }
 
     // Time: O(n)
@@ -51,7 +56,8 @@ public class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
         int rows = matrix.length;
         int columns = matrix[0].length;
-        List<Integer> result = new ArrayList<>(rows * columns);
+        final int matrixSize = rows * columns;
+        List<Integer> result = new ArrayList<>(matrixSize);
 
         // Initialize the boundaries of the matrix.
         int top = 0;
@@ -60,17 +66,21 @@ public class Solution {
         int right = columns - 1;
 
         // Iterate through the matrix.
-        while (top <= bottom && left <= right) {
+        while (true) {
             // first from left to right.
-            for (int i = left; i <= right; i++) {
-                result.add(matrix[top][i]);
+            if (top <= bottom) {
+                for (int i = left; i <= right; i++) {
+                    result.add(matrix[top][i]);
+                }
             }
             // Increment the top boundary.
             top++;
 
             // second from top to bottom.
-            for (int i = top; i <= bottom; i++) {
-                result.add(matrix[i][right]);
+            if (left <= right) {
+                for (int i = top; i <= bottom; i++) {
+                    result.add(matrix[i][right]);
+                }
             }
             // Decrement the right boundary.
             right--;
@@ -92,6 +102,10 @@ public class Solution {
             }
             // Increment the left boundary.
             left++;
+
+            if (result.size() == matrixSize) {
+                break;
+            }
         }
 
         return result;
