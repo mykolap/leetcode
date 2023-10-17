@@ -39,27 +39,44 @@ public class Solution {
         }
     }
 
-    // Time: O(n * log(k))
+    // Time: O(n)
     // Space: O(n)
     public int[] topKFrequent(int[] nums, int k) {
         // Create a hash map to store the frequency of each element in the array.
         Map<Integer, Integer> frequencyMap = new HashMap<>();
+        int max = 0;
         for (int num : nums) {
-            frequencyMap.merge(num, 1, Integer::sum);
+            int updatedValue = frequencyMap.merge(num, 1, Integer::sum);
+            max = Math.max(max, updatedValue);
         }
 
-        // Create a priority queue to store the top k elements, sorted by frequency.
-        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>((a, b) -> frequencyMap.get(b) - frequencyMap.get(a));
-
-        // Add all of the elements in the hash map to the priority queue.
-        for (Integer key : frequencyMap.keySet()) {
-            priorityQueue.add(key);
+        // Create a buckets to store the elements in the array, grouped by frequency.
+        List<Integer>[] buckets = new List[max + 1];
+        for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
+            final int freqPosition = entry.getValue();
+            if (buckets[freqPosition] == null) {
+                buckets[freqPosition] = new ArrayList<>();
+            }
+            buckets[freqPosition].add(entry.getKey());
         }
 
         // Create an array to store the top k elements.
         int[] result = new int[k];
-        for (int i = 0; i < k; i++) {
-            result[i] = priorityQueue.poll();
+
+        int resultPos = 0;
+        int i = buckets.length - 1;
+        while (i >= 0 && resultPos < k) {
+            if (buckets[i] == null) {
+                i--;
+                continue;
+            }
+            for (Integer num : buckets[i]) {
+                result[resultPos++] = num;
+                if (resultPos == k) {
+                    break;
+                }
+            }
+            i--;
         }
         return result;
     }
