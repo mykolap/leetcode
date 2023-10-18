@@ -96,39 +96,22 @@ public class Solution {
         // Get the size of the matrix.
         int n = matrix.length;
 
-        // Initialize the start and end indices.
-        int start = 0;
-        int end = n - 1;
-
-        // Initialize a temporary variable to store the top-left element of the matrix.
-        int tempTopLeft;
-
-        // Rotate the matrix until the start and end indices meet.
-        while (start < end) {
-            // Calculate the range of elements to rotate on this iteration.
-            int range = end - start;
-
-            // Iterate over the range of elements to rotate.
-            for (int i = 0; i < range; i++) {
-                // Save the top-left element of the matrix to a temporary variable.
-                tempTopLeft = matrix[start][start + i];
-
-                // Move the bottom-left element to the top-left corner.
-                matrix[start][start + i] = matrix[end - i][start];
-
-                // Move the bottom-right element to the bottom-left corner.
-                matrix[end - i][start] = matrix[end][end - i];
-
-                // Move the top-right element to the bottom-right corner.
-                matrix[end][end - i] = matrix[start + i][end];
-
-                // Move the saved top-left element to the top-right corner.
-                matrix[start + i][end] = tempTopLeft;
+        // Transpose the matrix
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
             }
+        }
 
-            // Increment the start and decrement the end indices.
-            start++;
-            end--;
+        // Reverse each row.
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n / 2; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[i][n - j - 1];
+                matrix[i][n - j - 1] = temp;
+            }
         }
     }
 
