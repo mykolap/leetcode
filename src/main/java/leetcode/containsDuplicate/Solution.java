@@ -1,7 +1,12 @@
 package leetcode.containsDuplicate;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.HashSet;
 import java.util.Set;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * https://leetcode.com/problems/contains-duplicate/
@@ -28,26 +33,34 @@ import java.util.Set;
  * 1 <= nums.length <= 105
  * -109 <= nums[i] <= 109
  */
+@SuppressWarnings("java:S5960")
 public class Solution {
-    public static void main(String[] args) {
-        int[] nums = {1,2,3,1};
-
-        System.out.println(new Solution().containsDuplicate(nums));
-    }
 
     // Time: O(n)
     // Space: O(n)
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> set = new HashSet<>();
         for (int num: nums) {
-            if (set.contains(num)) {
+            if (!set.add(num)) {
                 return true;
-            } else {
-                set.add(num);
             }
         }
 
         return false;
+    }
+
+    @Test
+    public void testContainsDuplicateTrue() {
+        int[] nums = {1,2,3,1};
+
+        assertTrue(new Solution().containsDuplicate(nums));
+    }
+
+    @Test
+    public void testContainsDuplicateFalse() {
+        int[] nums2 = {1,2,3,4};
+
+        assertFalse(new Solution().containsDuplicate(nums2));
     }
 
 }
