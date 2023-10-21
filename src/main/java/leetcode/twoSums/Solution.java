@@ -1,7 +1,11 @@
 package leetcode.twoSums;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.HashMap;
 import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/two-sum/
@@ -34,17 +38,44 @@ import java.util.Map;
  * Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
  */
 public class Solution {
-    public static void main(String[] args) {
-        int[] nums = {3, 2, 4};
-        int target = 6;
 
-        int[] result = twoSum(nums, target);
+    @Test
+    void testTwoSum_True1() {
+        int[] nums = {2, 11, 7, 15};
+        int target = 9;
 
-        System.out.println(result[0] + " " + result[1]);
+        int[] result = twoSumBruteForce(nums, target);
+
+        assertEquals(0, result[0]);
+        assertEquals(2, result[1]);
+
+        result = twoSum(nums, target);
+
+        assertEquals(0, result[0]);
+        assertEquals(2, result[1]);
     }
+
+    // Time: O(n^2)
+    // Space: O(1)
+    public int[] twoSumBruteForce(int[] nums, int target) {
+        // It is guaranteed that array has at least two elements.
+
+        for (int i = 0; i < nums.length; i++) {
+            int current = nums[i];
+            for (int j = i + 1; j < nums.length; j++) {
+                int next = nums[j];
+                if (current + next == target) {
+                    return new int[]{i, j};
+                }
+            }
+        }
+
+        return new int[]{};
+    }
+
     // Time: O(n)
     // Space: O(n)
-    public static int[] twoSum(int[] nums, int target) {
+    public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int current = nums[i];
@@ -58,4 +89,49 @@ public class Solution {
         }
         return new int[] {};
     }
+
+    @Test
+    void testTwoSum_False2() {
+        int[] nums = {2, 8, 11, 15};
+        int target = 9;
+
+        int[] result = twoSumBruteForce(nums, target);
+
+        assertEquals(0, result.length);
+
+        result = twoSum(nums, target);
+
+        assertEquals(0, result.length);
+    }
+
+    @Test
+    void testTwoSum_True3() {
+        int[] nums = {3, 3};
+        int target = 6;
+
+        int[] result = twoSumBruteForce(nums, target);
+
+        assertEquals(0, result[0]);
+        assertEquals(1, result[1]);
+
+        result = twoSum(nums, target);
+
+        assertEquals(0, result[0]);
+        assertEquals(1, result[1]);
+    }
+
+    @Test
+    void testTwoSum_False4() {
+        int[] nums = {3, 4};
+        int target = 6;
+
+        int[] result = twoSumBruteForce(nums, target);
+
+        assertEquals(0, result.length);
+
+        result = twoSum(nums, target);
+
+        assertEquals(0, result.length);
+    }
+
 }
