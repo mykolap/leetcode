@@ -1,6 +1,11 @@
 package leetcode.topKFrequentElements;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.*;
+import java.util.stream.Collectors;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/top-k-frequent-elements/
@@ -28,15 +33,23 @@ import java.util.*;
  */
 public class Solution {
 
-    public static void main(String[] args) {
-        int[] nums = {1, 1, 1, 3, 3, 3, 2, 2};
+    @Test
+    void testTopKFrequent() {
+        int[] nums = {1, 1, 1, 1, 3, 3, 3, 2, 2};
         int k = 2;
+        final Set<Integer> expectedSet = Set.of(1, 3);
 
-        int[] result = new Solution().topKFrequent(nums, k);
+        int[] result = topKFrequent(nums, k);
 
-        for (int i : result) {
-            System.out.println(i);
-        }
+        assertEquals(expectedSet, Arrays.stream(result).boxed().collect(Collectors.toSet()));
+
+        result = topKFrequentBruteforce(nums, k);
+
+        assertEquals(expectedSet, Arrays.stream(result).boxed().collect(Collectors.toSet()));
+
+        result = topKFrequentPriorityQueue(nums, k);
+
+        assertEquals(expectedSet, Arrays.stream(result).boxed().collect(Collectors.toSet()));
     }
 
     // Time: O(n)
@@ -45,15 +58,17 @@ public class Solution {
         // Create a hash map to store the frequency of each element in the array.
         Map<Integer, Integer> frequencyMap = new HashMap<>();
         int max = 0;
+        int min = Integer.MAX_VALUE;
         for (int num : nums) {
             int updatedValue = frequencyMap.merge(num, 1, Integer::sum);
             max = Math.max(max, updatedValue);
+            min = Math.min(min, updatedValue);
         }
 
         // Create a buckets to store the elements in the array, grouped by frequency.
-        List<Integer>[] buckets = new List[max + 1];
+        List<Integer>[] buckets = new List[max - min + 1];
         for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
-            final int freqPosition = entry.getValue();
+            final int freqPosition = entry.getValue() - min;
             if (buckets[freqPosition] == null) {
                 buckets[freqPosition] = new ArrayList<>();
             }
@@ -81,4 +96,39 @@ public class Solution {
         return result;
     }
 
+    // Time: O(n log n)
+    // Space: O(n)
+    public int[] topKFrequentBruteforce(int[] nums, int k) {
+        return Arrays.stream(nums)
+                .boxed()
+                .collect(Collectors.groupingBy(i -> i, Collectors.counting()))
+                .entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .limit(k)
+                .map(Map.Entry::getKey)
+                .mapToInt(Integer::intValue)
+                .toArray();
+    }
+
+    // Time: O(n log k)
+    // Space: O(n)
+    public int[] topKFrequentPriorityQueue(int[] nums, int k) {
+        // Create a hash map to store the frequency of each element in the array.
+        Map<Integer, Long> frequencyMap = Arrays.stream(nums)
+                .boxed()
+                .collect(Collectors.groupingBy(i -> i, Collectors.counting()));
+
+        // Create a priority queue to store the top k elements.
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.comparingLong(frequencyMap::get).reversed());
+        pq.addAll(frequencyMap.keySet());
+
+        // Create an array to store the top k elements.
+        int[] result = new int[k];
+
+        for (int i = 0; i < k; i++) {
+            result[i] = pq.poll();
+        }
+        return result;
+    }
 }
