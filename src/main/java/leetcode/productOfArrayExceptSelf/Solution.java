@@ -1,5 +1,9 @@
 package leetcode.productOfArrayExceptSelf;
 
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 /**
  * https://leetcode.com/problems/product-of-array-except-self/
  * 238. Product of Array Except Self
@@ -33,14 +37,43 @@ package leetcode.productOfArrayExceptSelf;
  * Could you solve it with O(1) constant space complexity? (The output array does not count as extra space
  */
 public class Solution {
-    public static void main(String[] args) {
-        int[] nums = {1,2,3,4};
 
-        int[] result = new Solution().productExceptSelf(nums);
+    @Test
+    void testProductExceptSelf() {
+        int[] nums = {1, 2, 3, 4};
+        int[] expected = {24, 12, 8, 6};
 
-        for (int i = 0; i < result.length; i++) {
-            System.out.println(result[i]);
+        int[] result = productExceptSelf(nums);
+
+        assertArrayEquals(expected, result);
+
+        result = productExceptSelfBruteforce(nums);
+
+        assertArrayEquals(expected, result);
+
+        result = productExceptSelf2Arrays(nums);
+
+        assertArrayEquals(expected, result);
+    }
+
+    // Time: O(n * n)
+    // Space: O(n)
+    public int[] productExceptSelfBruteforce(int[] nums) {
+        int[] result = new int[nums.length];
+
+        // Iterate over the array.
+        for (int i = 0; i < nums.length; i++) {
+            // Calculate the product of all elements except the current one.
+            int product = 1;
+            for (int j = 0; j < nums.length; j++) {
+                if (i != j) {
+                    product *= nums[j];
+                }
+            }
+            result[i] = product;
         }
+
+        return result;
     }
 
     // Time: O(n)
@@ -64,4 +97,30 @@ public class Solution {
         return result;
     }
 
+    // Time: O(n)
+    // Space: O(n)
+    public int[] productExceptSelf2Arrays(int[] nums) {
+        int[] leftProducts = new int[nums.length];
+        int[] rightProducts = new int[nums.length];
+        int[] result = new int[nums.length];
+
+        // product of all elements to the left of i
+        leftProducts[0] = 1;
+        for (int i = 1; i < nums.length; i++) {
+            leftProducts[i] = leftProducts[i - 1] * nums[i - 1];
+        }
+
+        // product of all elements to the right of i
+        rightProducts[nums.length - 1] = 1;
+        for (int i = nums.length - 2; i >= 0; i--) {
+            rightProducts[i] = rightProducts[i + 1] * nums[i + 1];
+        }
+
+        // multiply products to the left by the product to the right
+        for (int i = 0; i < nums.length; i++) {
+            result[i] = leftProducts[i] * rightProducts[i];
+        }
+
+        return result;
+    }
 }
