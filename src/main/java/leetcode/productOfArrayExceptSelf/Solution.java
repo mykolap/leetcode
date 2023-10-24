@@ -41,19 +41,18 @@ public class Solution {
     @Test
     void testProductExceptSelf() {
         int[] nums = {1, 2, 3, 4};
+        int[] nums2 = {-1, 1, 0, -3, 3};
         int[] expected = {24, 12, 8, 6};
+        int[] expected2 = {0, 0, 9, 0, 0};
 
-        int[] result = productExceptSelf(nums);
+        assertArrayEquals(expected, productExceptSelf(nums));
+        assertArrayEquals(expected2, productExceptSelf(nums2));
 
-        assertArrayEquals(expected, result);
+        assertArrayEquals(expected, productExceptSelfBruteforce(nums));
+        assertArrayEquals(expected2, productExceptSelfBruteforce(nums2));
 
-        result = productExceptSelfBruteforce(nums);
-
-        assertArrayEquals(expected, result);
-
-        result = productExceptSelf2Arrays(nums);
-
-        assertArrayEquals(expected, result);
+        assertArrayEquals(expected, productExceptSelf2Arrays(nums));
+        assertArrayEquals(expected2, productExceptSelf2Arrays(nums2));
     }
 
     // Time: O(n * n)
