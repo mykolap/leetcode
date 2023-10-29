@@ -179,4 +179,15 @@ public class Solution {
         assertEquals(expected, new Solution().threeSum(nums));
     }
 
+    @Test
+    public void testThreeSum4() {
+        int[] nums = {-4, 2, 2};
+
+        List<List<Integer>> expected = new ArrayList<>();
+        expected.add(List.of(-4, 2, 2));
+
+        assertEquals(expected, new Solution().threeSumBrutforce(nums));
+        assertEquals(expected, new Solution().threeSum(nums));
+    }
+
 }
