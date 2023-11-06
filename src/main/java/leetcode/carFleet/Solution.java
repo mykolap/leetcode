@@ -2,9 +2,9 @@ package leetcode.carFleet;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.Comparator;
 import java.util.Map;
+import java.util.TreeMap;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -70,16 +70,13 @@ public class Solution {
     // Space: O(n)
     public int carFleet(int target, int[] position, int[] speed) {
         // Create a map to keep track of the position and speed.
-        Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new TreeMap<>(Comparator.reverseOrder());
 
         // Loop through the position array.
         for (int i = 0; i < position.length; i++) {
             // Put the position and speed in the map.
             map.put(position[i], speed[i]);
         }
-
-        // Sort the position array.
-        Arrays.sort(position);
 
         // Create a variable to keep track of the number of fleets.
         int fleet = 0;
@@ -88,10 +85,10 @@ public class Solution {
         double time = 0;
 
         // Loop through the position array.
-        for (int i = position.length - 1; i >= 0; i--) {
+        for (var entry : map.entrySet()) {
             // Calculate the time.
-            final int currentSpeed = map.get(position[i]);
-            double currentTime = (double) (target - position[i]) / currentSpeed;
+            final int currentSpeed = entry.getValue();
+            double currentTime = (double) (target - entry.getKey()) / currentSpeed;
 
             // If the current time is greater than the time.
             if (currentTime > time) {
