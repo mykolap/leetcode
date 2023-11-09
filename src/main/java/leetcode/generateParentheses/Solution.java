@@ -1,13 +1,9 @@
 package leetcode.generateParentheses;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/generate-parentheses/
@@ -29,18 +25,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * 1 <= n <= 8
  */
 public class Solution {
-    @Test
-    void testGenerateParenthesis() {
-        var result = generateParenthesis(3);
-        assertEquals(List.of("((()))", "(()())", "(())()", "()(())", "()()()"), result);
-        var resultNonRecursive = generateParenthesisNonRecursive(3);
-        assertEquals(List.of("((()))", "(()())", "(())()", "()(())", "()()()"), resultNonRecursive);
-
-        var result2 = generateParenthesis(1);
-        assertEquals(List.of("()"), result2);
-        var result2NonRecursive = generateParenthesisNonRecursive(1);
-        assertEquals(List.of("()"), result2NonRecursive);
-    }
 
     // Time: O(4^n)
     // Space: O(n)

@@ -1,11 +1,7 @@
 package leetcode.evaluateReversePolishNotation;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Deque;
 import java.util.LinkedList;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/evaluate-reverse-polish-notation/
@@ -41,24 +37,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Follow up: Could you solve it without using stack?
  */
 public class Solution {
-    @Test
-    void testEvalRPN() {
-        String[] tokens = {"2", "1", "+", "3", "*"};
-        String[] tokens2 = {"4", "13", "5", "/", "+"};
-        String[] tokens3 = {"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
-
-        int expected = 9;
-        int expected2 = 6;
-        int expected3 = 22;
-
-        assertEquals(expected, evalRPN(tokens));
-        assertEquals(expected2, evalRPN(tokens2));
-        assertEquals(expected3, evalRPN(tokens3));
-
-        assertEquals(expected, evalRPN2(tokens));
-        //assertEquals(expected2, evalRPN2(tokens2));
-        //assertEquals(expected3, evalRPN2(tokens3));
-    }
 
     // Time: O(n)
     // Space: O(n)

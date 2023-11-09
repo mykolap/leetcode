@@ -1,9 +1,5 @@
 package leetcode.productOfArrayExceptSelf;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-
 /**
  * https://leetcode.com/problems/product-of-array-except-self/
  * 238. Product of Array Except Self
@@ -37,23 +33,6 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
  * Could you solve it with O(1) constant space complexity? (The output array does not count as extra space
  */
 public class Solution {
-
-    @Test
-    void testProductExceptSelf() {
-        int[] nums = {1, 2, 3, 4};
-        int[] nums2 = {-1, 1, 0, -3, 3};
-        int[] expected = {24, 12, 8, 6};
-        int[] expected2 = {0, 0, 9, 0, 0};
-
-        assertArrayEquals(expected, productExceptSelf(nums));
-        assertArrayEquals(expected2, productExceptSelf(nums2));
-
-        assertArrayEquals(expected, productExceptSelfBruteforce(nums));
-        assertArrayEquals(expected2, productExceptSelfBruteforce(nums2));
-
-        assertArrayEquals(expected, productExceptSelf2Arrays(nums));
-        assertArrayEquals(expected2, productExceptSelf2Arrays(nums2));
-    }
 
     // Time: O(n * n)
     // Space: O(n)

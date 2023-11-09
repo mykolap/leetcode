@@ -1,11 +1,7 @@
 package leetcode.twoSums;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/two-sum/
@@ -38,22 +34,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
  */
 public class Solution {
-
-    @Test
-    void testTwoSum_True1() {
-        int[] nums = {2, 11, 7, 15};
-        int target = 9;
-
-        int[] result = twoSumBruteForce(nums, target);
-
-        assertEquals(0, result[0]);
-        assertEquals(2, result[1]);
-
-        result = twoSum(nums, target);
-
-        assertEquals(0, result[0]);
-        assertEquals(2, result[1]);
-    }
 
     // Time: O(n^2)
     // Space: O(1)
@@ -88,50 +68,6 @@ public class Solution {
             }
         }
         return new int[] {};
-    }
-
-    @Test
-    void testTwoSum_False2() {
-        int[] nums = {2, 8, 11, 15};
-        int target = 9;
-
-        int[] result = twoSumBruteForce(nums, target);
-
-        assertEquals(0, result.length);
-
-        result = twoSum(nums, target);
-
-        assertEquals(0, result.length);
-    }
-
-    @Test
-    void testTwoSum_True3() {
-        int[] nums = {3, 3};
-        int target = 6;
-
-        int[] result = twoSumBruteForce(nums, target);
-
-        assertEquals(0, result[0]);
-        assertEquals(1, result[1]);
-
-        result = twoSum(nums, target);
-
-        assertEquals(0, result[0]);
-        assertEquals(1, result[1]);
-    }
-
-    @Test
-    void testTwoSum_False4() {
-        int[] nums = {3, 4};
-        int target = 6;
-
-        int[] result = twoSumBruteForce(nums, target);
-
-        assertEquals(0, result.length);
-
-        result = twoSum(nums, target);
-
-        assertEquals(0, result.length);
     }
 
 }
