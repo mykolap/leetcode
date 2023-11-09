@@ -1,13 +1,8 @@
 package leetcode.containsDuplicate;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * https://leetcode.com/problems/contains-duplicate/
@@ -73,24 +68,6 @@ public class Solution {
         }
 
         return false;
-    }
-
-    @Test
-    public void testContainsDuplicateTrue() {
-        int[] nums = {1,2,3,1};
-
-        assertTrue(new Solution().containsDuplicateBrutforce(nums));
-        assertTrue(new Solution().containsDuplicateSorted(nums));
-        assertTrue(new Solution().containsDuplicate(nums));
-    }
-
-    @Test
-    public void testContainsDuplicateFalse() {
-        int[] nums2 = {1,2,3,4};
-
-        assertFalse(new Solution().containsDuplicateBrutforce(nums2));
-        assertFalse(new Solution().containsDuplicateSorted(nums2));
-        assertFalse(new Solution().containsDuplicate(nums2));
     }
 
 }

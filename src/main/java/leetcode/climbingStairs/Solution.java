@@ -32,11 +32,6 @@ package leetcode.climbingStairs;
  * 1 <= n <= 45
  */
 public class Solution {
-    public static void main(String[] args) {
-        int n = 4;
-
-        System.out.println(new Solution().climbStairs(n));
-    }
 
     // Time: O(n)
     // Space: O(1)
@@ -57,4 +52,5 @@ public class Solution {
 
         return second;
     }
+
 }

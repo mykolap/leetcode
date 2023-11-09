@@ -49,7 +49,7 @@ public class Solution {
         System.out.println(new Solution().canFinish(numCourses, prerequisites));
     }
 
-// Time complexity: O(V + E)
+    // Time complexity: O(V + E)
     // Space complexity: O(V)
 
     public boolean canFinish(int numCourses, int[][] prerequisites) {

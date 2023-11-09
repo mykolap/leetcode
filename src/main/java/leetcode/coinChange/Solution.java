@@ -48,12 +48,6 @@ import java.util.Arrays;
  * 0 <= amount <= 104
  */
 public class Solution {
-    public static void main(String[] args) {
-        int[] coins = {1, 2, 5};
-        int amount = 11;
-
-        System.out.println(new Solution().coinChange(coins, amount));
-    }
 
     // Time: O(n * m)
     // Space: O(n)

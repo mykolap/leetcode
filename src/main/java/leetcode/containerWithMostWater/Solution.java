@@ -1,9 +1,5 @@
 package leetcode.containerWithMostWater;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 /**
  * https://leetcode.com/problems/container-with-most-water/
  * 11. Container With Most Water
@@ -37,34 +33,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * n == height.length 2 <= n <= 105 0 <= height[i] <= 104
  */
 public class Solution {
-
-    @Test
-    public void testContainerWithMostWater() {
-        int[] height = {1, 8, 6,
-                2, 5, 4, 8, 3, 7};
-        assertEquals(49, maxArea(height));
-        assertEquals(49, maxAreaBruteForce(height));
-
-        int[] height2 = {1, 1};
-        assertEquals(1, maxArea(height2));
-        assertEquals(1, maxAreaBruteForce(height2));
-
-        int[] height3 = {4, 3, 2, 1, 4};
-        assertEquals(16, maxArea(height3));
-        assertEquals(16, maxAreaBruteForce(height3));
-
-        int[] height4 = {1, 2, 1};
-        assertEquals(2, maxArea(height4));
-        assertEquals(2, maxAreaBruteForce(height4));
-
-        int[] height5 = {1, 2, 4, 3};
-        assertEquals(4, maxArea(height5));
-        assertEquals(4, maxAreaBruteForce(height5));
-
-        int[] height6 = {1, 2, 1, 2, 1, 2, 1, 2};
-        assertEquals(12, maxArea(height6));
-        assertEquals(12, maxAreaBruteForce(height6));
-    }
 
     // Time: O(n)
     // Space: O(1)

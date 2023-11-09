@@ -1,12 +1,8 @@
 package leetcode.longestConsecutiveSequence;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/longest-consecutive-sequence/
@@ -34,18 +30,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * -109 <= nums[i] <= 109
  */
 public class Solution {
-
-    @Test
-    void testLongestConsecutive() {
-        int[] nums = {100, 4, 200, 1, 3, 2};
-        int[] nums2 = {0, 3, 7, 2, 5, 8, 4, 6, 0, 1};
-
-        assertEquals(4, longestConsecutive(nums));
-        assertEquals(4, longestConsecutiveSorting(nums));
-
-        assertEquals(9, longestConsecutive(nums2));
-        assertEquals(9, longestConsecutiveSorting(nums2));
-    }
 
     // Time: O(n)
     // Space: O(n)

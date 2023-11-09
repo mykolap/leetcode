@@ -1,12 +1,8 @@
 package leetcode.carFleet;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Comparator;
 import java.util.Map;
 import java.util.TreeMap;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/car-fleet/
@@ -44,27 +40,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * 0 <= N <= 10 ^ 4 0 < target <= 10 ^ 6 0 < speed[i] <= 10 ^ 6 0 <= position[i] < target All initial positions are different.
  */
 public class Solution {
-
-    @Test
-    void testCarFleet() {
-        int target = 12;
-        int[] position = {10, 8, 0, 5, 3};
-        int[] speed = {2, 4, 1, 1, 3};
-
-        assertEquals(3, carFleet(target, position, speed));
-
-        target = 10;
-        position = new int[]{3};
-        speed = new int[]{3};
-
-        assertEquals(1, carFleet(target, position, speed));
-
-        target = 100;
-        position = new int[]{0, 2, 4};
-        speed = new int[]{4, 2, 1};
-
-        assertEquals(1, carFleet(target, position, speed));
-    }
 
     // Time: O(nlogn)
     // Space: O(n)

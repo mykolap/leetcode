@@ -1,11 +1,7 @@
 package leetcode.dailyTemperatures;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Deque;
 import java.util.LinkedList;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
  * https://leetcode.com/problems/daily-temperatures/
@@ -35,29 +31,6 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
  * 30 <= temperatures[i] <= 100
  */
 public class Solution {
-
-    @Test
-    public void testDailyTemperatures() {
-        int[] temperatures = {73, 74, 75, 71, 69, 72, 76, 73};
-        int[] expected = {1, 1, 4, 2, 1, 1, 0, 0};
-        assertArrayEquals(expected, dailyTemperaturesBruteforce(temperatures));
-        assertArrayEquals(expected, dailyTemperatures(temperatures));
-
-        int[] temperatures2 = {30, 40, 50, 60};
-        int[] expected2 = {1, 1, 1, 0};
-        assertArrayEquals(expected2, dailyTemperaturesBruteforce(temperatures2));
-        assertArrayEquals(expected2, dailyTemperatures(temperatures2));
-
-        int[] temperatures3 = {30, 60, 90};
-        int[] expected3 = {1, 1, 0};
-        assertArrayEquals(expected3, dailyTemperaturesBruteforce(temperatures3));
-        assertArrayEquals(expected3, dailyTemperatures(temperatures3));
-
-        int[] temperatures4 = {89, 62, 70, 58, 47, 47, 46, 76, 100, 70};
-        int[] expected4 = {8, 1, 5, 4, 3, 2, 1, 1, 0, 0};
-        assertArrayEquals(expected4, dailyTemperaturesBruteforce(temperatures4));
-        assertArrayEquals(expected4, dailyTemperatures(temperatures4));
-    }
 
     // Time: O(n^2)
     // Space: O(n)
