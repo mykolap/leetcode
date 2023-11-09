@@ -1,13 +1,8 @@
 package leetcode.validAnagram;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * https://leetcode.com/problems/valid-anagram/
@@ -27,18 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * <p>
  * Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
  */
-@SuppressWarnings("java:S5960")
 public class Solution {
-
-    @Test
-    void testIsAnagramTrue() {
-        String s = "anagram";
-        String t = "nagaram";
-
-        assertTrue(new Solution().isAnagramSorting(s, t));
-        assertTrue(new Solution().isAnagramMap(s, t));
-        assertTrue(new Solution().isAnagram(s, t));
-    }
 
     // Time: O(n log n)
     // Space: O(n)
@@ -132,16 +116,6 @@ public class Solution {
         }
 
         return true;
-    }
-
-    @Test
-    void testIsAnagramFalse() {
-        String s = "rat";
-        String t = "car";
-
-        assertFalse(new Solution().isAnagramSorting(s, t));
-        assertFalse(new Solution().isAnagramMap(s, t));
-        assertFalse(new Solution().isAnagram(s, t));
     }
 
 }

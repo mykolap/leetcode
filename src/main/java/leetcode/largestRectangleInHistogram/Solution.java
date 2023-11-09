@@ -1,11 +1,7 @@
 package leetcode.largestRectangleInHistogram;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Deque;
 import java.util.LinkedList;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/largest-rectangle-in-histogram/
@@ -32,32 +28,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class Solution {
 
-    @Test
-    public void testLargestRectangleInHistogram() {
-        int[] heights = {2, 1, 5, 6, 2, 3};
-        assertEquals(10, largestRectangleArea(heights));
-        assertEquals(10, largestRectangleAreaBruteForce(heights));
-
-        int[] heights2 = {2, 4};
-        assertEquals(4, largestRectangleArea(heights2));
-        assertEquals(4, largestRectangleAreaBruteForce(heights2));
-
-        int[] heights3 = {1};
-        assertEquals(1, largestRectangleArea(heights3));
-        assertEquals(1, largestRectangleAreaBruteForce(heights3));
-
-        int[] heights4 = {1, 1};
-        assertEquals(2, largestRectangleArea(heights4));
-        assertEquals(2, largestRectangleAreaBruteForce(heights4));
-
-        int[] heights5 = {2, 1, 2};
-        assertEquals(3, largestRectangleArea(heights5));
-        assertEquals(3, largestRectangleAreaBruteForce(heights5));
-    }
-
     // Time: O(n)
     // Space: O(n)
-    private int largestRectangleArea(int[] heights) {
+    public int largestRectangleArea(int[] heights) {
         int maxArea = 0;
         Deque<Integer> stack = new LinkedList<>(); // Store the indexes
 
@@ -78,7 +51,7 @@ public class Solution {
 
     // Time: O(n^2)
     // Space: O(1)
-    private int largestRectangleAreaBruteForce(int[] heights) {
+    public int largestRectangleAreaBruteForce(int[] heights) {
         int maxArea = 0;
         for (int i = 0; i < heights.length; i++) {
             int minHeight = heights[i];

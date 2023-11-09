@@ -1,9 +1,5 @@
 package leetcode.trappingRainWater;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 /**
  * https://leetcode.com/problems/trapping-rain-water/
  * 42. Trapping Rain Water
@@ -30,21 +26,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class Solution {
 
-    @Test
-    public void testTrappingRainWater() {
-        int[] height = {0, 1, 0,
-                2, 1, 0, 1, 3, 2, 1, 2, 1};
-        assertEquals(6, trap(height));
-        assertEquals(6, trapBruteForce(height));
-
-        int[] height2 = {4, 2, 0, 3, 2, 5};
-        assertEquals(9, trap(height2));
-        assertEquals(9, trapBruteForce(height2));
-    }
-
     // Time: O(n)
     // Space: O(1)
-    private int trap(int[] height) {
+    public int trap(int[] height) {
         int result = 0;
 
         // Create two pointers.
@@ -88,7 +72,7 @@ public class Solution {
 
     // Time: O(n ^ 2)
     // Space: O(1)
-    private int trapBruteForce(int[] height) {
+    public int trapBruteForce(int[] height) {
         int result = 0;
 
         // Loop through the array.

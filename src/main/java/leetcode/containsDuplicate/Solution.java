@@ -29,7 +29,6 @@ import java.util.Set;
  * 1 <= nums.length <= 105
  * -109 <= nums[i] <= 109
  */
-@SuppressWarnings("java:S5960")
 public class Solution {
 
     // Time: O(n^2)

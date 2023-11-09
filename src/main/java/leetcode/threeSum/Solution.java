@@ -1,12 +1,8 @@
 package leetcode.threeSum;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/3sum/
@@ -32,21 +28,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * <p>
  * 0 <= nums.length <= 3000 -105 <= nums[i] <= 105
  */
-@SuppressWarnings("java:S5960")
 public class Solution {
-
-    @Test
-    public void testThreeSum1() {
-        int[] nums = {-1, 0, 1,
-                2, -1, -4};
-
-        List<List<Integer>> expected = new ArrayList<>();
-        expected.add(List.of(-1, -1, 2));
-        expected.add(List.of(-1, 0, 1));
-
-        assertEquals(expected, new Solution().threeSumBrutforce(nums));
-        assertEquals(expected, new Solution().threeSum(nums));
-    }
 
     // Time: O(n^3)
     // Space: O(1)
@@ -59,8 +41,16 @@ public class Solution {
             return result;
         }
 
+        // Sort the array.
+        Arrays.sort(nums);
+
         // Iterate over the array.
         for (int i = 0; i < nums.length - 2; i++) {
+            // Skip duplicates.
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
+
             // Get the current element.
             int currentElement = nums[i];
 
@@ -156,38 +146,6 @@ public class Solution {
         }
 
         return result;
-    }
-
-    @Test
-    public void testThreeSum2() {
-        int[] nums = {0, 1, 1};
-
-        List<List<Integer>> expected = new ArrayList<>();
-
-        assertEquals(expected, new Solution().threeSumBrutforce(nums));
-        assertEquals(expected, new Solution().threeSum(nums));
-    }
-
-    @Test
-    public void testThreeSum3() {
-        int[] nums = {0, 0, 0};
-
-        List<List<Integer>> expected = new ArrayList<>();
-        expected.add(List.of(0, 0, 0));
-
-        assertEquals(expected, new Solution().threeSumBrutforce(nums));
-        assertEquals(expected, new Solution().threeSum(nums));
-    }
-
-    @Test
-    public void testThreeSum4() {
-        int[] nums = {-4, 2, 2};
-
-        List<List<Integer>> expected = new ArrayList<>();
-        expected.add(List.of(-4, 2, 2));
-
-        assertEquals(expected, new Solution().threeSumBrutforce(nums));
-        assertEquals(expected, new Solution().threeSum(nums));
     }
 
 }

@@ -1,12 +1,7 @@
 package leetcode.validParentheses;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
-
 import java.util.Deque;
 import java.util.LinkedList;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/valid-parentheses/
@@ -37,18 +32,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * 1 <= s.length <= 104 s consists of parentheses only '()[]{}'.
  */
 public class Solution {
-
-    @ParameterizedTest
-    @CsvSource({
-            "(), true",
-            "()[]{}, true",
-            "(], false",
-            "([)], false",
-            "{[]}, true",
-    })
-    void testIsValidTrue(String s, boolean expected) {
-        assertEquals(expected, isValid(s));
-    }
 
     // Time: O(n)
     // Space: O(n)

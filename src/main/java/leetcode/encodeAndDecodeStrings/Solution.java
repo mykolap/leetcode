@@ -1,11 +1,7 @@
 package leetcode.encodeAndDecodeStrings;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
  * https://leetcode.com/problems/encode-and-decode-strings/
@@ -47,19 +43,6 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
  * String.split(). Note: This is a companion problem to the System Design problem: Design TinyURL.
  */
 public class Solution {
-
-    @Test
-    void testEncodeAndDecode() {
-        String[] strs = {"Hello", "World"};
-
-        Codec codec = new Codec();
-        String encoded = codec.encode(strs);
-        String[] decoded = codec.decode(encoded);
-
-        assertArrayEquals(strs, decoded);
-
-        strs = new String[]{"word", "word;test"};
-    }
 
     // Time: O(n)
     // Space: O(n)

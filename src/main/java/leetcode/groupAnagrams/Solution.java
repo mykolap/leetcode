@@ -1,10 +1,6 @@
 package leetcode.groupAnagrams;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
-
-import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
 /**
  * https://leetcode.com/problems/group-anagrams/
@@ -28,28 +24,6 @@ import static org.junit.jupiter.api.Assertions.assertIterableEquals;
  * 1 <= strs.length <= 104 0 <= strs[i].length <= 100 strs[i] consists of lower-case English letters.
  */
 public class Solution {
-
-    @Test
-    void testGroupAnagrams() {
-        String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
-        final List<List<String>> expectedResult = List.of(
-                List.of("bat"),
-                List.of("tan", "nat"),
-                List.of("eat", "tea", "ate")
-        );
-
-        final List<List<String>> result1Sorted = groupAnagrams(strs)
-                .stream()
-                .sorted(Comparator.comparing(List::size))
-                .toList();
-        assertIterableEquals(expectedResult, result1Sorted);
-
-        final List<List<String>> result2Sorted = groupAnagramsCounting(strs)
-                .stream()
-                .sorted(Comparator.comparing(List::size))
-                .toList();
-        assertIterableEquals(expectedResult, result2Sorted);
-    }
 
     // Time: O(n * k log k)
     // Space: O(n * k)

@@ -1,10 +1,5 @@
 package leetcode.validPalindrome;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 /**
  * https://leetcode.com/problems/valid-palindrome/
  * 125. Valid Palindrome
@@ -36,12 +31,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  */
 public class Solution {
 
-    @Test
-    void testIsPalindromeTrue() {
-        String s = "A man, a plan, a canal: Panama";
-        assertTrue(isPalindrome(s));
-    }
-
     // Time: O(n)
     // Space: O(1)
     public boolean isPalindrome(String s) {
@@ -65,12 +54,6 @@ public class Solution {
             }
         }
         return true;
-    }
-
-    @Test
-    void testIsPalindromeFalse() {
-        String s = "race a car";
-        assertFalse(isPalindrome(s));
     }
 
 }

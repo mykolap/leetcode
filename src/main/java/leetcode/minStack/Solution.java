@@ -1,11 +1,7 @@
 package leetcode.minStack;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Deque;
 import java.util.LinkedList;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/min-stack/
@@ -57,34 +53,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class Solution {
 
-    @Test
-    void testMinStack() {
-        MinStack minStack = new MinStack();
-        MinStackUsing2Deques minStackUsing2Deques = new MinStackUsing2Deques();
-
-        minStack.push(-2);
-        minStackUsing2Deques.push(-2);
-        // stack: [-2]
-        minStack.push(0);
-        minStackUsing2Deques.push(0);
-        // stack: [-2, 0]
-        minStack.push(-3);
-        minStackUsing2Deques.push(-3);
-        // stack: [-2, 0, -3]
-        assertEquals(-3, minStack.getMin()); // return -3
-        assertEquals(-3, minStackUsing2Deques.getMin()); // return -3
-        // stack: [-2, 0, -3]
-        minStack.pop();
-        minStackUsing2Deques.pop();
-        // stack: [-2, 0]
-        assertEquals(0, minStack.top());    // return 0
-        assertEquals(0, minStackUsing2Deques.top());    // return 0
-        // stack: [-2, 0]
-        assertEquals(-2, minStack.getMin()); // return -2
-        assertEquals(-2, minStackUsing2Deques.getMin()); // return -2
-        // stack: [-2, 0]
-    }
-
     static class Node {
         int val;
         int min;
@@ -97,12 +65,23 @@ public class Solution {
         }
     }
 
+    public interface MinStack {
+        void push(int val);
+
+        void pop();
+
+        int top();
+
+        int getMin();
+    }
+
     // Time: O(1)
     // Space: O(n)
-    class MinStack {
+    class MinStackImpl implements MinStack {
 
         private Node head;
 
+        @Override
         public void push(int val) {
             if (head == null) {
                 head = new Node(val, val, null);
@@ -111,21 +90,24 @@ public class Solution {
             }
         }
 
+        @Override
         public void pop() {
             head = head.next;
         }
 
+        @Override
         public int top() {
             return head.val;
         }
 
+        @Override
         public int getMin() {
             return head.min;
         }
 
     }
 
-    class MinStackUsing2Deques {
+    class MinStackUsing2Deques implements MinStack {
 
         private Deque<Integer> stack;
         private Deque<Integer> minStack;
@@ -135,6 +117,7 @@ public class Solution {
             minStack = new LinkedList<>();
         }
 
+        @Override
         public void push(int val) {
             stack.push(val);
 
@@ -145,20 +128,22 @@ public class Solution {
             }
         }
 
+        @Override
         public void pop() {
             stack.pop();
             minStack.pop();
         }
 
+        @Override
         public int top() {
             return stack.peek();
         }
 
+        @Override
         public int getMin() {
             return minStack.peek();
         }
 
     }
-
 
 }

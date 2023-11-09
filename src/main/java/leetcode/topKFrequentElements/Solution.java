@@ -1,11 +1,7 @@
 package leetcode.topKFrequentElements;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
 import java.util.stream.Collectors;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * https://leetcode.com/problems/top-k-frequent-elements/
@@ -32,25 +28,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Follow up: Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
  */
 public class Solution {
-
-    @Test
-    void testTopKFrequent() {
-        int[] nums = {1, 1, 1, 1, 3, 3, 3, 2, 2};
-        int k = 2;
-        final Set<Integer> expectedSet = Set.of(1, 3);
-
-        int[] result = topKFrequent(nums, k);
-
-        assertEquals(expectedSet, Arrays.stream(result).boxed().collect(Collectors.toSet()));
-
-        result = topKFrequentBruteforce(nums, k);
-
-        assertEquals(expectedSet, Arrays.stream(result).boxed().collect(Collectors.toSet()));
-
-        result = topKFrequentPriorityQueue(nums, k);
-
-        assertEquals(expectedSet, Arrays.stream(result).boxed().collect(Collectors.toSet()));
-    }
 
     // Time: O(n)
     // Space: O(n)

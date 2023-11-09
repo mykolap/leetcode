@@ -1,9 +1,5 @@
 package leetcode.TwoSums2InputArrayIsSorted;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 /**
  * https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
  * 167. Two Sum II - Input array is sorted
@@ -32,22 +28,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * 2 <= numbers.length <= 3 * 104 -1000 <= numbers[i] <= 1000 numbers is sorted in non-decreasing order. -1000 <= target <= 1000
  */
 public class Solution {
-
-    @Test
-    void testTwoSum_True1() {
-        int[] nums = {2, 7, 11, 15};
-        int target = 9;
-
-        int[] result = twoSumBruteForce(nums, target);
-
-        assertEquals(1, result[0]);
-        assertEquals(2, result[1]);
-
-        result = twoSum(nums, target);
-
-        assertEquals(1, result[0]);
-        assertEquals(2, result[1]);
-    }
 
     // Time: O(n^2)
     // Space: O(1)

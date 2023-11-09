@@ -1,10 +1,5 @@
 package leetcode.validSudoku;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 /**
  * https://leetcode.com/problems/valid-sudoku/
  * 36. Valid Sudoku
@@ -54,37 +49,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * board[i][j] is a digit 1-9 or '.'.
  */
 public class Solution {
-
-    @Test
-    void testIsValidSudoku() {
-        char[][] board = {
-                {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
-                {'6', '.', '.', '.', '.', '.', '.', '.', '.'},
-                {'.', '.', '8', '.', '.', '.', '.', '.', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '.', '.', '.', '.', '.', '1'},
-                {'7', '.', '.', '.', '.', '.', '.', '.', '6'},
-                {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
-                {'.', '.', '.', '.', '1', '.', '.', '.', '5'},
-                {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
-        };
-
-        assertTrue(isValidSudoku(board));
-
-        char[][] board2 = {
-                {'8', '3', '.', '.', '7', '.', '.', '.', '.'},
-                {'6', '.', '.', '.', '.', '.', '.', '.', '.'},
-                {'.', '.', '8', '.', '.', '.', '.', '6', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '.', '.', '.', '.', '.', '1'},
-                {'7', '.', '.', '.', '.', '.', '.', '.', '6'},
-                {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
-                {'.', '.', '.', '.', '1', '.', '.', '.', '5'},
-                {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
-        };
-
-        assertFalse(isValidSudoku(board2));
-    }
 
     // Time: O(n^2)
     // Space: O(n)

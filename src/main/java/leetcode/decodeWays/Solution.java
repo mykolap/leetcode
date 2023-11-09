@@ -1,11 +1,5 @@
 package leetcode.decodeWays;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
-
-import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 /**
  * https://leetcode.com/problems/decode-ways/
  * 91. Decode Ways
@@ -44,7 +38,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * <p>
  * 1 <= s.length <= 100 s contains only digits and may contain leading zero(s).
  */
-@SuppressWarnings("java:S5960")
 public class Solution {
 
     // Time: O(2^n)
@@ -149,28 +142,6 @@ public class Solution {
 
         // Return the number of ways to decode the string.
         return currentWay;
-    }
-
-    @ParameterizedTest
-    @CsvSource({
-            "12, 2",
-            "226, 3",
-            "0, 0",
-            "06, 0",
-            "901, 0",
-            "10, 1",
-            "2101, 1",
-            "21012, 2",
-            "210123, 3",
-            "2101234567890, 0",
-            "21012345678901, 0",
-    })
-    public void test(String input, int expected) {
-        assertAll(
-                () -> assertEquals(expected, new Solution().numDecodingsRecursion(input)),
-                () -> assertEquals(expected, new Solution().numDecodingsDp(input)),
-                () -> assertEquals(expected, new Solution().numDecodings(input))
-        );
     }
 
 }
