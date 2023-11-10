@@ -42,4 +42,11 @@ class SolutionTest {
         assertEquals(expected, actual);
     }
 
+    @ParameterizedTest
+    @MethodSource("getLengthOfLongestSubstringArgs")
+    void lengthOfLongestSubstringMap(String s, int expected) {
+        int actual = new Solution().lengthOfLongestSubstringMap(s);
+        assertEquals(expected, actual);
+    }
+
 }
