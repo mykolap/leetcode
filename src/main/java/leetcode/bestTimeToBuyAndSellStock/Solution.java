@@ -27,23 +27,25 @@ package leetcode.bestTimeToBuyAndSellStock;
  * 0 <= prices[i] <= 104
  */
 public class Solution {
-    public static void main(String[] args) {
-        int[] prices = {7,1,5,3,6,4};
-
-        System.out.println(new Solution().maxProfit(prices));
-    }
 
     // Time: O(n)
     // Space: O(1)
     public int maxProfit(int[] prices) {
         int maxProfit = 0;
-        int minPrice = prices[0];
-        int price;
 
-        for (int i = 1; i < prices.length; i++) {
-            price = prices[i];
-            minPrice = Math.min(minPrice, price);
-            maxProfit = Math.max(maxProfit, price - minPrice);
+        int left = 0;
+        int right = 1;
+
+        final int length = prices.length;
+
+        while (right < length) {
+            if (prices[left] >= prices[right]) {
+                left = right;
+                right = left + 1;
+            } else {
+                maxProfit = Math.max(maxProfit, prices[right] - prices[left]);
+                right++;
+            }
         }
 
         return maxProfit;
