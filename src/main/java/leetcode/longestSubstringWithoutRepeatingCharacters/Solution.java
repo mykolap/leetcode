@@ -43,12 +43,6 @@ import java.util.Set;
  */
 public class Solution {
 
-    public static void main(String[] args) {
-        String s = "abcabcbb";
-
-        System.out.println(new Solution().lengthOfLongestSubstring(s));
-    }
-
     // Time: O(n)
     // Space: O(n)
     public int lengthOfLongestSubstring(String s) {
@@ -59,13 +53,40 @@ public class Solution {
 
         int result = 0;
 
-        while (right < s.length()) {
+        final int length = s.length();
+        while (right < length) {
             Character rightChar = s.charAt(right);
             if (seen.contains(rightChar)) {
                 seen.remove(s.charAt(left));
                 left++;
             } else {
                 seen.add(rightChar);
+                right++;
+                result = Math.max(result, right - left);
+            }
+        }
+
+        return result;
+    }
+
+    // Time: O(n)
+    // Space: O(1)
+    public int lengthOfLongestSubstringIntArr(String s) {
+        int left = 0;
+        int right = 0;
+
+        int[] seen = new int[128];
+
+        int result = 0;
+
+        final int length = s.length();
+        while (right < length) {
+            char rightChar = s.charAt(right);
+            if (seen[rightChar] > 0) {
+                seen[s.charAt(left)]--;
+                left++;
+            } else {
+                seen[rightChar]++;
                 right++;
                 result = Math.max(result, right - left);
             }
