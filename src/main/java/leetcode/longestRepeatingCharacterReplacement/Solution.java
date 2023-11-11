@@ -30,13 +30,6 @@ package leetcode.longestRepeatingCharacterReplacement;
  */
 public class Solution {
 
-    public static void main(String[] args) {
-        String s = "ABAABCCDDEE";
-        int k = 2;
-
-        System.out.println(new Solution().characterReplacement(s, k));
-    }
-
     // Time: O(n)
     // Space: O(1)
     public int characterReplacement(String s, int k) {
