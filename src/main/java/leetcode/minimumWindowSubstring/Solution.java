@@ -132,4 +132,47 @@ public class Solution {
         return min == Integer.MAX_VALUE ? "" : s.substring(result[0], result[1] + 1);
     }
 
+    // Time: O(n)
+    // Space: O(n)
+    public String minWindowArr(String s, String t) {
+        int[] need = new int[128];
+        int total = 0;
+        for (char c : t.toCharArray()) {
+            need[c]++;
+            total++;
+        }
+        int left = 0;
+        int right = 0;
+        int valid = 0;
+        int winStart = 0;
+        int winLength = Integer.MAX_VALUE;
+        int[] window = new int[128];
+        int strLen = s.length();
+        while (right < strLen) {
+            char c = s.charAt(right);
+            right++;
+            if (need[c] > 0) {
+                window[c]++;
+                if (window[c] <= need[c]) {
+                    valid++;
+                }
+            }
+            while (valid == total) {
+                if (right - left < winLength) {
+                    winStart = left;
+                    winLength = right - left;
+                }
+                char d = s.charAt(left);
+                left++;
+                if (need[d] > 0) {
+                    if (window[d] <= need[d]) {
+                        valid--;
+                    }
+                    window[d]--;
+                }
+            }
+        }
+        return winLength == Integer.MAX_VALUE ? "" : s.substring(winStart, winStart + winLength);
+    }
+
 }
