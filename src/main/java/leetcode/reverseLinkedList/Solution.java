@@ -1,4 +1,4 @@
-package leetcode.reverseALinkedList;
+package leetcode.reverseLinkedList;
 
 /**
  * https://leetcode.com/problems/reverse-linked-list/
@@ -30,21 +30,6 @@ package leetcode.reverseALinkedList;
  */
 public class Solution {
 
-    public static void main(String[] args) {
-        ListNode head = new ListNode(1,
-                new ListNode(2,
-                        new ListNode(3,
-                                new ListNode(4,
-                                        new ListNode(5)))));
-
-        ListNode result = new Solution().reverseList(head);
-
-        while (result != null) {
-            System.out.println(result.val);
-            result = result.next;
-        }
-    }
-
     // Time: O(n)
     // Space: O(1)
     public ListNode reverseList(ListNode head) {
@@ -66,6 +51,21 @@ public class Solution {
         return previous;
     }
 
+    // Time: O(n)
+    // Space: O(n)
+    public ListNode reverseListRecursive(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode reversed = reverseListRecursive(head.next);
+
+        head.next.next = head;
+        head.next = null;
+
+        return reversed;
+    }
+
     public static class ListNode {
         int val;
         ListNode next;
@@ -80,6 +80,28 @@ public class Solution {
         ListNode(int val, ListNode next) {
             this.val = val;
             this.next = next;
+        }
+
+        @Override
+        public int hashCode() {
+            return val;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            ListNode listNode = (ListNode) o;
+
+            return val == listNode.val;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                   "val=" + val +
+                   '}';
         }
     }
 
