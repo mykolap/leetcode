@@ -30,34 +30,9 @@ package leetcode.mergeTwoSortedLists;
  */
 public class Solution {
 
-    public static void main(String[] args) {
-        ListNode l1 = new ListNode(1,
-                new ListNode(2,
-                        new ListNode(4)));
-
-        ListNode l2 = new ListNode(1,
-                new ListNode(3,
-                        new ListNode(4)));
-
-        ListNode result = new Solution().mergeTwoLists(l1, l2);
-
-        while (result != null) {
-            System.out.println(result.val);
-            result = result.next;
-        }
-    }
-
     // Time: O(n)
     // Space: O(1)
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        // If either list is null, return the other list.
-        if (list1 == null) {
-            return list2;
-        }
-        if (list2 == null) {
-            return list1;
-        }
-
         // Create a dummy node to store the head of the merged list.
         ListNode dummyHead = new ListNode();
         ListNode current = dummyHead;
@@ -89,7 +64,7 @@ public class Solution {
         return dummyHead.next;
     }
 
-    private static class ListNode {
+    static class ListNode {
         int val;
         ListNode next;
 
