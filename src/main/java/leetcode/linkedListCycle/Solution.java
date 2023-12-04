@@ -1,5 +1,7 @@
 package leetcode.linkedListCycle;
 
+import leetcode.common.ListNode;
+
 /**
  * https://leetcode.com/problems/linked-list-cycle/
  * 141. Linked List Cycle
@@ -67,20 +69,6 @@ public class Solution {
         } while (slowPointer != fastPointer);
 
         return true;
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int val) {
-            this(val, null);
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 
 }
