@@ -1,5 +1,7 @@
 package leetcode.sameTree;
 
+import leetcode.common.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -32,19 +34,7 @@ import java.util.Queue;
  * The number of nodes in both trees is in the range [0, 100].
  * -104 <= Node.val <= 104
  */
-public class Solution {
-
-    public static void main(String[] args) {
-        TreeNode p = new TreeNode(1,
-                new TreeNode(2),
-                new TreeNode(3));
-
-        TreeNode q = new TreeNode(1,
-                new TreeNode(2),
-                new TreeNode(3));
-
-        System.out.println(new Solution().isSameTree(p, q));
-    }
+public class Solution0100 {
 
     // Time: O(n)
     // Space: O(n)
@@ -87,28 +77,4 @@ public class Solution {
         return true;
     }
 
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        public TreeNode() {
-
-        }
-
-        public TreeNode(int val) {
-            this(val, null, null);
-        }
-
-        public TreeNode(int val, TreeNode left) {
-            this(val, left, null);
-        }
-
-        public TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-
-        }
-    }
 }

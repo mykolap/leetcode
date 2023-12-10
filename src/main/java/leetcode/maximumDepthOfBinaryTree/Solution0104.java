@@ -1,5 +1,7 @@
 package leetcode.maximumDepthOfBinaryTree;
 
+import leetcode.common.TreeNode;
+
 /**
  * https://leetcode.com/problems/maximum-depth-of-binary-tree/
  * 104. Maximum Depth of Binary Tree
@@ -34,16 +36,7 @@ package leetcode.maximumDepthOfBinaryTree;
  * The number of nodes in the tree is in the range [0, 104].
  * -100 <= Node.val <= 100
  */
-public class Solution {
-    public static void main(String[] args) {
-        TreeNode root = new TreeNode(3,
-                new TreeNode(9),
-                new TreeNode(20,
-                        new TreeNode(15),
-                        new TreeNode(7)));
-
-        System.out.println(new Solution().maxDepth(root));
-    }
+public class Solution0104 {
 
     // Time: O(n)
     // Space: O(n)
@@ -53,25 +46,6 @@ public class Solution {
         }
 
         return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 
 }
