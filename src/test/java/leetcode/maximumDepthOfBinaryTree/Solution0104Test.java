@@ -22,8 +22,22 @@ class Solution0104Test {
 
     @ParameterizedTest
     @MethodSource("getMaxDepthArgs")
-    void maxDepth(TreeNode root, int expected) {
-        assertThat(new Solution0104().maxDepth(root))
+    void maxDepthRecursiveDfs(TreeNode root, int expected) {
+        assertThat(new Solution0104().maxDepthRecursiveDfs(root))
+                .isEqualTo(expected);
+    }
+
+    @ParameterizedTest
+    @MethodSource("getMaxDepthArgs")
+    void maxDepthIterativeBfs(TreeNode root, int expected) {
+        assertThat(new Solution0104().maxDepthIterativeBfs(root))
+                .isEqualTo(expected);
+    }
+
+    @ParameterizedTest
+    @MethodSource("getMaxDepthArgs")
+    void maxDepthIterativeDfs(TreeNode root, int expected) {
+        assertThat(new Solution0104().maxDepthIterativeDfs(root))
                 .isEqualTo(expected);
     }
 

@@ -64,7 +64,7 @@ public class TreeNode {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        int height = new Solution0104().maxDepth(this);
+        int height = new Solution0104().maxDepthRecursiveDfs(this);
         int nodes = (int) Math.pow(2, height - 1);
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(this);
