@@ -118,9 +118,9 @@ public class Solution0036 {
 
     private boolean isValidRow(char[][] board, int row) {
         boolean[] visited = new boolean[9];
-        for (int i = 0; i < 9; i++) {
-            if (board[row][i] != '.') {
-                int num = board[row][i] - '1';
+        for (int col = 0; col < 9; col++) {
+            if (board[row][col] != '.') {
+                int num = board[row][col] - '1';
                 if (visited[num]) return false;
                 visited[num] = true;
             }
@@ -130,9 +130,9 @@ public class Solution0036 {
 
     private boolean isValidColumn(char[][] board, int col) {
         boolean[] visited = new boolean[9];
-        for (int i = 0; i < 9; i++) {
-            if (board[i][col] != '.') {
-                int num = board[i][col] - '1';
+        for (int row = 0; row < 9; row++) {
+            if (board[row][col] != '.') {
+                int num = board[row][col] - '1';
                 if (visited[num]) return false;
                 visited[num] = true;
             }
@@ -140,14 +140,20 @@ public class Solution0036 {
         return true;
     }
 
-    private boolean isValidBox(char[][] board, int boxStartIndex) {
+    private boolean isValidBox(char[][] board, int boxIndex) {
+        // 0 1 2 - 0
+        // 3 4 5 - 1
+        // 6 7 8 - 2
+        int rowIndexStart = boxIndex / 3 * 3;
+        // 0 3 6 - 0
+        // 1 4 7 - 1
+        // 2 5 8 - 2
+        int colIndexStart = boxIndex % 3 * 3;
         boolean[] visited = new boolean[9];
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                int rowIndex = boxStartIndex / 3 * 3 + i;
-                int colIndex = boxStartIndex % 3 * 3 + j;
-                if (board[rowIndex][colIndex] != '.') {
-                    int num = board[rowIndex][colIndex] - '1';
+        for (int row = rowIndexStart; row < rowIndexStart + 3; row++) {
+            for (int col = colIndexStart; col < colIndexStart + 3; col++) {
+                if (board[row][col] != '.') {
+                    int num = board[row][col] - '1';
                     if (visited[num]) return false;
                     visited[num] = true;
                 }
