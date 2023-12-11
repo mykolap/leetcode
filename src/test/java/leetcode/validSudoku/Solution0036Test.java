@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution0036Test {
 
     static Stream<Arguments> getIsValidSudokuArgs() {
         return Stream.of(
@@ -40,7 +40,13 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getIsValidSudokuArgs")
     void isValidSudoku(char[][] board, boolean expected) {
-        assertEquals(expected, new Solution().isValidSudoku(board));
+        assertEquals(expected, new Solution0036().isValidSudoku(board));
+    }
+
+    @ParameterizedTest
+    @MethodSource("getIsValidSudokuArgs")
+    void isValidSudokuSimplified(char[][] board, boolean expected) {
+        assertEquals(expected, new Solution0036().isValidSudokuSimplified(board));
     }
 
 }

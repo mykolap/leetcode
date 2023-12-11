@@ -48,7 +48,7 @@ package leetcode.validSudoku;
  * board[i].length == 9
  * board[i][j] is a digit 1-9 or '.'.
  */
-public class Solution {
+public class Solution0036 {
 
     // Time: O(n^2)
     // Space: O(n)
@@ -104,6 +104,55 @@ public class Solution {
             }
         }
 
+        return true;
+    }
+
+    public boolean isValidSudokuSimplified(char[][] board) {
+        for (int i = 0; i < 9; i++) {
+            if (!isValidRow(board, i) || !isValidColumn(board, i) || !isValidBox(board, i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean isValidRow(char[][] board, int row) {
+        boolean[] visited = new boolean[9];
+        for (int i = 0; i < 9; i++) {
+            if (board[row][i] != '.') {
+                int num = board[row][i] - '1';
+                if (visited[num]) return false;
+                visited[num] = true;
+            }
+        }
+        return true;
+    }
+
+    private boolean isValidColumn(char[][] board, int col) {
+        boolean[] visited = new boolean[9];
+        for (int i = 0; i < 9; i++) {
+            if (board[i][col] != '.') {
+                int num = board[i][col] - '1';
+                if (visited[num]) return false;
+                visited[num] = true;
+            }
+        }
+        return true;
+    }
+
+    private boolean isValidBox(char[][] board, int boxStartIndex) {
+        boolean[] visited = new boolean[9];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                int rowIndex = boxStartIndex / 3 * 3 + i;
+                int colIndex = boxStartIndex % 3 * 3 + j;
+                if (board[rowIndex][colIndex] != '.') {
+                    int num = board[rowIndex][colIndex] - '1';
+                    if (visited[num]) return false;
+                    visited[num] = true;
+                }
+            }
+        }
         return true;
     }
 
