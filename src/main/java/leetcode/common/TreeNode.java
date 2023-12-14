@@ -24,41 +24,32 @@ public class TreeNode {
         this.right = right;
     }
 
-    public static TreeNode fromVarargArray(Integer... array) {
-        if (array.length == 0) {
+    public static TreeNode fromVarargArray(Integer... values) {
+        if (values == null || values.length == 0 || values[0] == null) {
             return null;
         }
 
-        TreeNode root = addNodeIfValueNotNull(array[0]);
-        TreeNode current = root;
+        TreeNode root = new TreeNode(values[0]);
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
 
-        if (array.length > 1) {
-            current.left = addNodeIfValueNotNull(array[1]);
-            if (array.length > 3) {
-                current.left.left = addNodeIfValueNotNull(array[3]);
+        for (int i = 1; i < values.length; i += 2) {
+            TreeNode parent = queue.poll();
+
+            if (values[i] != null) {
+                TreeNode left = new TreeNode(values[i]);
+                parent.left = left;
+                queue.offer(left);
             }
-            if (array.length > 4) {
-                current.left.right = addNodeIfValueNotNull(array[4]);
+
+            if (i + 1 < values.length && values[i + 1] != null) {
+                TreeNode right = new TreeNode(values[i + 1]);
+                parent.right = right;
+                queue.offer(right);
             }
         }
-        if (array.length > 2) {
-            current.right = TreeNode.fromVarargArray(array[2]);
-            if (array.length > 5) {
-                current.right.left = addNodeIfValueNotNull(array[5]);
-            }
-            if (array.length > 6) {
-                current.right.right = addNodeIfValueNotNull(array[6]);
 
-            }
-        }
         return root;
-    }
-
-    private static TreeNode addNodeIfValueNotNull(Integer value) {
-        if (value == null) {
-            return null;
-        }
-        return new TreeNode(value);
     }
 
     @Override
