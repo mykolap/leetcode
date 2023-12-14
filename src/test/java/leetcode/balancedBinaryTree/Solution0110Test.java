@@ -24,6 +24,14 @@ class Solution0110Test {
                 Arguments.of(
                         TreeNode.fromVarargArray(),
                         true
+                ),
+                Arguments.of(
+                        TreeNode.fromVarargArray(1, 2, 2, 3, null, null, 3, 4, null, null, 4),
+                        false
+                ),
+                Arguments.of(
+                        TreeNode.fromVarargArray(1, 2, 3, 4, 5, 6, null, 8),
+                        true
                 )
         );
     }
@@ -34,4 +42,12 @@ class Solution0110Test {
         boolean result = new Solution0110().isBalanced(root);
         assertEquals(expected, result);
     }
+
+    @ParameterizedTest
+    @MethodSource("casesProvider")
+    void isBalancedOptimized(TreeNode root, boolean expected) {
+        boolean result = new Solution0110().isBalancedOptimized(root);
+        assertEquals(expected, result);
+    }
+
 }

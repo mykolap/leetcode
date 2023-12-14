@@ -2,6 +2,8 @@ package leetcode.balancedBinaryTree;
 
 import leetcode.common.TreeNode;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 /**
  * https://leetcode.com/problems/balanced-binary-tree/
  * 110. Balanced Binary Tree
@@ -34,7 +36,7 @@ import leetcode.common.TreeNode;
  */
 public class Solution0110 {
 
-    // Time: O(n)
+    // Time: O(n^2)
     // Space: O(n)
     public boolean isBalanced(TreeNode root) {
         if (root == null) {
@@ -42,7 +44,9 @@ public class Solution0110 {
         }
         int leftDepth = maxDepthRecursiveDfs(root.left);
         int rightDepth = maxDepthRecursiveDfs(root.right);
-        return Math.abs(leftDepth - rightDepth) <= 1;
+        return Math.abs(leftDepth - rightDepth) <= 1
+               && isBalanced(root.left)
+               && isBalanced(root.right);
     }
 
     // Time: O(n)
@@ -53,6 +57,37 @@ public class Solution0110 {
         }
 
         return 1 + Math.max(maxDepthRecursiveDfs(root.left), maxDepthRecursiveDfs(root.right));
+    }
+
+    // Time: O(n)
+    // Space: O(n)
+    public boolean isBalancedOptimized(TreeNode root) {
+        AtomicBoolean isBalanced = new AtomicBoolean(true);
+        dfs(root, isBalanced);
+        return isBalanced.get();
+    }
+
+    private int dfs(TreeNode root, AtomicBoolean isBalanced) {
+        if (root == null) {
+            return 0;
+        }
+
+        int leftDepth = dfs(root.left, isBalanced);
+        if (!isBalanced.get()) {
+            return Integer.MIN_VALUE;
+        }
+
+        int rightDepth = dfs(root.right, isBalanced);
+        if (!isBalanced.get()) {
+            return Integer.MIN_VALUE;
+        }
+
+        if (Math.abs(leftDepth - rightDepth) > 1) {
+            isBalanced.set(false);
+            return Integer.MIN_VALUE;
+        }
+
+        return 1 + Math.max(leftDepth, rightDepth);
     }
 
 }
