@@ -2,8 +2,6 @@ package leetcode.balancedBinaryTree;
 
 import leetcode.common.TreeNode;
 
-import java.util.concurrent.atomic.AtomicBoolean;
-
 /**
  * https://leetcode.com/problems/balanced-binary-tree/
  * 110. Balanced Binary Tree
@@ -36,6 +34,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
  */
 public class Solution0110 {
 
+    private static final int UNBALANCED = -1;
+
     // Time: O(n^2)
     // Space: O(n)
     public boolean isBalanced(TreeNode root) {
@@ -62,29 +62,26 @@ public class Solution0110 {
     // Time: O(n)
     // Space: O(n)
     public boolean isBalancedOptimized(TreeNode root) {
-        AtomicBoolean isBalanced = new AtomicBoolean(true);
-        dfs(root, isBalanced);
-        return isBalanced.get();
+        return dfs(root) != UNBALANCED;
     }
 
-    private int dfs(TreeNode root, AtomicBoolean isBalanced) {
+    private int dfs(TreeNode root) {
         if (root == null) {
             return 0;
         }
 
-        int leftDepth = dfs(root.left, isBalanced);
-        if (!isBalanced.get()) {
-            return Integer.MIN_VALUE;
+        int leftDepth = dfs(root.left);
+        if (leftDepth == UNBALANCED) {
+            return UNBALANCED;
         }
 
-        int rightDepth = dfs(root.right, isBalanced);
-        if (!isBalanced.get()) {
-            return Integer.MIN_VALUE;
+        int rightDepth = dfs(root.right);
+        if (rightDepth == UNBALANCED) {
+            return UNBALANCED;
         }
 
         if (Math.abs(leftDepth - rightDepth) > 1) {
-            isBalanced.set(false);
-            return Integer.MIN_VALUE;
+            return UNBALANCED;
         }
 
         return 1 + Math.max(leftDepth, rightDepth);
