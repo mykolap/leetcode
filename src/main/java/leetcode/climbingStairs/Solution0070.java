@@ -31,7 +31,7 @@ package leetcode.climbingStairs;
  *
  * 1 <= n <= 45
  */
-public class Solution {
+public class Solution0070 {
 
     // Time: O(n)
     // Space: O(1)
@@ -42,15 +42,35 @@ public class Solution {
 
         int first = 1;
         int second = 2;
-        int oldFirstValue;
 
         for (int i = 3; i <= n; i++) {
-            oldFirstValue = first;
+            int tmp = first;
             first = second;
-            second += oldFirstValue;
+            second = second + tmp;
         }
 
         return second;
+    }
+
+    // Time: O(n)
+    // Space: O(n)
+    public int climbStairsFirstApproach(int n) {
+        if (n <= 2) {
+            return n;
+        }
+
+        int[] dp = new int[n + 1];
+
+        // base cases
+        dp[1] = 1;
+        dp[2] = 2;
+
+        // recursive cases
+        for (int i = 3; i <= n; i++) {
+            dp[i] = dp[i - 2] + dp[i - 1];
+        }
+
+        return dp[n];
     }
 
 }
