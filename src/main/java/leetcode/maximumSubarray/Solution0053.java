@@ -20,29 +20,7 @@ package leetcode.maximumSubarray;
  * <p>
  * 1 <= nums.length <= 3 * 104 -105 <= nums[i] <= 105
  */
-public class Solution {
-    public static void main(String[] args) {
-        int[] nums = {-2, 1, -3, 4, -1,
-                      2, 1, -5, 4};
-
-        System.out.println(new Solution().maxSubArray(nums)); // 6
-
-        int[] nums2 = {-2, 1};
-
-        System.out.println(new Solution().maxSubArray(nums2)); // 1
-
-        int[] nums3 = {5,4,-1,7,8};
-
-        System.out.println(new Solution().maxSubArray(nums3)); // 23
-
-        int[] nums4 = {-1};
-
-        System.out.println(new Solution().maxSubArray(nums4)); // -1
-
-        int[] nums5 = {-1,-2,-3,0};
-
-        System.out.println(new Solution().maxSubArray(nums5)); // 0
-    }
+public class Solution0053 {
 
     // Time: O(n)
     // Space: O(1)
