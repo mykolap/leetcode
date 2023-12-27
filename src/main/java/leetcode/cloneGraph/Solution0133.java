@@ -73,7 +73,7 @@ public class Solution0133 {
 
     // Time: O(n)
     // Space: O(n)
-    public Node cloneGraph(Node node) {
+    public Node cloneGraphBfs(Node node) {
         if (node == null) {
             return null;
         }
@@ -98,6 +98,32 @@ public class Solution0133 {
         }
 
         return clonedNodes.get(node);
+    }
+
+    // Time: O(n)
+    // Space: O(n)
+    public Node cloneGraphDfs(Node node) {
+        if (node == null) {
+            return null;
+        }
+        Map<Node, Node> clonedNodes = new HashMap<>();
+        return cloneGraphDfs(node, clonedNodes);
+    }
+
+    private Node cloneGraphDfs(Node node, Map<Node, Node> clonedNodes) {
+        final Node clonedNode = clonedNodes.get(node);
+        if (clonedNode != null) {
+            return clonedNode;
+        }
+
+        Node newClonedNode = new Node(node.val);
+        clonedNodes.put(node, newClonedNode);
+
+        for (Node neighbor : node.neighbors) {
+            newClonedNode.neighbors.add(cloneGraphDfs(neighbor, clonedNodes));
+        }
+
+        return newClonedNode;
     }
 
 }
