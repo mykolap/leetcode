@@ -1,6 +1,11 @@
 package leetcode.cloneGraph;
 
-import java.util.*;
+import leetcode.common.Node;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.Queue;
 
 /**
  * https://leetcode.com/problems/clone-graph/
@@ -64,26 +69,7 @@ import java.util.*;
  * There are no repeated edges and no self-loops in the graph.
  * The Graph is connected and all nodes can be visited starting from the given node.
  */
-public class Solution {
-
-    static class Node {
-        public int val;
-        public List<Node> neighbors;
-        public Node() {
-            val = 0;
-            neighbors = new ArrayList<Node>();
-        }
-        public Node(int _val) {
-            val = _val;
-            neighbors = new ArrayList<Node>();
-        }
-        public Node(int _val, Node node1, Node node2) {
-            val = _val;
-            neighbors = new ArrayList<Node>();
-            neighbors.add(node1);
-            neighbors.add(node2);
-        }
-    }
+public class Solution0133 {
 
     // Time: O(n)
     // Space: O(n)
