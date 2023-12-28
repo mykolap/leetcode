@@ -70,18 +70,18 @@ public class Solution0435 {
         }
         Arrays.sort(intervals, Comparator.comparingInt(interval -> interval[0]));
 
-        int[] lastInterval = intervals[0];
+        int lastIntervalEnd = intervals[0][1];
         int intervalsToRemove = 0;
         for (int i = 1; i < intervals.length; i++) {
             int[] currentInterval = intervals[i];
-            if (currentInterval[0] >= lastInterval[1]) {
+            if (currentInterval[0] >= lastIntervalEnd) {
                 // non overlaping, update last interval
-                lastInterval = currentInterval;
+                lastIntervalEnd = currentInterval[1];
             } else {
                 // as last - should be used the one with smaller end, so we have less overlaps
                 // the one with bigger end - should be removed and not used as last
-                if (currentInterval[1] < lastInterval[1]) {
-                    lastInterval = currentInterval;
+                if (currentInterval[1] < lastIntervalEnd) {
+                    lastIntervalEnd = currentInterval[1];
                 }
                 intervalsToRemove++;
             }
