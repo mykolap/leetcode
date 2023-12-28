@@ -35,24 +35,14 @@ import java.util.List;
  * intervals[i].length == 2
  * 0 <= starti <= endi <= 10^4
  */
-public class Solution {
-
-    public static void main(String[] args) {
-        int[][] intervals = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
-
-        int[][] result = new Solution().merge(intervals);
-
-        for (int[] interval : result) {
-            System.out.println(interval[0] + " " + interval[1]);
-        }
-    }
+public class Solution0056 {
 
     // Time: O(n * log(n))
     // Space: O(n)
     public int[][] merge(int[][] intervals) {
         // If the array is null or empty, return null.
-        if (intervals == null || intervals.length == 0) {
-            return new int[0][0];
+        if (intervals.length <= 1) {
+            return intervals;
         }
 
         // Sort the array by the start time of each interval.
@@ -62,13 +52,11 @@ public class Solution {
         List<int[]> mergedIntervals = new ArrayList<>(intervals.length);
 
         // Add the first interval to the list.
-        mergedIntervals.add(intervals[0]);
+        int[] lastInterval = intervals[0];
+        mergedIntervals.add(lastInterval);
 
         // Iterate over the array of intervals.
         for (int i = 1; i < intervals.length; i++) {
-            // Get the last interval from the list.
-            int[] lastInterval = mergedIntervals.get(mergedIntervals.size() - 1);
-
             // Get the current interval.
             int[] currentInterval = intervals[i];
 
@@ -78,12 +66,13 @@ public class Solution {
                 lastInterval[1] = Math.max(lastInterval[1], currentInterval[1]);
             } else {
                 // Otherwise, add the current interval to the list.
+                lastInterval = currentInterval;
                 mergedIntervals.add(currentInterval);
             }
         }
 
         // Return the list as an array.
-        return mergedIntervals.toArray(new int[mergedIntervals.size()][]);
+        return mergedIntervals.toArray(new int[][]{});
     }
 
 }
