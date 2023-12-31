@@ -38,7 +38,7 @@ public class Solution1897 {
 
     // Time: O(n * m)
     // Space: O(1)
-    public boolean makeEqual(String[] words) {
+    public boolean makeEqualMap(String[] words) {
         // Count the number of occurrences of each character.
         Map<Character, Integer> charCounts = new HashMap<>();
         for (String word : words) {
@@ -53,4 +53,23 @@ public class Solution1897 {
         }
         return true;
     }
+
+    // Time: O(n * m)
+    // Space: O(1)
+    public boolean makeEqualArray(String[] words) {
+        // Count the number of occurrences of each character.
+        int[] charCounts = new int[26];
+        for (String word : words) {
+            word.chars().forEach(c -> charCounts[(char) c - 'a']++);
+        }
+
+        // Return whether the number of occurrences of each character is divisible by the number of words.
+        for (int count : charCounts) {
+            if (count % words.length != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }

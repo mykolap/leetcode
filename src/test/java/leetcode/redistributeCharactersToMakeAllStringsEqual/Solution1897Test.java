@@ -37,7 +37,14 @@ class Solution1897Test {
 
     @ParameterizedTest
     @MethodSource("casesProvider")
-    void makeEqual(String[] words, boolean expected) {
-        assertEquals(expected, new Solution1897().makeEqual(words));
+    void makeEqualMap(String[] words, boolean expected) {
+        assertEquals(expected, new Solution1897().makeEqualMap(words));
     }
+
+    @ParameterizedTest
+    @MethodSource("casesProvider")
+    void makeEqualArray(String[] words, boolean expected) {
+        assertEquals(expected, new Solution1897().makeEqualArray(words));
+    }
+
 }
