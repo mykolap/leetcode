@@ -40,18 +40,7 @@ import leetcode.common.ListNode;
  * <p>
  * Follow up: Can you solve it using O(1) (i.e. constant) memory?
  */
-public class Solution {
-
-    public static void main(String[] args) {
-        ListNode head = new ListNode(3,
-                new ListNode(2,
-                        new ListNode(0,
-                                new ListNode(-4))));
-
-        head.next.next.next.next = head.next;
-
-        System.out.println(new Solution().hasCycle(head));
-    }
+public class Solution0141 {
 
     // Time: O(n)
     // Space: O(1)

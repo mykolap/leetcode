@@ -5,6 +5,7 @@ import java.util.List;
 
 public class ListNode {
 
+    public boolean safeToString = false;
     public int val;
     public ListNode next;
 
@@ -34,6 +35,11 @@ public class ListNode {
 
     @Override
     public String toString() {
+        if (safeToString) {
+            return "[" +
+                   val +
+                   ",...]";
+        }
         var head = this;
         List<Integer> values = new ArrayList<>();
         while (head != null) {
