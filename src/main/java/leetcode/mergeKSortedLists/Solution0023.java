@@ -1,5 +1,7 @@
 package leetcode.mergeKSortedLists;
 
+import leetcode.common.ListNode;
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -35,30 +37,10 @@ import java.util.PriorityQueue;
  * lists[i] is sorted in ascending order.
  * The sum of lists[i].length won't exceed 10^4.
  */
-public class Solution {
-
-    public static void main(String[] args) {
-        ListNode[] lists = {
-                new ListNode(1,
-                        new ListNode(4,
-                                new ListNode(5))),
-                new ListNode(1,
-                        new ListNode(3,
-                                new ListNode(4))),
-                new ListNode(2,
-                        new ListNode(6))
-        };
-
-        ListNode result = new Solution().mergeKLists(lists);
-
-        while (result != null) {
-            System.out.println(result.val);
-            result = result.next;
-        }
-    }
+public class Solution0023 {
 
     // Time: O(n * log(k))
-    // Space: O(1)
+    // Space: O(k)
     public ListNode mergeKLists(ListNode[] lists) {
         // If the array is null or empty, return null.
         if (lists == null || lists.length == 0) {
@@ -90,23 +72,6 @@ public class Solution {
         }
 
         return dummyHead.next;
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 
 }
