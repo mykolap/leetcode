@@ -12,11 +12,8 @@ package leetcode.numberOfLaserBeamsInABank;
  * Laser beams are independent, i.e., one beam does not interfere nor join with another.
  * <p>
  * Return the total number of laser beams in the bank.
- * </a>
- * <br/>
- * <div class="notranslate"><p><img alt="" src="https://assets.leetcode.com/uploads/2021/09/18/image.png" style="width: 500px; height: 500px;">
- *     </p>
- *     <p><strong>Example 1:</strong></p>
+ * </p>
+ * <p><strong>Example 1:</strong></p>
  * Input: bank = ["011001","000000","010100","001000"]
  * Output: 8
  * Explanation: Between each of the following device pairs, there is one beam. In total, there are 8 beams:
