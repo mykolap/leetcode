@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution0128Test {
 
     static Stream<Arguments> getLongestConsecutiveArgs() {
         return Stream.of(
@@ -20,13 +20,13 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getLongestConsecutiveArgs")
     void longestConsecutive(int[] nums, int expected) {
-        assertEquals(expected, new Solution().longestConsecutive(nums));
+        assertEquals(expected, new Solution0128().longestConsecutive(nums));
     }
 
     @ParameterizedTest
     @MethodSource("getLongestConsecutiveArgs")
     void longestConsecutiveSorting(int[] nums, int expected) {
-        assertEquals(expected, new Solution().longestConsecutiveSorting(nums));
+        assertEquals(expected, new Solution0128().longestConsecutiveSorting(nums));
     }
 
 }

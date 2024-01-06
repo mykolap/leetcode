@@ -29,7 +29,7 @@ import java.util.Set;
  * 0 <= nums.length <= 105
  * -109 <= nums[i] <= 109
  */
-public class Solution {
+public class Solution0128 {
 
     // Time: O(n)
     // Space: O(n)
