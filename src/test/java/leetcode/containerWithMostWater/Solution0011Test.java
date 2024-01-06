@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class SolutionTest {
+class Solution0011Test {
 
     static Stream<Arguments> getMaxAreaArgs() {
         return Stream.of(
@@ -24,14 +24,14 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getMaxAreaArgs")
     void maxArea(int[] height, int expected) {
-        assertThat(new Solution().maxArea(height))
+        assertThat(new Solution0011().maxArea(height))
                 .isEqualTo(expected);
     }
 
     @ParameterizedTest
     @MethodSource("getMaxAreaArgs")
     void maxAreaBruteForce(int[] height, int expected) {
-        assertThat(new Solution().maxArea(height))
+        assertThat(new Solution0011().maxArea(height))
                 .isEqualTo(expected);
     }
 

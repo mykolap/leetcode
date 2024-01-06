@@ -32,7 +32,7 @@ package leetcode.containerWithMostWater;
  * <p>
  * n == height.length 2 <= n <= 105 0 <= height[i] <= 104
  */
-public class Solution {
+public class Solution0011 {
 
     // Time: O(n)
     // Space: O(1)
