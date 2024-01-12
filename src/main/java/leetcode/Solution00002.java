@@ -1,4 +1,4 @@
-package leetcode.addTwoNumbers;
+package leetcode;
 
 import leetcode.common.ListNode;
 
@@ -42,7 +42,7 @@ import leetcode.common.ListNode;
  * <p>
  * It is guaranteed that the list represents a number that does not have leading zeros.
  */
-public class Solution {
+public class Solution00002 {
 
     // Time: O(n)
     // Space: O(n)

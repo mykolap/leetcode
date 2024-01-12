@@ -1,4 +1,4 @@
-package leetcode.addTwoNumbers;
+package leetcode;
 
 import leetcode.common.ListNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class SolutionTest {
+class Solution00002Test {
 
     static Stream<Arguments> getAddTwoNumbersArgs() {
         return Stream.of(
@@ -22,7 +22,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getAddTwoNumbersArgs")
     void addTwoNumbers(ListNode l1, ListNode l2, String expectedSum) {
-        assertThat(new Solution().addTwoNumbers(l1, l2))
+        assertThat(new Solution00002().addTwoNumbers(l1, l2))
                 .hasToString(expectedSum);
     }
 
