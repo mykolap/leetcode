@@ -14,23 +14,23 @@ class Solution0110Test {
     static Stream<Arguments> casesProvider() {
         return Stream.of(
                 Arguments.of(
-                        TreeNode.fromVarargArray(3, 9, 20, null, null, 15, 7),
+                        TreeNode.of(3, 9, 20, null, null, 15, 7),
                         true
                 ),
                 Arguments.of(
-                        TreeNode.fromVarargArray(1, 2, 2, 3, 3, null, null, 4, 4),
+                        TreeNode.of(1, 2, 2, 3, 3, null, null, 4, 4),
                         false
                 ),
                 Arguments.of(
-                        TreeNode.fromVarargArray(),
+                        TreeNode.of(),
                         true
                 ),
                 Arguments.of(
-                        TreeNode.fromVarargArray(1, 2, 2, 3, null, null, 3, 4, null, null, 4),
+                        TreeNode.of(1, 2, 2, 3, null, null, 3, 4, null, null, 4),
                         false
                 ),
                 Arguments.of(
-                        TreeNode.fromVarargArray(1, 2, 3, 4, 5, 6, null, 8),
+                        TreeNode.of(1, 2, 3, 4, 5, 6, null, 8),
                         true
                 )
         );

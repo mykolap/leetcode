@@ -13,8 +13,8 @@ class Solution2385Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
-                Arguments.of(TreeNode.fromVarargArray(1, 5, 3, null, 4, 10, 6, 9, 2), 3, 4),
-                Arguments.of(TreeNode.fromVarargArray(1), 1, 0)
+                Arguments.of(TreeNode.of(1, 5, 3, null, 4, 10, 6, 9, 2), 3, 4),
+                Arguments.of(TreeNode.of(1), 1, 0)
         );
     }
 

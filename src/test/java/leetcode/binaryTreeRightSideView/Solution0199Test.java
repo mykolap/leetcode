@@ -18,23 +18,23 @@ class Solution0199Test {
                         new int[]{}
                 ),
                 Arguments.of(
-                        TreeNode.fromVarargArray(1, 2, 3, null, 5, null, 4),
+                        TreeNode.of(1, 2, 3, null, 5, null, 4),
                         new int[]{1, 3, 4}
                 ),
                 Arguments.of(
-                        TreeNode.fromVarargArray(1, null, 3),
+                        TreeNode.of(1, null, 3),
                         new int[]{1, 3}
                 ),
                 Arguments.of(
-                        TreeNode.fromVarargArray(1, 2, 3, 4),
+                        TreeNode.of(1, 2, 3, 4),
                         new int[]{1, 3, 4}
                 ),
                 Arguments.of(
-                        TreeNode.fromVarargArray(1, 2, 3, 4, 5, 6, 7, 8, 9),
+                        TreeNode.of(1, 2, 3, 4, 5, 6, 7, 8, 9),
                         new int[]{1, 3, 7, 9}
                 ),
                 Arguments.of(
-                        TreeNode.fromVarargArray(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15),
+                        TreeNode.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15),
                         new int[]{1, 3, 7, 15}
                 )
         );

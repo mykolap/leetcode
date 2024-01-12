@@ -24,7 +24,7 @@ public class TreeNode {
         this.right = right;
     }
 
-    public static TreeNode fromVarargArray(Integer... values) {
+    public static TreeNode of(Integer... values) {
         if (values == null || values.length == 0 || values[0] == null) {
             return null;
         }

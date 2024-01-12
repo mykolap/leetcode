@@ -15,15 +15,15 @@ class Solution0102Test {
     static Stream<Arguments> casesProvider() {
         return Stream.of(
                 Arguments.of(
-                        TreeNode.fromVarargArray(3, 9, 20, null, null, 15, 7),
+                        TreeNode.of(3, 9, 20, null, null, 15, 7),
                         List.of(List.of(3), List.of(9, 20), List.of(15, 7))
                 ),
                 Arguments.of(
-                        TreeNode.fromVarargArray(1),
+                        TreeNode.of(1),
                         List.of(List.of(1))
                 ),
                 Arguments.of(
-                        TreeNode.fromVarargArray(),
+                        TreeNode.of(),
                         List.of()
                 )
         );

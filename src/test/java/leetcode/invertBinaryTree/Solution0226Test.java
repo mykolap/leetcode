@@ -14,16 +14,16 @@ class Solution0226Test {
 
     static Stream<Arguments> getInvertTreeArgs() {
         return Stream.of(
-                Arguments.of(TreeNode.fromVarargArray(4, 2, 7, 1, 3, 6, 9), """
+                Arguments.of(TreeNode.of(4, 2, 7, 1, 3, 6, 9), """
                                4       \s
                            7       2   \s
                          9   6   3   1 \s
                         """),
-                Arguments.of(TreeNode.fromVarargArray(2, 1, 3), """
+                Arguments.of(TreeNode.of(2, 1, 3), """
                            2   \s
                          3   1 \s
                         """),
-                Arguments.of(TreeNode.fromVarargArray(1), " 1  \n")
+                Arguments.of(TreeNode.of(1), " 1  \n")
         );
     }
 
