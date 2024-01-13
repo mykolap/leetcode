@@ -1,4 +1,4 @@
-package leetcode.trappingRainWater;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00042Test {
 
     static Stream<Arguments> getTrappingRainWaterArgs() {
         return Stream.of(
@@ -20,13 +20,13 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getTrappingRainWaterArgs")
     void trap(int[] height, int expected) {
-        assertEquals(expected, new Solution().trap(height));
+        assertEquals(expected, new Solution00042().trap(height));
     }
 
     @ParameterizedTest
     @MethodSource("getTrappingRainWaterArgs")
     void trapBruteForce(int[] height, int expected) {
-        assertEquals(expected, new Solution().trapBruteForce(height));
+        assertEquals(expected, new Solution00042().trapBruteForce(height));
     }
 
 }
