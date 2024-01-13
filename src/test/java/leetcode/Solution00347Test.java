@@ -1,4 +1,4 @@
-package leetcode.topKFrequentElements;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-class SolutionTest {
+class Solution00347Test {
 
     static Stream<Arguments> getTopKFrequentArgs() {
         return Stream.of(
@@ -19,20 +19,14 @@ class SolutionTest {
 
     @ParameterizedTest
     @MethodSource("getTopKFrequentArgs")
-    void topKFrequent(int[] nums, int k, int[] expected) {
-        assertArrayEquals(expected, new Solution().topKFrequent(nums, k));
+    void topKFrequentStream(int[] nums, int k, int[] expected) {
+        assertArrayEquals(expected, new Solution00347().topKFrequentStream(nums, k));
     }
 
     @ParameterizedTest
     @MethodSource("getTopKFrequentArgs")
-    void topKFrequentBruteforce(int[] nums, int k, int[] expected) {
-        assertArrayEquals(expected, new Solution().topKFrequentBruteforce(nums, k));
-    }
-
-    @ParameterizedTest
-    @MethodSource("getTopKFrequentArgs")
-    void topKFrequentPriorityQueue(int[] nums, int k, int[] expected) {
-        assertArrayEquals(expected, new Solution().topKFrequentPriorityQueue(nums, k));
+    void topKFrequentInSteps(int[] nums, int k, int[] expected) {
+        assertArrayEquals(expected, new Solution00347().topKFrequentInSteps(nums, k));
     }
 
 }
