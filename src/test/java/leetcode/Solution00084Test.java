@@ -1,4 +1,4 @@
-package leetcode.largestRectangleInHistogram;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00084Test {
 
     static Stream<Arguments> getLargestRectangleAreaArgs() {
         return Stream.of(
@@ -23,13 +23,13 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getLargestRectangleAreaArgs")
     void largestRectangleArea(int[] heights, int expected) {
-        assertEquals(expected, new Solution().largestRectangleArea(heights));
+        assertEquals(expected, new Solution00084().largestRectangleArea(heights));
     }
 
     @ParameterizedTest
     @MethodSource("getLargestRectangleAreaArgs")
     void largestRectangleAreaBruteForce(int[] heights, int expected) {
-        assertEquals(expected, new Solution().largestRectangleAreaBruteForce(heights));
+        assertEquals(expected, new Solution00084().largestRectangleAreaBruteForce(heights));
     }
 
 }

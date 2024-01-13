@@ -1,4 +1,4 @@
-package leetcode.largestRectangleInHistogram;
+package leetcode;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -26,7 +26,7 @@ import java.util.LinkedList;
  * <p>
  * 1 <= heights.length <= 105 0 <= heights[i] <= 104
  */
-public class Solution {
+public class Solution00084 {
 
     // Time: O(n)
     // Space: O(n)
