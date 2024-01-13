@@ -1,4 +1,4 @@
-package leetcode.amountOfTimeForBinaryTreeToBeInfected;
+package leetcode;
 
 import leetcode.common.TreeNode;
 
@@ -39,7 +39,7 @@ import java.util.*;
  * Each node has a unique value.
  * A node with a value of start exists in the tree.
  */
-public class Solution2385 {
+public class Solution02385 {
 
     // Time O(n)
     // Space O(n)

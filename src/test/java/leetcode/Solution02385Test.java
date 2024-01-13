@@ -1,4 +1,4 @@
-package leetcode.amountOfTimeForBinaryTreeToBeInfected;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution2385Test {
+class Solution02385Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -21,14 +21,14 @@ class Solution2385Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void amountOfTimeBfs(TreeNode root, int start, int expected) {
-        int actual = new Solution2385().amountOfTimeBfs(root, start);
+        int actual = new Solution02385().amountOfTimeBfs(root, start);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void amountOfTimeDfs(TreeNode root, int start, int expected) {
-        int actual = new Solution2385().amountOfTimeDfs(root, start);
+        int actual = new Solution02385().amountOfTimeDfs(root, start);
         assertEquals(expected, actual);
     }
 
