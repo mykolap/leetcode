@@ -1,4 +1,4 @@
-package leetcode.medianOfTwoSortedArrays;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/median-of-two-sorted-arrays/
@@ -51,7 +51,7 @@ package leetcode.medianOfTwoSortedArrays;
  * 0 <= n <= 1000
  * 1 <= m + n <= 2000
  */
-public class Solution {
+public class Solution00004 {
 
     // Time: O(log(min(m,n)))
     // Space: O(1)

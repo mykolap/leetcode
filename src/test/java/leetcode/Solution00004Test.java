@@ -1,14 +1,13 @@
-package leetcode.medianOfTwoSortedArrays;
+package leetcode;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-class SolutionTest {
+class Solution00004Test {
 
     static Stream<Arguments> getMedianArgs() {
         return Stream.of(
@@ -25,7 +24,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getMedianArgs")
     void findMedianSortedArrays(int[] nums1, int[] nums2, double expected) {
-        assertEquals(expected, new Solution().findMedianSortedArrays(nums1, nums2));
+        Assertions.assertEquals(expected, new Solution00004().findMedianSortedArrays(nums1, nums2));
     }
 
 }
