@@ -1,4 +1,4 @@
-package leetcode.twoSums;
+package leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,7 +33,7 @@ import java.util.Map;
  *
  * Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
  */
-public class Solution {
+public class Solution00001 {
 
     // Time: O(n^2)
     // Space: O(1)
