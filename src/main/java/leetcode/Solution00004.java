@@ -63,14 +63,17 @@ public class Solution00004 {
 
         int m = nums1.length;
         int n = nums2.length;
+        int total = m + n;
 
         int left = 0;
         int right = m;
 
         // Perform binary search on the shorter array
         while (left <= right) {
+            // Calculate the partition point for the shorter array
             int partitionX = (left + right) / 2;
-            int partitionY = (m + n + 1) / 2 - partitionX;
+            // Calculate the partition point for the longer array
+            int partitionY = (total + 1) / 2 - partitionX;
 
             // Calculate elements around the partition points
             int maxLeftX = partitionX == 0 ? Integer.MIN_VALUE : nums1[partitionX - 1];
@@ -82,14 +85,18 @@ public class Solution00004 {
             // Compare elements around the partition points and adjust the binary search range
             if (maxLeftX <= minRightY && maxLeftY <= minRightX) {
                 // Calculate and return the median
-                if ((m + n) % 2 == 0) {
+                if (total % 2 == 0) {
+                    // Even number of elements
                     return (Math.max(maxLeftX, maxLeftY) + Math.min(minRightX, minRightY)) / 2.0;
                 } else {
+                    // Odd number of elements
                     return Math.max(maxLeftX, maxLeftY);
                 }
             } else if (maxLeftX > minRightY) {
+                // Move the partition point to the left
                 right = partitionX - 1;
             } else {
+                // Move the partition point to the right
                 left = partitionX + 1;
             }
         }

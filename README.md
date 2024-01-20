@@ -24,6 +24,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00004.java)
 [Test](src/test/java/leetcode/Solution00004Test.java)
 
+### 26. Remove Duplicates from Sorted Array
+
+<a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00026.java)
+[Test](src/test/java/leetcode/Solution00026Test.java)
+
 ### 27. Remove Element
 
 <a href="https://leetcode.com/problems/remove-element">Web link</a>
