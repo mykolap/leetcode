@@ -47,3 +47,21 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/sum-of-subarray-minimums">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00907.java)
 [Test](src/test/java/leetcode/Solution00907Test.java)
+
+### 3010. Divide an Array Into Subarrays With Minimum Cost I
+
+<a href="https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03010.java)
+[Test](src/test/java/leetcode/Solution03010Test.java)
+
+### 3011. Find if Array Can Be Sorted
+
+<a href="https://leetcode.com/problems/find-if-array-can-be-sorted">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03011.java)
+[Test](src/test/java/leetcode/Solution03011Test.java)
+
+### 3012. Minimize Length of Array Using Operations
+
+<a href="https://leetcode.com/problems/minimize-length-of-array-using-operations">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03012.java)
+[Test](src/test/java/leetcode/Solution03012Test.java)
