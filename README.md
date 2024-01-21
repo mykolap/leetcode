@@ -54,6 +54,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00198.java)
 [Test](src/test/java/leetcode/Solution00198Test.java)
 
+### 212. Word Search II
+
+<a href="https://leetcode.com/problems/word-search-ii">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00212.java)
+[Test](src/test/java/leetcode/Solution00212Test.java)
+
 ### 907. Sum of Subarray Minimums
 
 <a href="https://leetcode.com/problems/sum-of-subarray-minimums">Web link</a>
