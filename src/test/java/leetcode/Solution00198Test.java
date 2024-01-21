@@ -1,4 +1,4 @@
-package leetcode.houseRobber;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0198Test {
+class Solution00198Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -20,19 +20,19 @@ class Solution0198Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void rob(int[] nums, int expected) {
-        assertEquals(expected, new Solution0198().rob(nums));
+        assertEquals(expected, new Solution00198().rob(nums));
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void robDp(int[] nums, int expected) {
-        assertEquals(expected, new Solution0198().robDp(nums));
+        assertEquals(expected, new Solution00198().robDp(nums));
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void robBruteForce(int[] nums, int expected) {
-        assertEquals(expected, new Solution0198().robBruteForce(nums));
+        assertEquals(expected, new Solution00198().robBruteForce(nums));
     }
 
 }

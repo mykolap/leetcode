@@ -1,4 +1,4 @@
-package leetcode.houseRobber;
+package leetcode;
 
 /**
  * 198. House Robber
@@ -36,7 +36,7 @@ package leetcode.houseRobber;
  * <p>
  * 0 <= nums[i] <= 400
  */
-public class Solution0198 {
+public class Solution00198 {
 
     // Time: O(n)
     // Space: O(1)
