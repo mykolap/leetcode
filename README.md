@@ -36,6 +36,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00027.java)
 [Test](src/test/java/leetcode/Solution00027Test.java)
 
+### 80. Remove Duplicates from Sorted Array II
+
+<a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00080.java)
+[Test](src/test/java/leetcode/Solution00080Test.java)
+
 ### 84. Largest Rectangle in Histogram
 
 <a href="https://leetcode.com/problems/largest-rectangle-in-histogram">Web link</a>
