@@ -38,7 +38,7 @@ public class Solution00212 {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
                 // Perform a depth-first search from each cell
-                dfs(board, i, j, root, result);
+                dfs(board, i, j, root, words, result);
             }
         }
 
@@ -46,7 +46,7 @@ public class Solution00212 {
         return result;
     }
 
-    private void dfs(char[][] board, int i, int j, TrieNode p, List<String> result) {
+    private void dfs(char[][] board, int i, int j, TrieNode p, String[] words, List<String> result) {
         // Boundary check for board
         if (i < 0 || i >= board.length || j < 0 || j >= board[0].length) {
             return;
@@ -63,10 +63,11 @@ public class Solution00212 {
         // Move to the next TrieNode corresponding to the character
         p = p.next[c - 'a'];
 
-        // If the TrieNode has a word (indicating we found a word), add it to the result and set the word to null to avoid duplicates
-        if (p.word != null) {
-            result.add(p.word);
-            p.word = null;   // avoid duplicate
+        // If the TrieNode has a word index >= 0 (indicating we found a word),
+        // add it to the result and set the word index to -1 to avoid duplicates
+        if (p.wordIndex >= 0) {
+            result.add(words[p.wordIndex]);
+            p.wordIndex = -1;   // avoid duplicate
         }
 
         // Mark the current board position as visited by setting it to '#'
@@ -75,22 +76,22 @@ public class Solution00212 {
         // Iterate over all four directions
         // Move up
         if (i - 1 >= 0) {
-            dfs(board, i - 1, j, p, result);
+            dfs(board, i - 1, j, p, words, result);
         }
 
         // Move down
         if (i + 1 < board.length) {
-            dfs(board, i + 1, j, p, result);
+            dfs(board, i + 1, j, p, words, result);
         }
 
         // Move left
         if (j - 1 >= 0) {
-            dfs(board, i, j - 1, p, result);
+            dfs(board, i, j - 1, p, words, result);
         }
 
         // Move right
         if (j + 1 < board[0].length) {
-            dfs(board, i, j + 1, p, result);
+            dfs(board, i, j + 1, p, words, result);
         }
 
         // After the DFS, revert the current board position back to its original character
@@ -102,7 +103,8 @@ public class Solution00212 {
         TrieNode root = new TrieNode();
 
         // Iterate over each word in the input array
-        for (String word : words) {
+        for (int wordIndex = 0; wordIndex < words.length; wordIndex++) {
+            String word = words[wordIndex];
             // Start from the root for each word
             TrieNode p = root;
 
@@ -112,14 +114,16 @@ public class Solution00212 {
                 int i = c - 'a';
 
                 // If the TrieNode for this character does not exist, create a new one
-                if (p.next[i] == null) p.next[i] = new TrieNode();
+                if (p.next[i] == null) {
+                    p.next[i] = new TrieNode();
+                }
 
                 // Move to the next TrieNode
                 p = p.next[i];
             }
 
             // After all characters of the word have been processed, set the word at the last TrieNode
-            p.word = word;
+            p.wordIndex = wordIndex;
         }
 
         // Return the root of the Trie
@@ -131,8 +135,8 @@ public class Solution00212 {
         // 'a' corresponds to index 0, 'b' to index 1, ..., 'z' to index 25.
         TrieNode[] next = new TrieNode[26];
 
-        // A string to store a word at a TrieNode. It is set when the end of a word is reached in the Trie.
-        String word;
+        // The index of word at this TrieNode, if any. -1 indicates no word ends at this TrieNode.
+        int wordIndex = -1;
     }
 
 }
