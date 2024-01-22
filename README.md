@@ -60,6 +60,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00212.java)
 [Test](src/test/java/leetcode/Solution00212Test.java)
 
+### 645. Set Mismatch
+
+<a href="https://leetcode.com/problems/set-mismatch">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00645.java)
+[Test](src/test/java/leetcode/Solution00645Test.java)
+
 ### 907. Sum of Subarray Minimums
 
 <a href="https://leetcode.com/problems/sum-of-subarray-minimums">Web link</a>
