@@ -48,6 +48,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00084.java)
 [Test](src/test/java/leetcode/Solution00084Test.java)
 
+### 169. Majority Element
+
+<a href="https://leetcode.com/problems/majority-element">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00169.java)
+[Test](src/test/java/leetcode/Solution00169Test.java)
+
 ### 198. House Robber
 
 <a href="https://leetcode.com/problems/house-robber">Web link</a>
