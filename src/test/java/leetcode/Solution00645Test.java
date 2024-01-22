@@ -23,7 +23,6 @@ class Solution00645Test {
         Solution00645 solution = new Solution00645();
         int[] actual = solution.findErrorNums(nums);
         assertArrayEquals(expected, actual);
-        ;
     }
 
 }

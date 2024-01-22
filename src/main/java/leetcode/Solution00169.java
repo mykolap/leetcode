@@ -31,7 +31,7 @@ import java.util.Map;
 public class Solution00169 {
 
     // Time: O(n)
-// Space: O(1)
+    // Space: O(1)
     public int majorityElement(int[] nums) {
         int count = 0;
         int candidate = 0;
