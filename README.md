@@ -78,6 +78,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00907.java)
 [Test](src/test/java/leetcode/Solution00907Test.java)
 
+### 1239. Maximum Length of a Concatenated String with Unique Characters
+
+<a href="https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters">Web link</a>
+[Implementation](src/main/java/leetcode/Solution01239.java)
+[Test](src/test/java/leetcode/Solution01239Test.java)
+
 ### 3010. Divide an Array Into Subarrays With Minimum Cost I
 
 <a href="https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i">Web link</a>
