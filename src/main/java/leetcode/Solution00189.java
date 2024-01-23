@@ -86,25 +86,25 @@ public class Solution00189 {
         int count = 0;
 
         // Iterate over the array, starting from the first element
-        for (int start = 0; count < n; start++) {
-            // Initialize the current index and the value to be moved
-            int current = start;
-            int prev = nums[start];
+        for (int startIndex = 0; count < n; startIndex++) {
+            // Initialize the currentTargetIndex index and the value to be moved
+            int currentTargetIndex = startIndex;
+            int prevValue = nums[startIndex];
 
-            // Keep moving the values in the array until we return to the start index
+            // Keep moving the values in the array until we return to the startIndex index
             do {
-                // Calculate the index of the next value to be moved
-                int next = (current + k) % n;
+                // Calculate the index of the nextTargetIndex value to be moved
+                int nextTargetIndex = (currentTargetIndex + k) % n;
 
-                // Swap the next value with the previous value
-                int tmp = nums[next];
-                nums[next] = prev;
-                prev = tmp;
+                // Swap the nextTargetIndex value with the previous value
+                int tmp = nums[nextTargetIndex];
+                nums[nextTargetIndex] = prevValue;
+                prevValue = tmp;
 
-                // Update the current index and increment the counter
-                current = next;
+                // Update the currentTargetIndex index and increment the counter
+                currentTargetIndex = nextTargetIndex;
                 count++;
-            } while (start != current); // Continue until we have moved all n elements
+            } while (startIndex != currentTargetIndex); // Continue until we have moved all n elements
         }
     }
 
