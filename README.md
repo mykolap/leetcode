@@ -48,6 +48,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00084.java)
 [Test](src/test/java/leetcode/Solution00084Test.java)
 
+### 121. Best Time to Buy and Sell Stock
+
+<a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00121.java)
+[Test](src/test/java/leetcode/Solution00121Test.java)
+
 ### 169. Majority Element
 
 <a href="https://leetcode.com/problems/majority-element">Web link</a>

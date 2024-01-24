@@ -1,4 +1,4 @@
-package leetcode.bestTimeToBuyAndSellStock;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00121Test {
 
     static Stream<Arguments> getMaxProfitArgs() {
         return Stream.of(
@@ -24,7 +24,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getMaxProfitArgs")
     void maxProfit(int[] prices, int expected) {
-        int actual = new Solution().maxProfit(prices);
+        int actual = new Solution00121().maxProfit(prices);
         assertEquals(expected, actual);
     }
 

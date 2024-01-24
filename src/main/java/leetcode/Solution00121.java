@@ -1,4 +1,4 @@
-package leetcode.bestTimeToBuyAndSellStock;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
@@ -26,7 +26,7 @@ package leetcode.bestTimeToBuyAndSellStock;
  * 1 <= prices.length <= 105
  * 0 <= prices[i] <= 104
  */
-public class Solution {
+public class Solution00121 {
 
     // Time: O(n)
     // Space: O(1)
