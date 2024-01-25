@@ -90,6 +90,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00907.java)
 [Test](src/test/java/leetcode/Solution00907Test.java)
 
+### 1143. Longest Common Subsequence
+
+<a href="https://leetcode.com/problems/longest-common-subsequence">Web link</a>
+[Implementation](src/main/java/leetcode/Solution01143.java)
+[Test](src/test/java/leetcode/Solution01143Test.java)
+
 ### 1239. Maximum Length of a Concatenated String with Unique Characters
 
 <a href="https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters">Web link</a>
