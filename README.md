@@ -78,6 +78,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00212.java)
 [Test](src/test/java/leetcode/Solution00212Test.java)
 
+### 576. Out of Boundary Paths
+
+<a href="https://leetcode.com/problems/out-of-boundary-paths">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00576.java)
+[Test](src/test/java/leetcode/Solution00576Test.java)
+
 ### 645. Set Mismatch
 
 <a href="https://leetcode.com/problems/set-mismatch">Web link</a>
