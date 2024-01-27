@@ -1,4 +1,4 @@
-package leetcode.findTheDuplicateNumber;
+package leetcode;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -56,7 +56,7 @@ import java.util.Set;
  * How can we prove that at least one duplicate number must exist in nums?
  * Can you solve the problem in linear runtime complexity?
  */
-public class Solution0287 {
+public class Solution00287 {
 
     // Time: O(n^2)
     // Space: O(1)

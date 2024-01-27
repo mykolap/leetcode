@@ -72,17 +72,38 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00198.java)
 [Test](src/test/java/leetcode/Solution00198Test.java)
 
+### 287. Find the Duplicate Number
+
+<a href="https://leetcode.com/problems/find-the-duplicate-number">Web link</a> |
+<a href="https://www.youtube.com/watch?v=wjYnzkAhcNk">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00287.java) |
+[Test](src/test/java/leetcode/Solution00287Test.java)
+
 ### 212. Word Search II
 
 <a href="https://leetcode.com/problems/word-search-ii">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00212.java)
 [Test](src/test/java/leetcode/Solution00212Test.java)
 
+### 424. Longest Repeating Character Replacement
+
+<a href="https://leetcode.com/problems/longest-repeating-character-replacement">Web link</a> |
+<a href="https://www.youtube.com/watch?v=gqXU1UyA8pk">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00424.java) |
+[Test](src/test/java/leetcode/Solution00424Test.java)
+
 ### 576. Out of Boundary Paths
 
 <a href="https://leetcode.com/problems/out-of-boundary-paths">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00576.java)
 [Test](src/test/java/leetcode/Solution00576Test.java)
+
+### 629. K Inverse Pairs Array
+
+<a href="https://leetcode.com/problems/k-inverse-pairs-array">Web link</a>
+<a href="https://www.youtube.com/watch?v=dglwb30bUKI">Needcode video</a>
+[Implementation](src/main/java/leetcode/Solution00629.java)
+[Test](src/test/java/leetcode/Solution00629Test.java)
 
 ### 645. Set Mismatch
 

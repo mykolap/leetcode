@@ -1,11 +1,11 @@
-package leetcode.longestRepeatingCharacterReplacement;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00424Test {
 
     @ParameterizedTest
     @CsvSource({
@@ -15,7 +15,7 @@ class SolutionTest {
             "ABBB, 0, 3"
     })
     void characterReplacement(String s, int k, int expected) {
-        int actual = new Solution().characterReplacement(s, k);
+        int actual = new Solution00424().characterReplacement(s, k);
         assertEquals(expected, actual);
     }
 

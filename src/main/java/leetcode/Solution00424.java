@@ -1,4 +1,4 @@
-package leetcode.longestRepeatingCharacterReplacement;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/longest-repeating-character-replacement/
@@ -28,7 +28,7 @@ package leetcode.longestRepeatingCharacterReplacement;
  * s consists of only uppercase English letters.
  * 0 <= k <= s.length
  */
-public class Solution {
+public class Solution00424 {
 
     // Time: O(n)
     // Space: O(1)

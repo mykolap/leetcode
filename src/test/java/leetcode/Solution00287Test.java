@@ -1,4 +1,4 @@
-package leetcode.findTheDuplicateNumber;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0287Test {
+class Solution00287Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -22,28 +22,28 @@ class Solution0287Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void findDublicateBruteforce(int[] nums, int expected) {
-        int actual = new Solution0287().findDuplicateBruteforce(nums);
+        int actual = new Solution00287().findDuplicateBruteforce(nums);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void findDuplicateArray(int[] nums, int expected) {
-        int actual = new Solution0287().findDuplicateArray(nums);
+        int actual = new Solution00287().findDuplicateArray(nums);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void findDuplicateSet(int[] nums, int expected) {
-        int actual = new Solution0287().findDuplicateSet(nums);
+        int actual = new Solution00287().findDuplicateSet(nums);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void findDuplicateFloyd(int[] nums, int expected) {
-        int actual = new Solution0287().findDuplicateFloyd(nums);
+        int actual = new Solution00287().findDuplicateFloyd(nums);
         assertEquals(expected, actual);
     }
 
