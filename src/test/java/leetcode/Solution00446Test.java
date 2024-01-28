@@ -1,4 +1,4 @@
-package leetcode.arithmeticSlicesIiSubsequence;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0446Test {
+class Solution00446Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -20,7 +20,7 @@ class Solution0446Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void numberOfArithmeticSlices(int[] nums, int expected) {
-        assertEquals(expected, new Solution0446().numberOfArithmeticSlices(nums));
+        assertEquals(expected, new Solution00446().numberOfArithmeticSlices(nums));
     }
 
 }

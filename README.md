@@ -48,6 +48,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00084.java)
 [Test](src/test/java/leetcode/Solution00084Test.java)
 
+### 110. Balanced Binary Tree
+
+<a href="https://leetcode.com/problems/balanced-binary-tree">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00110.java)
+[Test](src/test/java/leetcode/Solution00110Test.java)
+
 ### 121. Best Time to Buy and Sell Stock
 
 <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock">Web link</a>
@@ -92,6 +98,18 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00424.java) |
 [Test](src/test/java/leetcode/Solution00424Test.java)
 
+### 446. Arithmetic Slices II - Subsequence
+
+<a href="https://leetcode.com/problems/arithmetic-slices-ii-subsequence">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00446.java)
+[Test](src/test/java/leetcode/Solution00446Test.java)
+
+### 455. Assign Cookies
+
+<a href="https://leetcode.com/problems/assign-cookies">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00455.java)
+[Test](src/test/java/leetcode/Solution00455Test.java)
+
 ### 576. Out of Boundary Paths
 
 <a href="https://leetcode.com/problems/out-of-boundary-paths">Web link</a>
@@ -100,9 +118,9 @@ This project is a collection of solutions for LeetCode problems.
 
 ### 629. K Inverse Pairs Array
 
-<a href="https://leetcode.com/problems/k-inverse-pairs-array">Web link</a>
-<a href="https://www.youtube.com/watch?v=dglwb30bUKI">Needcode video</a>
-[Implementation](src/main/java/leetcode/Solution00629.java)
+<a href="https://leetcode.com/problems/k-inverse-pairs-array">Web link</a> |
+<a href="https://www.youtube.com/watch?v=dglwb30bUKI">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00629.java) |
 [Test](src/test/java/leetcode/Solution00629Test.java)
 
 ### 645. Set Mismatch
@@ -116,6 +134,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/sum-of-subarray-minimums">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00907.java)
 [Test](src/test/java/leetcode/Solution00907Test.java)
+
+### 1074. Number of Submatrices That Sum to Target
+
+<a href="https://leetcode.com/problems/number-of-submatrices-that-sum-to-target">Web link</a> |
+<a href="https://www.youtube.com/watch?v=43DRBP2DUHg">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution01074.java) |
+[Test](src/test/java/leetcode/Solution01074Test.java)
 
 ### 1143. Longest Common Subsequence
 

@@ -1,4 +1,4 @@
-package leetcode.balancedBinaryTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 
@@ -32,7 +32,7 @@ import leetcode.common.TreeNode;
  * The number of nodes in the tree is in the range [0, 5000].
  * -104 <= Node.val <= 104
  */
-public class Solution0110 {
+public class Solution00110 {
 
     private static final int UNBALANCED = -1;
 

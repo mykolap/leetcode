@@ -1,4 +1,4 @@
-package leetcode.balancedBinaryTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0110Test {
+class Solution00110Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -39,14 +39,14 @@ class Solution0110Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void isBalanced(TreeNode root, boolean expected) {
-        boolean result = new Solution0110().isBalanced(root);
+        boolean result = new Solution00110().isBalanced(root);
         assertEquals(expected, result);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void isBalancedOptimized(TreeNode root, boolean expected) {
-        boolean result = new Solution0110().isBalancedOptimized(root);
+        boolean result = new Solution00110().isBalancedOptimized(root);
         assertEquals(expected, result);
     }
 

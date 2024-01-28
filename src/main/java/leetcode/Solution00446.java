@@ -1,4 +1,4 @@
-package leetcode.arithmeticSlicesIiSubsequence;
+package leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,7 +33,7 @@ import java.util.Map;
  * 1  <= nums.length <= 1000
  * -231 <= nums[i] <= 231 - 1
  */
-public class Solution0446 {
+public class Solution00446 {
 
     // Time: O(n^2)
     // Space: O(n^2)

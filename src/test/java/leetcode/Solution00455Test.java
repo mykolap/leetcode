@@ -1,4 +1,4 @@
-package leetcode.assignCookies;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0455Test {
+class Solution00455Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -23,7 +23,7 @@ class Solution0455Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void findContentChildren(int[] g, int[] s, int expected) {
-        int actual = new Solution0455().findContentChildren(g, s);
+        int actual = new Solution00455().findContentChildren(g, s);
         assertEquals(expected, actual);
     }
 
