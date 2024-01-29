@@ -78,6 +78,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00198.java)
 [Test](src/test/java/leetcode/Solution00198Test.java)
 
+### 232. Implement Queue using Stacks
+
+<a href="https://leetcode.com/problems/implement-queue-using-stacks">Web link</a> |
+<a href="https://www.youtube.com/watch?v=eanwa3ht3YQ">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00232.java) |
+[Test](src/test/java/leetcode/Solution00232Test.java)
+
 ### 287. Find the Duplicate Number
 
 <a href="https://leetcode.com/problems/find-the-duplicate-number">Web link</a> |
