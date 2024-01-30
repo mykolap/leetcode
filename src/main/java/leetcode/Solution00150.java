@@ -1,7 +1,7 @@
-package leetcode.evaluateReversePolishNotation;
+package leetcode;
 
+import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.LinkedList;
 
 /**
  * https://leetcode.com/problems/evaluate-reverse-polish-notation/
@@ -36,13 +36,13 @@ import java.util.LinkedList;
  * <p>
  * Follow up: Could you solve it without using stack?
  */
-public class Solution {
+public class Solution00150 {
 
     // Time: O(n)
     // Space: O(n)
     public int evalRPN(String[] tokens) {
         // Create a stack.
-        Deque<Integer> stack = new LinkedList<>();
+        Deque<Integer> stack = new ArrayDeque<>();
         int num1;
         int num2;
 
@@ -66,41 +66,6 @@ public class Solution {
 
         // Return the top element from the stack.
         return stack.pop();
-    }
-
-    // Time: O(n)
-    // Space: O(n)
-    // Non stack - but works only for simplest cases.
-    public int evalRPN2(String[] tokens) {
-        int num1 = 0;
-        int num2 = 0;
-        // Loop through the tokens.
-        for (int i = 0, tokensLength = tokens.length; i < tokensLength; i++) {
-            if (i == 0) {
-                num1 = Integer.parseInt(tokens[i]);
-                continue;
-            }
-            String token = tokens[i];
-            // If the token is an operator.
-            final char firstChar = token.charAt(0);
-            if (Character.isDigit(firstChar)) {
-                num2 = Integer.parseInt(token);
-            } else {
-                num1 = performOperation(firstChar, num1, num2);
-                num2 = 0;
-            }
-        }
-        return num1;
-    }
-
-    private static int performOperation(char firstChar, int num1, int num2) {
-        return switch (firstChar) {
-            case '+' -> num1 + num2;
-            case '-' -> num1 - num2;
-            case '*' -> num1 * num2;
-            case '/' -> num1 / num2;
-            default -> 0;
-        };
     }
 
 }

@@ -1,4 +1,4 @@
-package leetcode.binaryTreeRightSideView;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-class Solution0199Test {
+class Solution00199Test {
 
     private static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -43,7 +43,7 @@ class Solution0199Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void rightSideViewBfs(TreeNode root, int[] expected) {
-        int[] actual = new Solution0199().rightSideViewBfs(root).stream().mapToInt(i -> i).toArray();
+        int[] actual = new Solution00199().rightSideViewBfs(root).stream().mapToInt(i -> i).toArray();
         assertArrayEquals(expected, actual);
     }
 

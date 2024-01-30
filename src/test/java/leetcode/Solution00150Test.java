@@ -1,6 +1,5 @@
-package leetcode.evaluateReversePolishNotation;
+package leetcode;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -9,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00150Test {
 
     static Stream<Arguments> getEvalRPNArgs() {
         return Stream.of(
@@ -22,14 +21,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getEvalRPNArgs")
     void evalRPN(String[] tokens, int expected) {
-        assertEquals(expected, new Solution().evalRPN(tokens));
-    }
-
-    @Test
-    void evalRPN2() {
-        String[] tokens = {"2", "1", "+", "3", "*"};
-        int expected = 9;
-        assertEquals(expected, new Solution().evalRPN2(tokens));
+        assertEquals(expected, new Solution00150().evalRPN(tokens));
     }
 
 }

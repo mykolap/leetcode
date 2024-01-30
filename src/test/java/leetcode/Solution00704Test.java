@@ -1,4 +1,4 @@
-package leetcode.binarySearch;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00704Test {
 
     static Stream<Arguments> getSearchArgs() {
         return Stream.of(
@@ -24,7 +24,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getSearchArgs")
     void search(int[] nums, int target, int expected) {
-        assertEquals(expected, new Solution().search(nums, target));
+        assertEquals(expected, new Solution00704().search(nums, target));
     }
 
 }

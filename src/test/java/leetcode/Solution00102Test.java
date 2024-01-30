@@ -1,6 +1,7 @@
-package leetcode.binaryTreeLevelOrderTraversal;
+package leetcode;
 
 import leetcode.common.TreeNode;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -8,9 +9,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-class Solution0102Test {
+class Solution00102Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -32,7 +31,7 @@ class Solution0102Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void levelOrder(TreeNode head, List<List<Integer>> expected) {
-        assertThat(new Solution0102().levelOrder(head))
+        Assertions.assertThat(new Solution00102().levelOrder(head))
                 .containsExactlyElementsOf(expected);
     }
 

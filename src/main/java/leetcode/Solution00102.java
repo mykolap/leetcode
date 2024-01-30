@@ -1,4 +1,4 @@
-package leetcode.binaryTreeLevelOrderTraversal;
+package leetcode;
 
 import leetcode.common.TreeNode;
 
@@ -39,7 +39,7 @@ import java.util.Queue;
  * <p>
  * Follow-up: Recursive solution is trivial, could you do it iteratively?
  */
-public class Solution0102 {
+public class Solution00102 {
 
     // Time O(n)
     // Space O(n)

@@ -48,6 +48,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00084.java)
 [Test](src/test/java/leetcode/Solution00084Test.java)
 
+### 102. Binary Tree Level Order Traversal
+
+<a href="https://leetcode.com/problems/binary-tree-level-order-traversal">Web link</a> |
+<a href="https://www.youtube.com/watch?v=6ZnyEApgFYg">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00102.java) |
+[Test](src/test/java/leetcode/Solution00102Test.java)
+
 ### 110. Balanced Binary Tree
 
 <a href="https://leetcode.com/problems/balanced-binary-tree">Web link</a>
@@ -59,6 +66,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00121.java)
 [Test](src/test/java/leetcode/Solution00121Test.java)
+
+### 150. Evaluate Reverse Polish Notation
+
+<a href="https://leetcode.com/problems/evaluate-reverse-polish-notation">Web link</a> |
+<a href="https://www.youtube.com/watch?v=iu0082c4HDE">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00150.java) |
+[Test](src/test/java/leetcode/Solution00150Test.java)
 
 ### 169. Majority Element
 
@@ -77,6 +91,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/house-robber">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00198.java)
 [Test](src/test/java/leetcode/Solution00198Test.java)
+
+### 199. Binary Tree Right Side View
+
+<a href="https://leetcode.com/problems/binary-tree-right-side-view">Web link</a> |
+<a href="https://www.youtube.com/watch?v=d4zLyf32e3I">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00199.java) |
+[Test](src/test/java/leetcode/Solution00199Test.java)
 
 ### 232. Implement Queue using Stacks
 
@@ -135,6 +156,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/set-mismatch">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00645.java)
 [Test](src/test/java/leetcode/Solution00645Test.java)
+
+### 704. Binary Search
+
+<a href="https://leetcode.com/problems/binary-search">Web link</a> |
+<a href="https://www.youtube.com/watch?v=s4DPM8ct1pI">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00704.java) |
+[Test](src/test/java/leetcode/Solution00704Test.java)
 
 ### 907. Sum of Subarray Minimums
 
