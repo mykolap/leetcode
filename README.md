@@ -164,6 +164,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00704.java) |
 [Test](src/test/java/leetcode/Solution00704Test.java)
 
+### 739. Daily Temperatures
+
+<a href="https://leetcode.com/problems/daily-temperatures">Web link</a> |
+<a href="https://www.youtube.com/watch?v=cTBiBSnjO3c">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00739.java) |
+[Test](src/test/java/leetcode/Solution00739Test.java)
+
 ### 907. Sum of Subarray Minimums
 
 <a href="https://leetcode.com/problems/sum-of-subarray-minimums">Web link</a>

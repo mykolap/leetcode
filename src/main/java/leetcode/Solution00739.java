@@ -1,4 +1,4 @@
-package leetcode.dailyTemperatures;
+package leetcode;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -30,7 +30,7 @@ import java.util.LinkedList;
  * 1 <= temperatures.length <= 105
  * 30 <= temperatures[i] <= 100
  */
-public class Solution {
+public class Solution00739 {
 
     // Time: O(n^2)
     // Space: O(n)

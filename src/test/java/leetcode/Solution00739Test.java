@@ -1,4 +1,4 @@
-package leetcode.dailyTemperatures;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class SolutionTest {
+class Solution00739Test {
 
     static Stream<Arguments> getArgsDailyTemperatures() {
         return Stream.of(
@@ -22,14 +22,14 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getArgsDailyTemperatures")
     void dailyTemperaturesBruteforce(int[] temperatures, int[] expected) {
-        assertThat(new Solution().dailyTemperaturesBruteforce(temperatures))
+        assertThat(new Solution00739().dailyTemperaturesBruteforce(temperatures))
                 .containsExactly(expected);
     }
 
     @ParameterizedTest
     @MethodSource("getArgsDailyTemperatures")
     void dailyTemperatures(int[] temperatures, int[] expected) {
-        assertThat(new Solution().dailyTemperatures(temperatures))
+        assertThat(new Solution00739().dailyTemperatures(temperatures))
                 .containsExactly(expected);
     }
 
