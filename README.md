@@ -202,6 +202,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution01457.java)
 [Test](src/test/java/leetcode/Solution01457Test.java)
 
+### 2966. Divide Array Into Arrays With Max Difference
+
+<a href="https://leetcode.com/problems/divide-array-into-arrays-with-max-difference">Web link</a> |
+<a href="https://www.youtube.com/watch?v=XleOio1oJeo">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution02966.java) |  
+[Test](src/test/java/leetcode/Solution02966Test.java)
+
 ### 3010. Divide an Array Into Subarrays With Minimum Cost I
 
 <a href="https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i">Web link</a>
