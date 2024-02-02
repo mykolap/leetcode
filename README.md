@@ -196,6 +196,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution01239.java)
 [Test](src/test/java/leetcode/Solution01239Test.java)
 
+### 1291. Sequential Digits
+
+<a href="https://leetcode.com/problems/sequential-digits">Web link</a> |
+<a href="https://www.youtube.com/watch?v=Q-ca65wRJyI">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution01291.java) |
+[Test](src/test/java/leetcode/Solution01291Test.java)
+
 ### 1457. Pseudo-Palindromic Paths in a Binary Tree
 
 <a href="https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree">Web link</a>
