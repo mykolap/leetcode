@@ -177,6 +177,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00907.java)
 [Test](src/test/java/leetcode/Solution00907Test.java)
 
+### 1043. Partition Array for Maximum Sum
+
+<a href="https://leetcode.com/problems/partition-array-for-maximum-sum">Web link</a> |
+<a href="https://www.youtube.com/watch?v=kWhy4ZUBdOY">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution01043.java) |
+[Test](src/test/java/leetcode/Solution01043Test.java)
+
 ### 1074. Number of Submatrices That Sum to Target
 
 <a href="https://leetcode.com/problems/number-of-submatrices-that-sum-to-target">Web link</a> |
