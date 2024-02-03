@@ -1,4 +1,4 @@
-package leetcode.kokoEatingBananas;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,9 +8,9 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00875Test {
 
-    static Stream<Arguments> getMinEatingSpeedArgs() {
+    static Stream<Arguments> casesProvider() {
         return Stream.of(
                 Arguments.of(new int[]{3, 6, 7, 11}, 8, 4),
                 Arguments.of(new int[]{30, 11, 23, 4, 20}, 5, 30),
@@ -21,9 +21,9 @@ class SolutionTest {
     }
 
     @ParameterizedTest
-    @MethodSource("getMinEatingSpeedArgs")
+    @MethodSource("casesProvider")
     void minEatingSpeed(int[] piles, int h, int expected) {
-        assertEquals(expected, new Solution().minEatingSpeed(piles, h));
+        assertEquals(expected, new Solution00875().minEatingSpeed(piles, h));
     }
 
 }

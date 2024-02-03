@@ -1,4 +1,4 @@
-package leetcode.kokoEatingBananas;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/koko-eating-bananas/
@@ -28,7 +28,7 @@ package leetcode.kokoEatingBananas;
  * <p>
  * 1 <= piles.length <= 104 piles.length <= h <= 109 1 <= piles[i] <= 109
  */
-public class Solution {
+public class Solution00875 {
 
     // Time: O(nlogn)
     // Space: O(1)

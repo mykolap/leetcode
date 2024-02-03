@@ -119,6 +119,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00212.java)
 [Test](src/test/java/leetcode/Solution00212Test.java)
 
+### 230. Kth Smallest Element in a BST
+
+<a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst">Web link</a> |
+<a href="https://www.youtube.com/watch?v=5LUXSvjmGCw">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00230.java) |
+[Test](src/test/java/leetcode/Solution00230Test.java)
+
 ### 424. Longest Repeating Character Replacement
 
 <a href="https://leetcode.com/problems/longest-repeating-character-replacement">Web link</a> |
@@ -170,6 +177,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=cTBiBSnjO3c">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00739.java) |
 [Test](src/test/java/leetcode/Solution00739Test.java)
+
+### 875. Koko Eating Bananas
+
+<a href="https://leetcode.com/problems/koko-eating-bananas">Web link</a> |
+<a href="https://www.youtube.com/watch?v=U2SozAs9RzA">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00875.java) |
+[Test](src/test/java/leetcode/Solution00875Test.java)
 
 ### 907. Sum of Subarray Minimums
 
@@ -240,3 +254,15 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/minimize-length-of-array-using-operations">Web link</a>
 [Implementation](src/main/java/leetcode/Solution03012.java)
 [Test](src/test/java/leetcode/Solution03012Test.java)
+
+### 3024. Type of Triangle II
+
+<a href="https://leetcode.com/problems/type-of-triangle-ii">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03024.java)
+[Test](src/test/java/leetcode/Solution03024Test.java)
+
+### 3025. Find the Number of Ways to Place People I
+
+<a href="https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03025.java)
+[Test](src/test/java/leetcode/Solution03025Test.java)
