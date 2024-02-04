@@ -1,4 +1,4 @@
-package leetcode.combinationSum;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +36,7 @@ import java.util.List;
  * <p>
  * 1 <= candidates.length <= 30 1 <= candidates[i] <= 200 All elements of candidates are distinct. 1 <= target <= 500
  */
-public class Solution0039 {
+public class Solution00039 {
 
     // Time: O(n * 2^n)
     // Space: O(n * 2^n)

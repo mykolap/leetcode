@@ -1,4 +1,4 @@
-package leetcode.cloneGraph;
+package leetcode;
 
 import leetcode.common.Node;
 import org.junit.jupiter.api.Test;
@@ -6,12 +6,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-class Solution0133Test {
+class Solution00133Test {
 
     @Test
     void cloneGraphBfs_withSingleNode() {
         Node node1 = new Node(1);
-        Node clonedNode = new Solution0133().cloneGraphBfs(node1);
+        Node clonedNode = new Solution00133().cloneGraphBfs(node1);
 
         assertEquals(node1.val, clonedNode.val);
         assertEquals(node1.neighbors.size(), clonedNode.neighbors.size());
@@ -24,7 +24,7 @@ class Solution0133Test {
         node1.neighbors.add(node2);
         node2.neighbors.add(node1);
 
-        Node clonedNode = new Solution0133().cloneGraphBfs(node1);
+        Node clonedNode = new Solution00133().cloneGraphBfs(node1);
 
         assertEquals(node1.val, clonedNode.val);
         assertEquals(node1.neighbors.size(), clonedNode.neighbors.size());
@@ -33,14 +33,14 @@ class Solution0133Test {
 
     @Test
     void cloneGraphBfs_withNullNode() {
-        Node clonedNode = new Solution0133().cloneGraphBfs(null);
+        Node clonedNode = new Solution00133().cloneGraphBfs(null);
         assertNull(clonedNode);
     }
 
     @Test
     void cloneGraphDfs_withSingleNode() {
         Node node1 = new Node(1);
-        Node clonedNode = new Solution0133().cloneGraphDfs(node1);
+        Node clonedNode = new Solution00133().cloneGraphDfs(node1);
 
         assertEquals(node1.val, clonedNode.val);
         assertEquals(node1.neighbors.size(), clonedNode.neighbors.size());
@@ -53,7 +53,7 @@ class Solution0133Test {
         node1.neighbors.add(node2);
         node2.neighbors.add(node1);
 
-        Node clonedNode = new Solution0133().cloneGraphDfs(node1);
+        Node clonedNode = new Solution00133().cloneGraphDfs(node1);
 
         assertEquals(node1.val, clonedNode.val);
         assertEquals(node1.neighbors.size(), clonedNode.neighbors.size());
@@ -62,7 +62,7 @@ class Solution0133Test {
 
     @Test
     void cloneGraphDfs_withNullNode() {
-        Node clonedNode = new Solution0133().cloneGraphDfs(null);
+        Node clonedNode = new Solution00133().cloneGraphDfs(null);
         assertNull(clonedNode);
     }
 

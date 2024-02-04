@@ -1,4 +1,4 @@
-package leetcode.minimumWindowSubstring;
+package leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -43,7 +43,7 @@ import java.util.Map;
  * <p>
  * Follow up: Could you find an algorithm that runs in O(m + n) time?
  */
-public class Solution {
+public class Solution00076 {
 
     // Time: O(n)
     // Space: O(n)

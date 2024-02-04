@@ -1,4 +1,4 @@
-package leetcode.carFleet;
+package leetcode;
 
 import java.util.Comparator;
 import java.util.Map;
@@ -20,11 +20,7 @@ import java.util.TreeMap;
  * <p>
  * If a car catches up to a car fleet right at the destination point, it will still be considered as one car fleet.
  * <p>
- * <p>
- * <p>
  * How many car fleets will arrive at the destination?
- * <p>
- * <p>
  * <p>
  * Example 1:
  * <p>
@@ -34,12 +30,11 @@ import java.util.TreeMap;
  * <p>
  * Input: target = 10, position = [3], speed = [3] Output: 1
  * <p>
- * <p>
  * Note:
  * <p>
  * 0 <= N <= 10 ^ 4 0 < target <= 10 ^ 6 0 < speed[i] <= 10 ^ 6 0 <= position[i] < target All initial positions are different.
  */
-public class Solution {
+public class Solution00853 {
 
     // Time: O(nlogn)
     // Space: O(n)

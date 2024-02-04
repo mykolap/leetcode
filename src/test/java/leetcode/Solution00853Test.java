@@ -1,4 +1,4 @@
-package leetcode.carFleet;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00853Test {
 
     static Stream<Arguments> getCarFleetArgs() {
         return Stream.of(
@@ -21,7 +21,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getCarFleetArgs")
     void carFleet(int target, int[] position, int[] speed, int expected) {
-        assertEquals(expected, new Solution().carFleet(target, position, speed));
+        assertEquals(expected, new Solution00853().carFleet(target, position, speed));
     }
 
 }

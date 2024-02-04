@@ -36,6 +36,27 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00027.java)
 [Test](src/test/java/leetcode/Solution00027Test.java)
 
+### 39. Combination Sum - Backtracking
+
+<a href="https://leetcode.com/problems/combination-sum/">Web link</a> |
+<a href="https://www.youtube.com/watch?v=GBKI9VSKdGg">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00039.java) |
+[Test](src/test/java/leetcode/Solution00039Test.java)
+
+### 70. Climbing Stairs - Dynamic Programming
+
+<a href="https://leetcode.com/problems/climbing-stairs">Web link</a> |
+<a href="https://www.youtube.com/watch?v=Y0lT9Fck7qI">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00070.java) |
+[Test](src/test/java/leetcode/Solution00070Test.java)
+
+### 76. Minimum Window Substring - Sliding Window
+
+<a href="https://leetcode.com/problems/minimum-window-substring">Web link</a> |
+<a href="https://www.youtube.com/watch?v=jSto0O4AJbM">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00076.java) |
+[Test](src/test/java/leetcode/Solution00076Test.java)
+
 ### 80. Remove Duplicates from Sorted Array II
 
 <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii">Web link</a>
@@ -66,6 +87,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00121.java)
 [Test](src/test/java/leetcode/Solution00121Test.java)
+
+### 133. Clone Graph - Graphs - Depth First Search
+
+<a href="https://leetcode.com/problems/clone-graph">Web link</a> |
+<a href="https://www.youtube.com/watch?v=mQeF6bN8hMk">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00133.java) |
+[Test](src/test/java/leetcode/Solution00133Test.java)
 
 ### 150. Evaluate Reverse Polish Notation
 
@@ -99,6 +127,19 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00199.java) |
 [Test](src/test/java/leetcode/Solution00199Test.java)
 
+### 212. Word Search II
+
+<a href="https://leetcode.com/problems/word-search-ii">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00212.java)
+[Test](src/test/java/leetcode/Solution00212Test.java)
+
+### 230. Kth Smallest Element in a BST
+
+<a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst">Web link</a> |
+<a href="https://www.youtube.com/watch?v=5LUXSvjmGCw">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00230.java) |
+[Test](src/test/java/leetcode/Solution00230Test.java)
+
 ### 232. Implement Queue using Stacks
 
 <a href="https://leetcode.com/problems/implement-queue-using-stacks">Web link</a> |
@@ -113,18 +154,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00287.java) |
 [Test](src/test/java/leetcode/Solution00287Test.java)
 
-### 212. Word Search II
+### 322. Coin Change - Dynamic Programming - Bottom Up
 
-<a href="https://leetcode.com/problems/word-search-ii">Web link</a>
-[Implementation](src/main/java/leetcode/Solution00212.java)
-[Test](src/test/java/leetcode/Solution00212Test.java)
-
-### 230. Kth Smallest Element in a BST
-
-<a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst">Web link</a> |
-<a href="https://www.youtube.com/watch?v=5LUXSvjmGCw">Needcode video</a> |
-[Implementation](src/main/java/leetcode/Solution00230.java) |
-[Test](src/test/java/leetcode/Solution00230Test.java)
+<a href="https://leetcode.com/problems/coin-change">Web link</a> |
+<a href="https://www.youtube.com/watch?v=H9bfqozjoqs">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00322.java) |
+[Test](src/test/java/leetcode/Solution00322Test.java)
 
 ### 424. Longest Repeating Character Replacement
 
@@ -178,7 +213,14 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00739.java) |
 [Test](src/test/java/leetcode/Solution00739Test.java)
 
-### 875. Koko Eating Bananas
+### 853. Car Fleet - Stack
+
+<a href="https://leetcode.com/problems/car-fleet">Web link</a> |
+<a href="https://www.youtube.com/watch?v=Pr6T-3yB9RM">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00853.java) |
+[Test](src/test/java/leetcode/Solution00853Test.java)
+
+### 875. Koko Eating Bananas - Binary Search
 
 <a href="https://leetcode.com/problems/koko-eating-bananas">Web link</a> |
 <a href="https://www.youtube.com/watch?v=U2SozAs9RzA">Needcode video</a> |
@@ -234,7 +276,7 @@ This project is a collection of solutions for LeetCode problems.
 
 <a href="https://leetcode.com/problems/divide-array-into-arrays-with-max-difference">Web link</a> |
 <a href="https://www.youtube.com/watch?v=XleOio1oJeo">Needcode video</a> |
-[Implementation](src/main/java/leetcode/Solution02966.java) |  
+[Implementation](src/main/java/leetcode/Solution02966.java) |
 [Test](src/test/java/leetcode/Solution02966Test.java)
 
 ### 3010. Divide an Array Into Subarrays With Minimum Cost I

@@ -1,4 +1,4 @@
-package leetcode.climbingStairs;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0070Test {
+class Solution00070Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -41,13 +41,13 @@ class Solution0070Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void climbStairs(int n, int expected) {
-        assertEquals(expected, new Solution0070().climbStairs(n));
+        assertEquals(expected, new Solution00070().climbStairs(n));
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void climbStairsFirstApproach(int n, int expected) {
-        assertEquals(expected, new Solution0070().climbStairsFirstApproach(n));
+        assertEquals(expected, new Solution00070().climbStairsFirstApproach(n));
     }
 
 }

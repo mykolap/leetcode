@@ -1,4 +1,4 @@
-package leetcode.coinChange;
+package leetcode;
 
 import java.util.Arrays;
 
@@ -47,7 +47,7 @@ import java.util.Arrays;
  * 1 <= coins[i] <= 231 - 1
  * 0 <= amount <= 104
  */
-public class Solution {
+public class Solution00322 {
 
     // Time: O(n * m)
     // Space: O(n)

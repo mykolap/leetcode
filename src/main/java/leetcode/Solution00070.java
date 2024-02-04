@@ -1,4 +1,4 @@
-package leetcode.climbingStairs;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/climbing-stairs/
@@ -31,7 +31,7 @@ package leetcode.climbingStairs;
  *
  * 1 <= n <= 45
  */
-public class Solution0070 {
+public class Solution00070 {
 
     // Time: O(n)
     // Space: O(1)

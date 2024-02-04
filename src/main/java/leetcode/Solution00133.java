@@ -1,4 +1,4 @@
-package leetcode.cloneGraph;
+package leetcode;
 
 import leetcode.common.Node;
 
@@ -60,7 +60,6 @@ import java.util.Queue;
  * <p>
  * Explanation: This an empty graph, it does not have any nodes.
  *
- *
  * Constraints:
  *
  * The number of nodes in the graph is in the range [0, 100].
@@ -69,7 +68,7 @@ import java.util.Queue;
  * There are no repeated edges and no self-loops in the graph.
  * The Graph is connected and all nodes can be visited starting from the given node.
  */
-public class Solution0133 {
+public class Solution00133 {
 
     // Time: O(n)
     // Space: O(n)

@@ -1,4 +1,4 @@
-package leetcode.combinationSum;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Solution0039Test {
+class Solution00039Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -56,7 +56,7 @@ class Solution0039Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void combinationSum(int[] candidates, int target, List<List<Integer>> expected) {
-        var solution = new Solution0039();
+        var solution = new Solution00039();
         var actual = solution.combinationSum(candidates, target);
         assertThat(actual)
                 .containsExactlyElementsOf(expected);
