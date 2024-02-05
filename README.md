@@ -161,6 +161,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00322.java) |
 [Test](src/test/java/leetcode/Solution00322Test.java)
 
+### 387. First Unique Character in a String
+
+<a href="https://leetcode.com/problems/first-unique-character-in-a-string">Web link</a> |
+<a href="https://www.youtube.com/watch?v=rBENYgWy3xU">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00387.java) |
+[Test](src/test/java/leetcode/Solution00387Test.java)
+
 ### 424. Longest Repeating Character Replacement
 
 <a href="https://leetcode.com/problems/longest-repeating-character-replacement">Web link</a> |
