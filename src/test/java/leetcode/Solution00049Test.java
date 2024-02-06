@@ -1,4 +1,4 @@
-package leetcode.groupAnagrams;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class SolutionTest {
+class Solution00049Test {
 
     static Stream<Arguments> getGroupAnagramsArgs() {
         return Stream.of(
@@ -25,14 +25,14 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getGroupAnagramsArgs")
     void groupAnagrams(String[] strs, List<List<String>> expected) {
-        assertThat(new Solution().groupAnagrams(strs))
+        assertThat(new Solution00049().groupAnagrams(strs))
                 .containsExactlyInAnyOrderElementsOf(expected);
     }
 
     @ParameterizedTest
     @MethodSource("getGroupAnagramsArgs")
     void groupAnagramsCounting(String[] strs, List<List<String>> expected) {
-        assertThat(new Solution().groupAnagramsCounting(strs))
+        assertThat(new Solution00049().groupAnagramsCounting(strs))
                 .containsExactlyInAnyOrderElementsOf(expected);
     }
 

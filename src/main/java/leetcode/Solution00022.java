@@ -1,4 +1,4 @@
-package leetcode.generateParentheses;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -24,7 +24,7 @@ import java.util.Queue;
  * <p>
  * 1 <= n <= 8
  */
-public class Solution {
+public class Solution00022 {
 
     // Time: O(4^n)
     // Space: O(n)

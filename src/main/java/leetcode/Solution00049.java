@@ -1,4 +1,4 @@
-package leetcode.groupAnagrams;
+package leetcode;
 
 import java.util.*;
 
@@ -23,7 +23,7 @@ import java.util.*;
  * <p>
  * 1 <= strs.length <= 104 0 <= strs[i].length <= 100 strs[i] consists of lower-case English letters.
  */
-public class Solution {
+public class Solution00049 {
 
     // Time: O(n * k log k)
     // Space: O(n * k)

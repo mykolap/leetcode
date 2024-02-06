@@ -1,4 +1,4 @@
-package leetcode.generateParentheses;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00022Test {
 
     static Stream<Arguments> getGenerateParenthesisArgs() {
         return Stream.of(
@@ -21,13 +21,13 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getGenerateParenthesisArgs")
     void generateParenthesis(int n, List<String> expected) {
-        assertEquals(expected, new Solution().generateParenthesis(n));
+        assertEquals(expected, new Solution00022().generateParenthesis(n));
     }
 
     @ParameterizedTest
     @MethodSource("getGenerateParenthesisArgs")
     void generateParenthesisNonRecursive(int n, List<String> expected) {
-        assertEquals(expected, new Solution().generateParenthesisNonRecursive(n));
+        assertEquals(expected, new Solution00022().generateParenthesisNonRecursive(n));
     }
 
 }

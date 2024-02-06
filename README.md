@@ -24,6 +24,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00004.java)
 [Test](src/test/java/leetcode/Solution00004Test.java)
 
+### 22. Generate Parentheses
+
+<a href="https://leetcode.com/problems/generate-parentheses">Web link</a> |
+<a href="https://www.youtube.com/watch?v=s9fokUqJ76A">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00022.java) |
+[Test](src/test/java/leetcode/Solution00022Test.java)
+
 ### 26. Remove Duplicates from Sorted Array
 
 <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array">Web link</a>
@@ -42,6 +49,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=GBKI9VSKdGg">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00039.java) |
 [Test](src/test/java/leetcode/Solution00039Test.java)
+
+### 49. Group Anagrams - Arrays & Hashing
+
+<a href="https://leetcode.com/problems/group-anagrams">Web link</a> |
+<a href="https://www.youtube.com/watch?v=vzdNOK2oB2E">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00049.java) |
+[Test](src/test/java/leetcode/Solution00049Test.java)
 
 ### 70. Climbing Stairs - Dynamic Programming
 
