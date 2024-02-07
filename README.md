@@ -195,6 +195,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00446.java)
 [Test](src/test/java/leetcode/Solution00446Test.java)
 
+### 451. Sort Characters By Frequency
+
+<a href="https://leetcode.com/problems/sort-characters-by-frequency">Web link</a> |
+<a href="https://www.youtube.com/watch?v=OXdXc9HTrIg">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00451.java) |
+[Test](src/test/java/leetcode/Solution00451Test.java)
+
 ### 455. Assign Cookies
 
 <a href="https://leetcode.com/problems/assign-cookies">Web link</a>
