@@ -161,6 +161,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00232.java) |
 [Test](src/test/java/leetcode/Solution00232Test.java)
 
+### 279. Perfect Squares - Dynamic Programming
+
+<a href="https://leetcode.com/problems/perfect-squares">Web link</a> |
+<a href="https://www.youtube.com/watch?v=HLZLwjzIVGo">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00279.java) |
+[Test](src/test/java/leetcode/Solution00279Test.java)
+
 ### 287. Find the Duplicate Number
 
 <a href="https://leetcode.com/problems/find-the-duplicate-number">Web link</a> |
