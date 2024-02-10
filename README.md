@@ -24,6 +24,20 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00004.java)
 [Test](src/test/java/leetcode/Solution00004Test.java)
 
+### 5. Longest Palindromic Substring - Dynamic Programming
+
+<a href="https://leetcode.com/problems/longest-palindromic-substring">Web link</a> |
+<a href="https://www.youtube.com/watch?v=UuiTKBwPgAo">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00005.java) |
+[Test](src/test/java/leetcode/Solution00005Test.java)
+
+### 11. Container With Most Water - Two Pointers
+
+<a href="https://leetcode.com/problems/container-with-most-water">Web link</a> |
+<a href="https://www.youtube.com/watch?v=UuiTKBwPgAo">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00011.java) |
+[Test](src/test/java/leetcode/Solution00011Test.java)
+
 ### 22. Generate Parentheses
 
 <a href="https://leetcode.com/problems/generate-parentheses">Web link</a> |
@@ -240,6 +254,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/set-mismatch">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00645.java)
 [Test](src/test/java/leetcode/Solution00645Test.java)
+
+### 647. Palindromic Substrings - Dynamic Programming
+
+<a href="https://leetcode.com/problems/palindromic-substrings">Web link</a> |
+<a href="https://www.youtube.com/watch?v=4RACzI5-du8">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00647.java) |
+[Test](src/test/java/leetcode/Solution00647Test.java)
 
 ### 704. Binary Search
 

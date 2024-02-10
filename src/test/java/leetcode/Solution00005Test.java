@@ -1,4 +1,4 @@
-package leetcode.longestPalindromicSubstring;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0005Test {
+class Solution00005Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -25,21 +25,21 @@ class Solution0005Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void longestPalindromeBruteforce(String s, String expected) {
-        String actual = new Solution0005().longestPalindromeBruteforce(s);
+        String actual = new Solution00005().longestPalindromeBruteforce(s);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void longestPalindromeExpandAroundCenter(String s, String expected) {
-        String actual = new Solution0005().longestPalindromeExpandAroundCenter(s);
+        String actual = new Solution00005().longestPalindromeExpandAroundCenter(s);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void longestPalindromeDynamicProgramming(String s, String expected) {
-        String actual = new Solution0005().longestPalindromeDynamicProgramming(s);
+        String actual = new Solution00005().longestPalindromeDynamicProgramming(s);
         assertEquals(expected, actual);
     }
 

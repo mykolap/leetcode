@@ -1,4 +1,4 @@
-package leetcode.containerWithMostWater;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Solution0011Test {
+class Solution00011Test {
 
     static Stream<Arguments> getMaxAreaArgs() {
         return Stream.of(
@@ -24,14 +24,14 @@ class Solution0011Test {
     @ParameterizedTest
     @MethodSource("getMaxAreaArgs")
     void maxArea(int[] height, int expected) {
-        assertThat(new Solution0011().maxArea(height))
+        assertThat(new Solution00011().maxArea(height))
                 .isEqualTo(expected);
     }
 
     @ParameterizedTest
     @MethodSource("getMaxAreaArgs")
     void maxAreaBruteForce(int[] height, int expected) {
-        assertThat(new Solution0011().maxArea(height))
+        assertThat(new Solution00011().maxArea(height))
                 .isEqualTo(expected);
     }
 
