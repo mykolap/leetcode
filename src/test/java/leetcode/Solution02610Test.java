@@ -1,4 +1,4 @@
-package leetcode.convertAnArrayIntoA2dArrayWithConditions;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Solution2610Test {
+class Solution02610Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -29,7 +29,7 @@ class Solution2610Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void findMatrix(int[] nums, List<List<Integer>> expected) {
-        var actual = new Solution2610().findMatrix(nums);
+        var actual = new Solution02610().findMatrix(nums);
         assertThat(actual)
                 .containsExactlyElementsOf(expected);
     }

@@ -161,6 +161,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00212.java)
 [Test](src/test/java/leetcode/Solution00212Test.java)
 
+### 217. Contains Duplicate - Arrays & Hashing
+
+<a href="https://leetcode.com/problems/contains-duplicate">Web link</a> |
+<a href="https://www.youtube.com/watch?v=3OamzN90kPg">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00217.java) |
+[Test](src/test/java/leetcode/Solution00217Test.java)
+
 ### 230. Kth Smallest Element in a BST
 
 <a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst">Web link</a> |
@@ -334,6 +341,20 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree">Web link</a>
 [Implementation](src/main/java/leetcode/Solution01457.java)
 [Test](src/test/java/leetcode/Solution01457Test.java)
+
+### 1463. Cherry Pickup II
+
+<a href="https://leetcode.com/problems/cherry-pickup-ii">Web link</a> |
+<a href="https://www.youtube.com/watch?v=c1stwk2TbNk">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution01463.java) |
+[Test](src/test/java/leetcode/Solution01463Test.java)
+
+### 2610. Convert an Array Into a 2D Array With Conditions
+
+<a href="https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions">Web link</a> |
+<a href="https://www.youtube.com/watch?v=9pl1QiaGgmI">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution02610.java) |
+[Test](src/test/java/leetcode/Solution02610Test.java)
 
 ### 2966. Divide Array Into Arrays With Max Difference
 
