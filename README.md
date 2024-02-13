@@ -123,6 +123,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00133.java) |
 [Test](src/test/java/leetcode/Solution00133Test.java)
 
+### 138. Copy List with Random Pointer - Linked List
+
+<a href="https://leetcode.com/problems/copy-list-with-random-pointer">Web link</a> |
+<a href="https://www.youtube.com/watch?v=5Y2EiZST97Y">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00138.java) |
+[Test](src/test/java/leetcode/Solution00138Test.java)
+
 ### 150. Evaluate Reverse Polish Notation
 
 <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation">Web link</a> |
@@ -132,8 +139,9 @@ This project is a collection of solutions for LeetCode problems.
 
 ### 169. Majority Element
 
-<a href="https://leetcode.com/problems/majority-element">Web link</a>
-[Implementation](src/main/java/leetcode/Solution00169.java)
+<a href="https://leetcode.com/problems/majority-element">Web link</a> |
+<a href="https://www.youtube.com/watch?v=7pnhv842keE">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00169.java) |
 [Test](src/test/java/leetcode/Solution00169Test.java)
 
 ### 189. Rotate Array
@@ -348,6 +356,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=c1stwk2TbNk">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution01463.java) |
 [Test](src/test/java/leetcode/Solution01463Test.java)
+
+### 2108. Find First Palindromic String in the Array
+
+<a href="https://leetcode.com/problems/find-first-palindromic-string-in-the-array">Web link</a> |
+<a href="https://www.youtube.com/watch?v=4JA5MW772N0">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution02108.java) |
+[Test](src/test/java/leetcode/Solution02108Test.java)
 
 ### 2610. Convert an Array Into a 2D Array With Conditions
 
