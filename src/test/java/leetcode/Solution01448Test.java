@@ -1,4 +1,4 @@
-package leetcode.countGoodNodesInBinaryTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution1448Test {
+class Solution01448Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -22,14 +22,14 @@ class Solution1448Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void goodNodesDfs(TreeNode root, int expected) {
-        int actual = new Solution1448().goodNodesDfs(root);
+        int actual = new Solution01448().goodNodesDfs(root);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void goodNodesBfs(TreeNode root, int expected) {
-        int actual = new Solution1448().goodNodesBfs(root);
+        int actual = new Solution01448().goodNodesBfs(root);
         assertEquals(expected, actual);
     }
 

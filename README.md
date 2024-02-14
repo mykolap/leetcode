@@ -163,6 +163,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00199.java) |
 [Test](src/test/java/leetcode/Solution00199Test.java)
 
+### 207. Course Schedule
+
+<a href="https://leetcode.com/problems/course-schedule">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00207.java) |
+[Test](src/test/java/leetcode/Solution00207Test.java)
+
 ### 212. Word Search II
 
 <a href="https://leetcode.com/problems/word-search-ii">Web link</a>
@@ -344,6 +350,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution01291.java) |
 [Test](src/test/java/leetcode/Solution01291Test.java)
 
+### 1448. Count Good Nodes in Binary Tree
+
+<a href="https://leetcode.com/problems/count-good-nodes-in-binary-tree">Web link</a>
+[Implementation](src/main/java/leetcode/Solution01448.java)
+[Test](src/test/java/leetcode/Solution01448Test.java)
+
 ### 1457. Pseudo-Palindromic Paths in a Binary Tree
 
 <a href="https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree">Web link</a>
@@ -363,6 +375,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=4JA5MW772N0">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution02108.java) |
 [Test](src/test/java/leetcode/Solution02108Test.java)
+
+### 2149. Rearrange Array Elements by Sign
+
+<a href="https://leetcode.com/problems/rearrange-array-elements-by-sign">Web link</a> |
+<a href="https://www.youtube.com/watch?v=SoPmcGzz9-E">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution02149.java) |
+[Test](src/test/java/leetcode/Solution02149Test.java)
 
 ### 2610. Convert an Array Into a 2D Array With Conditions
 
