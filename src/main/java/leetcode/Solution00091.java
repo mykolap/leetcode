@@ -1,4 +1,4 @@
-package leetcode.decodeWays;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/decode-ways/
@@ -38,7 +38,7 @@ package leetcode.decodeWays;
  * <p>
  * 1 <= s.length <= 100 s contains only digits and may contain leading zero(s).
  */
-public class Solution {
+public class Solution00091 {
 
     // Time: O(2^n)
     // Space: O(n)

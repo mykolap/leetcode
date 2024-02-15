@@ -1,5 +1,6 @@
-package leetcode.decodeWays;
+package leetcode;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -8,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00091Test {
 
     static Stream<Arguments> getIsAnagramArgs() {
         return Stream.of(
@@ -29,19 +30,19 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getIsAnagramArgs")
     void numDecodingsRecursion(String input, int expected) {
-        assertEquals(expected, new Solution().numDecodingsRecursion(input));
+        Assertions.assertEquals(expected, new Solution00091().numDecodingsRecursion(input));
     }
 
     @ParameterizedTest
     @MethodSource("getIsAnagramArgs")
     void numDecodingsDp(String input, int expected) {
-        assertEquals(expected, new Solution().numDecodingsDp(input));
+        assertEquals(expected, new Solution00091().numDecodingsDp(input));
     }
 
     @ParameterizedTest
     @MethodSource("getIsAnagramArgs")
     void numDecodings(String input, int expected) {
-        assertEquals(expected, new Solution().numDecodings(input));
+        assertEquals(expected, new Solution00091().numDecodings(input));
     }
 
 }
