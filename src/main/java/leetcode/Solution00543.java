@@ -1,4 +1,4 @@
-package leetcode.diameterOfBinaryTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 
@@ -34,7 +34,7 @@ import java.util.Map;
  * The number of nodes in the tree is in the range [1, 104].
  * -100 <= Node.val <= 100
  */
-public class Solution0543 {
+public class Solution00543 {
 
     // Time: O(n)
     // Space: O(n)

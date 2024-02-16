@@ -1,4 +1,4 @@
-package leetcode.diameterOfBinaryTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Solution0543Test {
+class Solution00543Test {
 
     static Stream<Arguments> getArgsDiameterOrBinaryTree() {
         return Stream.of(
@@ -21,14 +21,14 @@ class Solution0543Test {
     @ParameterizedTest
     @MethodSource("getArgsDiameterOrBinaryTree")
     void diameterOfBinaryTreeRecursive(TreeNode root, int expected) {
-        assertThat(new Solution0543().diameterOfBinaryTreeRecursive(root))
+        assertThat(new Solution00543().diameterOfBinaryTreeRecursive(root))
                 .isEqualTo(expected);
     }
 
     @ParameterizedTest
     @MethodSource("getArgsDiameterOrBinaryTree")
     void diameterOfBinaryTreeIterative(TreeNode root, int expected) {
-        assertThat(new Solution0543().diameterOfBinaryTreeIterative(root))
+        assertThat(new Solution00543().diameterOfBinaryTreeIterative(root))
                 .isEqualTo(expected);
     }
 

@@ -257,6 +257,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00455.java)
 [Test](src/test/java/leetcode/Solution00455Test.java)
 
+### 543. Diameter of Binary Tree
+
+<a href="https://leetcode.com/problems/diameter-of-binary-tree">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00543.java) |
+[Test](src/test/java/leetcode/Solution00543Test.java)
+
 ### 576. Out of Boundary Paths
 
 <a href="https://leetcode.com/problems/out-of-boundary-paths">Web link</a>
@@ -368,6 +374,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=c1stwk2TbNk">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution01463.java) |
 [Test](src/test/java/leetcode/Solution01463Test.java)
+
+### 1481. Least Number of Unique Integers after K Removals
+
+<a href="https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals">Web link</a> |
+<a href="https://www.youtube.com/watch?v=Nsp_ta7SlEk">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution01481.java) |
+[Test](src/test/java/leetcode/Solution01481Test.java)
 
 ### 2108. Find First Palindromic String in the Array
 
