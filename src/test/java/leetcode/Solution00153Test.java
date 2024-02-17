@@ -1,4 +1,4 @@
-package leetcode.findMinimumInRotatedSortedArray;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00153Test {
 
     static Stream<Arguments> getFindMinArgs() {
         return Stream.of(
@@ -22,7 +22,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getFindMinArgs")
     void findMin(int[] nums, int expected) {
-        assertEquals(expected, new Solution().findMin(nums));
+        assertEquals(expected, new Solution00153().findMin(nums));
     }
 
 }

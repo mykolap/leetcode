@@ -1,4 +1,4 @@
-package leetcode.invertBinaryTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 
@@ -33,7 +33,7 @@ import java.util.Queue;
  * The number of nodes in the tree is in the range [0, 100].
  * -100 <= Node.val <= 100
  */
-public class Solution0226 {
+public class Solution00226 {
 
     // Time: O(n)
     // Space: O(n)

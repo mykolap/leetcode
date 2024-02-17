@@ -1,4 +1,4 @@
-package leetcode.findMinimumInRotatedSortedArray;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
@@ -28,7 +28,7 @@ package leetcode.findMinimumInRotatedSortedArray;
  * Output: 11
  * Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
  */
-public class Solution {
+public class Solution00153 {
 
     // Time: O(logn)
     // Space: O(1)

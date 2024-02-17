@@ -1,4 +1,4 @@
-package leetcode.invertBinaryTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Solution0226Test {
+class Solution00226Test {
 
     static Stream<Arguments> getInvertTreeArgs() {
         return Stream.of(
@@ -30,14 +30,14 @@ class Solution0226Test {
     @ParameterizedTest
     @MethodSource("getInvertTreeArgs")
     void invertTree(TreeNode root, String expected) {
-        assertThat(new Solution0226().invertTree(root))
+        assertThat(new Solution00226().invertTree(root))
                 .hasToString(expected);
     }
 
     @ParameterizedTest
     @MethodSource("getInvertTreeArgs")
     void invertTreeIterative(TreeNode root, String expected) {
-        assertThat(new Solution0226().invertTreeIterative(root))
+        assertThat(new Solution00226().invertTreeIterative(root))
                 .hasToString(expected);
     }
 
@@ -45,7 +45,7 @@ class Solution0226Test {
     void invertTreeNull() {
         TreeNode root = null;
 
-        assertThat(new Solution0226().invertTree(root))
+        assertThat(new Solution00226().invertTree(root))
                 .isNull();
     }
 
@@ -53,7 +53,7 @@ class Solution0226Test {
     void invertTreeIterativeNull() {
         TreeNode root = null;
 
-        assertThat(new Solution0226().invertTreeIterative(root))
+        assertThat(new Solution00226().invertTreeIterative(root))
                 .isNull();
     }
 

@@ -1,4 +1,4 @@
-package leetcode.insertInterval;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +51,7 @@ import java.util.List;
  * newInterval.length == 2
  * 0 <= newInterval[0] <= newInterval[1] <= 105
  */
-public class Solution0057 {
+public class Solution00057 {
 
     // Time: O(n)
     // Space: O(n)

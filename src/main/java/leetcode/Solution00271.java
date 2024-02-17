@@ -1,4 +1,4 @@
-package leetcode.encodeAndDecodeStrings;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * https://leetcode.com/problems/encode-and-decode-strings/
  * 271. Encode and Decode Strings
+ * Medium
  * <p>
  * Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is
  * decoded back to the original list of strings.
@@ -42,7 +43,7 @@ import java.util.List;
  * <p>
  * String.split(). Note: This is a companion problem to the System Design problem: Design TinyURL.
  */
-public class Solution {
+public class Solution00271 {
 
     // Time: O(n)
     // Space: O(n)

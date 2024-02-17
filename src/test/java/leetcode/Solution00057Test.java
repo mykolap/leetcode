@@ -1,4 +1,4 @@
-package leetcode.insertInterval;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-class Solution0057Test {
+class Solution00057Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -38,7 +38,7 @@ class Solution0057Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void insert(int[][] intervals, int[] newInterval, int[][] expected) {
-        assertArrayEquals(expected, new Solution0057().insert(intervals, newInterval));
+        assertArrayEquals(expected, new Solution00057().insert(intervals, newInterval));
     }
 
 }

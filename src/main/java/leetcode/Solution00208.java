@@ -1,4 +1,4 @@
-package leetcode.implementTriePrefixTree;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/implement-trie-prefix-tree/
@@ -40,7 +40,7 @@ package leetcode.implementTriePrefixTree;
  * 2. word and prefix consist only of lowercase English letters.
  * 3. At most 3 * 104 calls in total will be made to insert, search, and startsWith.
  */
-public class Solution0208 {
+public class Solution00208 {
 
     public static class Trie {
 

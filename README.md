@@ -71,6 +71,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00049.java) |
 [Test](src/test/java/leetcode/Solution00049Test.java)
 
+### 57. Insert Interval
+
+<a href="https://leetcode.com/problems/insert-interval">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00057.java) |
+[Test](src/test/java/leetcode/Solution00057Test.java)
+
 ### 70. Climbing Stairs - Dynamic Programming
 
 <a href="https://leetcode.com/problems/climbing-stairs">Web link</a> |
@@ -137,6 +143,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00150.java) |
 [Test](src/test/java/leetcode/Solution00150Test.java)
 
+### 153. Find Minimum in Rotated Sorted Array
+
+<a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00153.java)
+[Test](src/test/java/leetcode/Solution00153Test.java)
+
 ### 169. Majority Element
 
 <a href="https://leetcode.com/problems/majority-element">Web link</a> |
@@ -182,6 +194,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00217.java) |
 [Test](src/test/java/leetcode/Solution00217Test.java)
 
+### 226. Invert Binary Tree
+
+<a href="https://leetcode.com/problems/invert-binary-tree">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00226.java)
+[Test](src/test/java/leetcode/Solution00226Test.java)
+
 ### 230. Kth Smallest Element in a BST
 
 <a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst">Web link</a> |
@@ -195,6 +213,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=eanwa3ht3YQ">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00232.java) |
 [Test](src/test/java/leetcode/Solution00232Test.java)
+
+### 271. Encode and Decode Strings
+
+<a href="https://leetcode.com/problems/encode-and-decode-strings">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00271.java)
+[Test](src/test/java/leetcode/Solution00271Test.java)
 
 ### 279. Perfect Squares - Dynamic Programming
 
@@ -381,6 +405,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=Nsp_ta7SlEk">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution01481.java) |
 [Test](src/test/java/leetcode/Solution01481Test.java)
+
+### 1642. Furthest Building You Can Reach
+
+<a href="https://leetcode.com/problems/furthest-building-you-can-reach">Web link</a> |
+<a href="https://www.youtube.com/watch?v=zyTeznvXCtg">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution01642.java) |
+[Test](src/test/java/leetcode/Solution01642Test.java)
 
 ### 2108. Find First Palindromic String in the Array
 
