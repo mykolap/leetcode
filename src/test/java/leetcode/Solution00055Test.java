@@ -1,4 +1,4 @@
-package leetcode.jumpGame;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0055Test {
+class Solution00055Test {
 
     private static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -21,21 +21,21 @@ class Solution0055Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void canJump(int[] nums, boolean expected) {
-        boolean actual = new Solution0055().canJump(nums);
+        boolean actual = new Solution00055().canJump(nums);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void canJumpDirect(int[] nums, boolean expected) {
-        boolean actual = new Solution0055().canJumpDirect(nums);
+        boolean actual = new Solution00055().canJumpDirect(nums);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void canJumpBruteforce(int[] nums, boolean expected) {
-        boolean actual = new Solution0055().canJumpBruteforce(nums);
+        boolean actual = new Solution00055().canJumpBruteforce(nums);
         assertEquals(expected, actual);
     }
 

@@ -1,4 +1,4 @@
-package leetcode.jumpGame;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/jump-game/
@@ -22,7 +22,7 @@ package leetcode.jumpGame;
  * <p>
  * 1 <= nums.length <= 3 * 104 0 <= nums[i] <= 105
  */
-public class Solution0055 {
+public class Solution00055 {
 
     // Time: O(n)
     // Space: O(1)

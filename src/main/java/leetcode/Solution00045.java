@@ -1,8 +1,9 @@
-package leetcode.jumpGameIi;
+package leetcode;
 
 import java.util.Arrays;
 
 /**
+ * https://leetcode.com/problems/jump-game-ii/description/
  * 45. Jump Game II
  * <p>
  * Given an array of non-negative integers nums, you are initially positioned at the first index of the array. Each
@@ -20,7 +21,7 @@ import java.util.Arrays;
  * <p>
  * 1 <= nums.length <= 104 0 <= nums[i] <= 1000
  */
-public class Solution0045 {
+public class Solution00045 {
 
     // Time: O(n^2)
     // Space: O(n)

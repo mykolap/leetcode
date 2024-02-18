@@ -64,12 +64,24 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00039.java) |
 [Test](src/test/java/leetcode/Solution00039Test.java)
 
+### 45. Jump Game II
+
+<a href="https://leetcode.com/problems/jump-game-ii">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00045.java) |
+[Test](src/test/java/leetcode/Solution00045Test.java)
+
 ### 49. Group Anagrams - Arrays & Hashing
 
 <a href="https://leetcode.com/problems/group-anagrams">Web link</a> |
 <a href="https://www.youtube.com/watch?v=vzdNOK2oB2E">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00049.java) |
 [Test](src/test/java/leetcode/Solution00049Test.java)
+
+### 55. Jump Game
+
+<a href="https://leetcode.com/problems/jump-game">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00055.java) |
+[Test](src/test/java/leetcode/Solution00055Test.java)
 
 ### 57. Insert Interval
 
@@ -477,3 +489,9 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i">Web link</a>
 [Implementation](src/main/java/leetcode/Solution03025.java)
 [Test](src/test/java/leetcode/Solution03025Test.java)
+
+### 3038. Maximum Number of Operations With the Same Score I
+
+<a href="https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03038.java)
+[Test](src/test/java/leetcode/Solution03038Test.java)
