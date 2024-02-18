@@ -1,14 +1,14 @@
-package leetcode.kthLargestElementInAStream;
+package leetcode;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0703Test {
+class Solution00703Test {
 
     @Test
     void testOperations() {
-        Solution0703.KthLargest kthLargest = new Solution0703.KthLargest(3, new int[]{4, 5, 8, 2});
+        Solution00703.KthLargest kthLargest = new Solution00703.KthLargest(3, new int[]{4, 5, 8, 2});
         assertEquals(4, kthLargest.add(3));
         assertEquals(5, kthLargest.add(5));
         assertEquals(5, kthLargest.add(10));

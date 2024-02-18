@@ -1,4 +1,4 @@
-package leetcode.largestSubstringBetweenTwoEqualCharacters;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution1624Test {
+class Solution01624Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -23,21 +23,21 @@ class Solution1624Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maxLengthBetweenEqualCharactersBruteforce(String s, int expected) {
-        int actual = new Solution1624().maxLengthBetweenEqualCharactersBruteforce(s);
+        int actual = new Solution01624().maxLengthBetweenEqualCharactersBruteforce(s);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maxLengthBetweenEqualCharactersMap(String s, int expected) {
-        int actual = new Solution1624().maxLengthBetweenEqualCharactersMap(s);
+        int actual = new Solution01624().maxLengthBetweenEqualCharactersMap(s);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maxLengthBetweenEqualCharactersArray(String s, int expected) {
-        int actual = new Solution1624().maxLengthBetweenEqualCharactersArray(s);
+        int actual = new Solution01624().maxLengthBetweenEqualCharactersArray(s);
         assertEquals(expected, actual);
     }
 

@@ -325,6 +325,14 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00647.java) |
 [Test](src/test/java/leetcode/Solution00647Test.java)
 
+### 703. Kth Largest Element in a Stream
+
+<a href="https://leetcode.com/problems/kth-largest-element-in-a-stream">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00703.java)
+[Test](src/test/java/leetcode/Solution00703Test.java)
+
+<a href="https://leetcode.com/problems/longest-continuous-increasing-subsequence">Web link</a>
+
 ### 704. Binary Search
 
 <a href="https://leetcode.com/problems/binary-search">Web link</a> |
@@ -418,6 +426,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution01481.java) |
 [Test](src/test/java/leetcode/Solution01481Test.java)
 
+### 1624. Largest Substring Between Two Equal Characters
+
+<a href="https://leetcode.com/problems/largest-substring-between-two-equal-characters">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution01624.java) |
+[Test](src/test/java/leetcode/Solution01624Test.java)
+
 ### 1642. Furthest Building You Can Reach
 
 <a href="https://leetcode.com/problems/furthest-building-you-can-reach">Web link</a> |
@@ -495,3 +509,9 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i">Web link</a>
 [Implementation](src/main/java/leetcode/Solution03038.java)
 [Test](src/test/java/leetcode/Solution03038Test.java)
+
+### 3039. Apply Operations to Make String Empty
+
+<a href="https://leetcode.com/problems/apply-operations-to-make-string-empty/">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03039.java)
+[Test](src/test/java/leetcode/Solution03039Test.java)

@@ -1,4 +1,4 @@
-package leetcode.largestSubstringBetweenTwoEqualCharacters;
+package leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -43,7 +43,7 @@ import java.util.Map;
  * 1 <= s.length <= 300
  * s contains only lowercase English letters.
  */
-public class Solution1624 {
+public class Solution01624 {
 
     // Time: O(n^2)
     // Space: O(1)
