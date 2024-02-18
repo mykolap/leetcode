@@ -453,6 +453,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution02149.java) |
 [Test](src/test/java/leetcode/Solution02149Test.java)
 
+### 2402. Meeting Rooms III
+
+<a href="https://leetcode.com/problems/meeting-rooms-iii">Web link</a> |
+<a href="https://www.youtube.com/watch?v=2VLwjvODQbA">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution02402.java) |
+[Test](src/test/java/leetcode/Solution02402Test.java)
+
 ### 2610. Convert an Array Into a 2D Array With Conditions
 
 <a href="https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions">Web link</a> |
