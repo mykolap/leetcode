@@ -219,6 +219,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00230.java) |
 [Test](src/test/java/leetcode/Solution00230Test.java)
 
+### 231. Power of Two
+
+<a href="https://leetcode.com/problems/power-of-two">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00231.java) |
+[Test](src/test/java/leetcode/Solution00231Test.java)
+
 ### 232. Implement Queue using Stacks
 
 <a href="https://leetcode.com/problems/implement-queue-using-stacks">Web link</a> |
@@ -354,6 +360,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00853.java) |
 [Test](src/test/java/leetcode/Solution00853Test.java)
 
+### 872. Leaf-Similar Trees
+
+<a href="https://leetcode.com/problems/leaf-similar-trees">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00872.java)
+[Test](src/test/java/leetcode/Solution00872Test.java)
+
 ### 875. Koko Eating Bananas - Binary Search
 
 <a href="https://leetcode.com/problems/koko-eating-bananas">Web link</a> |
@@ -373,6 +385,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=kWhy4ZUBdOY">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution01043.java) |
 [Test](src/test/java/leetcode/Solution01043Test.java)
+
+### 1046. Last Stone Weight
+
+<a href="https://leetcode.com/problems/last-stone-weight">Web link</a>
+[Implementation](src/main/java/leetcode/Solution01046.java)
+[Test](src/test/java/leetcode/Solution01046Test.java)
 
 ### 1074. Number of Submatrices That Sum to Target
 

@@ -1,4 +1,4 @@
-package leetcode.lastStoneWeight;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution1046Test {
+class Solution01046Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -22,13 +22,13 @@ class Solution1046Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void lastStoneWeight(int[] stones, int expected) {
-        assertEquals(expected, new Solution1046().lastStoneWeight(stones));
+        assertEquals(expected, new Solution01046().lastStoneWeight(stones));
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void lastStoneWeightFirstApproach(int[] stones, int expected) {
-        assertEquals(expected, new Solution1046().lastStoneWeightFirstApproach(stones));
+        assertEquals(expected, new Solution01046().lastStoneWeightFirstApproach(stones));
     }
 
 }

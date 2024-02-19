@@ -1,4 +1,4 @@
-package leetcode.leafSimilarTrees;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0872Test {
+class Solution00872Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -34,7 +34,7 @@ class Solution0872Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void leafSimilarDfs(TreeNode root1, TreeNode root2, boolean expected) {
-        boolean actual = new Solution0872().leafSimilarDfs(root1, root2);
+        boolean actual = new Solution00872().leafSimilarDfs(root1, root2);
         assertEquals(expected, actual);
     }
 }

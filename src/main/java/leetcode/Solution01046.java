@@ -1,4 +1,4 @@
-package leetcode.lastStoneWeight;
+package leetcode;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -7,7 +7,6 @@ import java.util.PriorityQueue;
 /**
  * 1046. Last Stone Weight
  * https://leetcode.com/problems/last-stone-weight/
- * <p>
  * Easy
  * <p>
  * We have a collection of stones, each stone has a positive integer weight.
@@ -32,7 +31,7 @@ import java.util.PriorityQueue;
  * <p>
  * 1 <= stones.length <= 30 1 <= stones[i] <= 1000
  */
-public class Solution1046 {
+public class Solution01046 {
 
     // Time: O(n * log(n))
     // Space: O(n)

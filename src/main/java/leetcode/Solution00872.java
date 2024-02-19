@@ -1,4 +1,4 @@
-package leetcode.leafSimilarTrees;
+package leetcode;
 
 import leetcode.common.TreeNode;
 
@@ -32,7 +32,7 @@ import java.util.List;
  * The number of nodes in each tree will be in the range [1, 200].
  * Both of the given trees will have values in the range [0, 200].
  */
-public class Solution0872 {
+public class Solution00872 {
 
     // Time O(n)
     // Space O(n)
