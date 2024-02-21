@@ -1,4 +1,4 @@
-package leetcode.linkedListCycle;
+package leetcode;
 
 import leetcode.common.ListNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Solution0141Test {
+class Solution00141Test {
 
     static Stream<Arguments> casesProvider() {
         final ListNode example1 = ListNode.fromVarArgArray(3, 2, 0, -4);
@@ -31,7 +31,7 @@ class Solution0141Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void hasCycle(ListNode head, boolean expected) {
-        assertThat(new Solution0141().hasCycle(head)).isEqualTo(expected);
+        assertThat(new Solution00141().hasCycle(head)).isEqualTo(expected);
     }
 
 }

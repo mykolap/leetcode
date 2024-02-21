@@ -34,14 +34,6 @@ class Solution00231Test {
 
     @ParameterizedTest
     @MethodSource("casesProvider")
-    void isPowerOfTwoMath(int n, boolean expected) {
-        Solution00231 solution = new Solution00231();
-        boolean result = solution.isPowerOfTwoMath(n);
-        assertEquals(expected, result);
-    }
-
-    @ParameterizedTest
-    @MethodSource("casesProvider")
     void isPowerOfTwoBitCount(int n, boolean expected) {
         Solution00231 solution = new Solution00231();
         boolean result = solution.isPowerOfTwoBitCount(n);

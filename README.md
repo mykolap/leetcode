@@ -148,6 +148,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00138.java) |
 [Test](src/test/java/leetcode/Solution00138Test.java)
 
+### 141. Linked List Cycle
+
+<a href="https://leetcode.com/problems/linked-list-cycle">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00141.java)
+[Test](src/test/java/leetcode/Solution00141Test.java)
+
 ### 150. Evaluate Reverse Polish Notation
 
 <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation">Web link</a> |
@@ -186,6 +192,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=d4zLyf32e3I">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00199.java) |
 [Test](src/test/java/leetcode/Solution00199Test.java)
+
+### 201. Bitwise AND of Numbers Range
+
+<a href="https://leetcode.com/problems/bitwise-and-of-numbers-range">Web link</a> |
+<a href="https://www.youtube.com/watch?v=R3T0olAhUq0">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00201.java) |
+[Test](src/test/java/leetcode/Solution00201Test.java)
 
 ### 207. Course Schedule
 

@@ -1,4 +1,4 @@
-package leetcode.linkedListCycle;
+package leetcode;
 
 import leetcode.common.ListNode;
 
@@ -40,7 +40,7 @@ import leetcode.common.ListNode;
  * <p>
  * Follow up: Can you solve it using O(1) (i.e. constant) memory?
  */
-public class Solution0141 {
+public class Solution00141 {
 
     // Time: O(n)
     // Space: O(1)
