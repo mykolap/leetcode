@@ -134,6 +134,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00121.java)
 [Test](src/test/java/leetcode/Solution00121Test.java)
 
+### 128. Longest Consecutive Sequence
+
+<a href="https://leetcode.com/problems/longest-consecutive-sequence">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00128.java) |
+[Test](src/test/java/leetcode/Solution00128Test.java)
+
 ### 133. Clone Graph - Graphs - Depth First Search
 
 <a href="https://leetcode.com/problems/clone-graph">Web link</a> |
@@ -244,6 +250,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=eanwa3ht3YQ">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00232.java) |
 [Test](src/test/java/leetcode/Solution00232Test.java)
+
+### 268. Missing Number
+
+<a href="https://leetcode.com/problems/missing-number">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00268.java) |
+[Test](src/test/java/leetcode/Solution00268Test.java)
 
 ### 271. Encode and Decode Strings
 

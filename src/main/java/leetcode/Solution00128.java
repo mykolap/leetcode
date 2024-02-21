@@ -1,4 +1,4 @@
-package leetcode.longestConsecutiveSequence;
+package leetcode;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -29,7 +29,7 @@ import java.util.Set;
  * 0 <= nums.length <= 105
  * -109 <= nums[i] <= 109
  */
-public class Solution0128 {
+public class Solution00128 {
 
     // Time: O(n)
     // Space: O(n)

@@ -1,4 +1,4 @@
-package leetcode.longestConsecutiveSequence;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0128Test {
+class Solution00128Test {
 
     static Stream<Arguments> getLongestConsecutiveArgs() {
         return Stream.of(
@@ -20,13 +20,13 @@ class Solution0128Test {
     @ParameterizedTest
     @MethodSource("getLongestConsecutiveArgs")
     void longestConsecutive(int[] nums, int expected) {
-        assertEquals(expected, new Solution0128().longestConsecutive(nums));
+        assertEquals(expected, new Solution00128().longestConsecutive(nums));
     }
 
     @ParameterizedTest
     @MethodSource("getLongestConsecutiveArgs")
     void longestConsecutiveSorting(int[] nums, int expected) {
-        assertEquals(expected, new Solution0128().longestConsecutiveSorting(nums));
+        assertEquals(expected, new Solution00128().longestConsecutiveSorting(nums));
     }
 
 }
