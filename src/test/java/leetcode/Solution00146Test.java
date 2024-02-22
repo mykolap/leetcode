@@ -1,14 +1,14 @@
-package leetcode.lruCache;
+package leetcode;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0146Test {
+class Solution00146Test {
 
     @Test
     void testOperations() {
-        Solution0146.LRUCache cache = new Solution0146.LRUCache(2);
+        Solution00146.LRUCache cache = new Solution00146.LRUCache(2);
         cache.put(1, 1); // cache is {1=1}
         cache.put(2, 2); // cache is {1=1, 2=2}
         assertEquals(1, cache.get(1));    // return 1
@@ -22,7 +22,7 @@ class Solution0146Test {
 
     @Test
     void testOperations2() {
-        Solution0146.LRUCache cache = new Solution0146.LRUCache(2);
+        Solution00146.LRUCache cache = new Solution00146.LRUCache(2);
         cache.put(2, 1);
         cache.put(2, 2);
         assertEquals(2, cache.get(2));

@@ -1,4 +1,4 @@
-package leetcode.lowestCommonAncestorOfABinarySearchTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0235Test {
+class Solution00235Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -25,14 +25,14 @@ class Solution0235Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void lowestCommonAncestor(TreeNode root, int p, int q, int expected) {
-        final TreeNode actual = new Solution0235().lowestCommonAncestor(root, new TreeNode(p), new TreeNode(q));
+        final TreeNode actual = new Solution00235().lowestCommonAncestor(root, new TreeNode(p), new TreeNode(q));
         assertEquals(expected, actual.val);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void lowestCommonAncestorOptimized(TreeNode root, int p, int q, int expected) {
-        final TreeNode actual = new Solution0235().lowestCommonAncestorOptimized(root, new TreeNode(p), new TreeNode(q));
+        final TreeNode actual = new Solution00235().lowestCommonAncestorOptimized(root, new TreeNode(p), new TreeNode(q));
         assertEquals(expected, actual.val);
     }
 }

@@ -1,4 +1,4 @@
-package leetcode.longestIncreasingSubsequence;
+package leetcode;
 
 import java.util.Arrays;
 
@@ -40,7 +40,7 @@ import java.util.Arrays;
  * Could you come up with the O(n2) solution?
  * Could you improve it to O(n log(n)) time complexity?
  */
-public class Solution0300 {
+public class Solution00300 {
 
     // Time O(n^2)
     // Space O(n)

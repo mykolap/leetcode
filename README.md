@@ -18,6 +18,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00002.java)
 [Test](src/test/java/leetcode/Solution00002Test.java)
 
+### 3. Longest Substring Without Repeating Characters - Sliding Window
+
+<a href="https://leetcode.com/problems/longest-substring-without-repeating-characters">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00003.java) |
+[Test](src/test/java/leetcode/Solution00003Test.java)
+
 ### 4. Median of Two Sorted Arrays
 
 <a href="https://leetcode.com/problems/median-of-two-sorted-arrays">Web link</a>
@@ -160,6 +166,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00141.java)
 [Test](src/test/java/leetcode/Solution00141Test.java)
 
+### 146. LRU Cache
+
+<a href="https://leetcode.com/problems/lru-cache">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00146.java) |
+[Test](src/test/java/leetcode/Solution00146Test.java)
+
 ### 150. Evaluate Reverse Polish Notation
 
 <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation">Web link</a> |
@@ -251,6 +263,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00232.java) |
 [Test](src/test/java/leetcode/Solution00232Test.java)
 
+### 235. Lowest Common Ancestor of a Binary Search Tree
+
+<a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00235.java)
+[Test](src/test/java/leetcode/Solution00235Test.java)
+
 ### 268. Missing Number
 
 <a href="https://leetcode.com/problems/missing-number">Web link</a> |
@@ -276,6 +294,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=wjYnzkAhcNk">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00287.java) |
 [Test](src/test/java/leetcode/Solution00287Test.java)
+
+### 300. Longest Increasing Subsequence - Dynamic Programming
+
+<a href="https://leetcode.com/problems/longest-increasing-subsequence">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00300.java) |
+[Test](src/test/java/leetcode/Solution00300Test.java)
 
 ### 322. Coin Change - Dynamic Programming - Bottom Up
 
@@ -403,6 +427,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/sum-of-subarray-minimums">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00907.java)
 [Test](src/test/java/leetcode/Solution00907Test.java)
+
+### 997. Find the Town Judge
+
+<a href="https://leetcode.com/problems/find-the-town-judge">Web link</a> |
+<a href="https://www.youtube.com/watch?v=QiGaxdUINJ8">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00997.java) |
+[Test](src/test/java/leetcode/Solution00997Test.java)
 
 ### 1043. Partition Array for Maximum Sum
 

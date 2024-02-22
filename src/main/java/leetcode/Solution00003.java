@@ -1,4 +1,4 @@
-package leetcode.longestSubstringWithoutRepeatingCharacters;
+package leetcode;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -43,7 +43,7 @@ import java.util.Set;
  * 0 <= s.length <= 5 * 104
  * s consists of English letters, digits, symbols and spaces.
  */
-public class Solution {
+public class Solution00003 {
 
     // Time: O(n)
     // Space: O(n)

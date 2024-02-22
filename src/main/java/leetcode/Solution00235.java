@@ -1,4 +1,4 @@
-package leetcode.lowestCommonAncestorOfABinarySearchTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 
@@ -41,7 +41,7 @@ import leetcode.common.TreeNode;
  * </ul>
  * </div>
  */
-public class Solution0235 {
+public class Solution00235 {
 
     // Time: O(n)
     // Space: O(1)

@@ -1,4 +1,4 @@
-package leetcode.lruCache;
+package leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -57,7 +57,7 @@ import java.util.Map;
  * </div>
  * </div>
  */
-public class Solution0146 {
+public class Solution00146 {
 
     // Time: O(1)
     // Space: O(n)

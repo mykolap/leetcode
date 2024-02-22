@@ -1,4 +1,4 @@
-package leetcode.longestSubstringWithoutRepeatingCharacters;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00003Test {
 
     static Stream<Arguments> getLengthOfLongestSubstringArgs() {
         return Stream.of(
@@ -31,21 +31,21 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getLengthOfLongestSubstringArgs")
     void lengthOfLongestSubstring(String s, int expected) {
-        int actual = new Solution().lengthOfLongestSubstring(s);
+        int actual = new Solution00003().lengthOfLongestSubstring(s);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("getLengthOfLongestSubstringArgs")
     void lengthOfLongestSubstringIntArr(String s, int expected) {
-        int actual = new Solution().lengthOfLongestSubstringIntArr(s);
+        int actual = new Solution00003().lengthOfLongestSubstringIntArr(s);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("getLengthOfLongestSubstringArgs")
     void lengthOfLongestSubstringMap(String s, int expected) {
-        int actual = new Solution().lengthOfLongestSubstringMap(s);
+        int actual = new Solution00003().lengthOfLongestSubstringMap(s);
         assertEquals(expected, actual);
     }
 
