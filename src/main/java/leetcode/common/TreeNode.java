@@ -1,6 +1,6 @@
 package leetcode.common;
 
-import leetcode.maximumDepthOfBinaryTree.Solution0104;
+import leetcode.Solution00104;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -55,7 +55,7 @@ public class TreeNode {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        int height = new Solution0104().maxDepthRecursiveDfs(this);
+        int height = new Solution00104().maxDepthRecursiveDfs(this);
         int nodes = (int) Math.pow(2, height - 1);
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(this);

@@ -1,4 +1,4 @@
-package leetcode.maximumProfitInJobScheduling;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -39,7 +39,7 @@ import java.util.TreeMap;
  * 1 <= startTime[i] < endTime[i] <= 109
  * 1 <= profit[i] <= 104
  */
-public class Solution1235 {
+public class Solution01235 {
 
     // Time: O(nlogn)
     // Space: O(n)

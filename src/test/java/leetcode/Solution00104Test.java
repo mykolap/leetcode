@@ -1,4 +1,4 @@
-package leetcode.maximumDepthOfBinaryTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Solution0104Test {
+class Solution00104Test {
 
     static Stream<Arguments> getMaxDepthArgs() {
         return Stream.of(
@@ -23,21 +23,21 @@ class Solution0104Test {
     @ParameterizedTest
     @MethodSource("getMaxDepthArgs")
     void maxDepthRecursiveDfs(TreeNode root, int expected) {
-        assertThat(new Solution0104().maxDepthRecursiveDfs(root))
+        assertThat(new Solution00104().maxDepthRecursiveDfs(root))
                 .isEqualTo(expected);
     }
 
     @ParameterizedTest
     @MethodSource("getMaxDepthArgs")
     void maxDepthIterativeBfs(TreeNode root, int expected) {
-        assertThat(new Solution0104().maxDepthIterativeBfs(root))
+        assertThat(new Solution00104().maxDepthIterativeBfs(root))
                 .isEqualTo(expected);
     }
 
     @ParameterizedTest
     @MethodSource("getMaxDepthArgs")
     void maxDepthIterativeDfs(TreeNode root, int expected) {
-        assertThat(new Solution0104().maxDepthIterativeDfs(root))
+        assertThat(new Solution00104().maxDepthIterativeDfs(root))
                 .isEqualTo(expected);
     }
 

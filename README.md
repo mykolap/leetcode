@@ -128,6 +128,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00102.java) |
 [Test](src/test/java/leetcode/Solution00102Test.java)
 
+### 104. Maximum Depth of Binary Tree
+
+<a href="https://leetcode.com/problems/maximum-depth-of-binary-tree">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00104.java)
+[Test](src/test/java/leetcode/Solution00104Test.java)
+
 ### 110. Balanced Binary Tree
 
 <a href="https://leetcode.com/problems/balanced-binary-tree">Web link</a>
@@ -380,6 +386,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00647.java) |
 [Test](src/test/java/leetcode/Solution00647Test.java)
 
+### 695. Max Area of Island
+
+<a href="https://leetcode.com/problems/max-area-of-island">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00695.java)
+[Test](src/test/java/leetcode/Solution00695Test.java)
+
 ### 703. Kth Largest Element in a Stream
 
 <a href="https://leetcode.com/problems/kth-largest-element-in-a-stream">Web link</a>
@@ -401,6 +413,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=cTBiBSnjO3c">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00739.java) |
 [Test](src/test/java/leetcode/Solution00739Test.java)
+
+### 787. Cheapest Flights Within K Stops
+
+<a href="https://leetcode.com/problems/cheapest-flights-within-k-stops">Web link</a> |
+<a href="https://www.youtube.com/watch?v=5eIK3zUdYmE">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00787.java) |
+[Test](src/test/java/leetcode/Solution00787Test.java)
 
 ### 853. Car Fleet - Stack
 
@@ -460,6 +479,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/longest-common-subsequence">Web link</a>
 [Implementation](src/main/java/leetcode/Solution01143.java)
 [Test](src/test/java/leetcode/Solution01143Test.java)
+
+### 1235. Maximum Profit in Job Scheduling
+
+<a href="https://leetcode.com/problems/maximum-profit-in-job-scheduling">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution01235.java) |
+[Test](src/test/java/leetcode/Solution01235Test.java)
 
 ### 1239. Maximum Length of a Concatenated String with Unique Characters
 

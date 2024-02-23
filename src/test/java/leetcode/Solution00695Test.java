@@ -1,4 +1,4 @@
-package leetcode.maxAreaOfIsland;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0695Test {
+class Solution00695Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -32,7 +32,7 @@ class Solution0695Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maxAreaOfIsland(int[][] grid, int expected) {
-        int actual = new Solution0695().maxAreaOfIsland(grid);
+        int actual = new Solution00695().maxAreaOfIsland(grid);
         assertEquals(expected, actual);
     }
 }

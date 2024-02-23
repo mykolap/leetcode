@@ -1,4 +1,4 @@
-package leetcode.maxAreaOfIsland;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/max-area-of-island/
@@ -40,7 +40,7 @@ package leetcode.maxAreaOfIsland;
  * 1 <= m, n <= 50
  * grid[i][j] is either 0 or 1.
  */
-public class Solution0695 {
+public class Solution00695 {
 
     public int maxAreaOfIsland(int[][] grid) {
         int maxArea = 0;

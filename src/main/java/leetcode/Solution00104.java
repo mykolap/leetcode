@@ -1,4 +1,4 @@
-package leetcode.maximumDepthOfBinaryTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 
@@ -40,7 +40,7 @@ import java.util.Queue;
  * The number of nodes in the tree is in the range [0, 104].
  * -100 <= Node.val <= 100
  */
-public class Solution0104 {
+public class Solution00104 {
 
     // Time: O(n)
     // Space: O(n)

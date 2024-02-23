@@ -1,4 +1,4 @@
-package leetcode.maximumProfitInJobScheduling;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution1235Test {
+class Solution01235Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -21,7 +21,7 @@ class Solution1235Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void jobScheduling(int[] startTime, int[] endTime, int[] profit, int expected) {
-        assertEquals(expected, new Solution1235().jobScheduling(startTime, endTime, profit));
+        assertEquals(expected, new Solution01235().jobScheduling(startTime, endTime, profit));
     }
 
 }
