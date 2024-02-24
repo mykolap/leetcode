@@ -83,6 +83,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00049.java) |
 [Test](src/test/java/leetcode/Solution00049Test.java)
 
+### 53. Maximum Subarray
+
+<a href="https://leetcode.com/problems/maximum-subarray">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00053.java) |
+[Test](src/test/java/leetcode/Solution00053Test.java)
+
 ### 55. Jump Game
 
 <a href="https://leetcode.com/problems/jump-game">Web link</a> |
@@ -360,6 +366,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00543.java) |
 [Test](src/test/java/leetcode/Solution00543Test.java)
 
+### 567. Permutation in String
+
+<a href="https://leetcode.com/problems/permutation-in-string">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00567.java) |
+[Test](src/test/java/leetcode/Solution00567Test.java)
+
 ### 576. Out of Boundary Paths
 
 <a href="https://leetcode.com/problems/out-of-boundary-paths">Web link</a>
@@ -537,6 +549,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=zyTeznvXCtg">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution01642.java) |
 [Test](src/test/java/leetcode/Solution01642Test.java)
+
+### 2092. Find All People With Secret
+
+<a href="https://leetcode.com/problems/find-all-people-with-secret">Web link</a> |
+<a href="https://www.youtube.com/watch?v=1XujGRSU1bQ">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution02092.java) |
+[Test](src/test/java/leetcode/Solution02092Test.java)
 
 ### 2108. Find First Palindromic String in the Array
 

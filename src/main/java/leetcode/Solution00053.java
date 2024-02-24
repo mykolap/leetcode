@@ -1,4 +1,4 @@
-package leetcode.maximumSubarray;
+package leetcode;
 
 /** https://leetcode.com/problems/maximum-subarray/
  * 53. Maximum Subarray
@@ -20,7 +20,7 @@ package leetcode.maximumSubarray;
  * <p>
  * 1 <= nums.length <= 3 * 104 -105 <= nums[i] <= 105
  */
-public class Solution0053 {
+public class Solution00053 {
 
     // Time: O(n)
     // Space: O(1)

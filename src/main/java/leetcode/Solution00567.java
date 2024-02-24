@@ -1,4 +1,4 @@
-package leetcode.permutationInString;
+package leetcode;
 
 import java.util.Arrays;
 
@@ -26,7 +26,7 @@ import java.util.Arrays;
  * 1 <= s1.length, s2.length <= 104
  * s1 and s2 consist of lowercase English letters.
  */
-public class Solution {
+public class Solution00567 {
 
     // Time: O(n)
     // Space: O(1)

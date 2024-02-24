@@ -1,4 +1,4 @@
-package leetcode.permutationInString;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00567Test {
 
     static Stream<Arguments> getCheckInclusionArgs() {
         return Stream.of(
@@ -26,14 +26,14 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getCheckInclusionArgs")
     void checkInclusion(String s1, String s2, boolean expected) {
-        boolean actual = new Solution().checkInclusion(s1, s2);
+        boolean actual = new Solution00567().checkInclusion(s1, s2);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("getCheckInclusionArgs")
     void checkInclusionArrayEquals(String s1, String s2, boolean expected) {
-        boolean actual = new Solution().checkInclusionArrayEquals(s1, s2);
+        boolean actual = new Solution00567().checkInclusionArrayEquals(s1, s2);
         assertEquals(expected, actual);
     }
 }

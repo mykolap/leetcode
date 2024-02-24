@@ -1,4 +1,4 @@
-package leetcode.maximumSubarray;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0053Test {
+class Solution00053Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -24,7 +24,7 @@ class Solution0053Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maxSubArray(int[] nums, int expected) {
-        assertEquals(expected, new Solution0053().maxSubArray(nums));
+        assertEquals(expected, new Solution00053().maxSubArray(nums));
     }
 
 }
