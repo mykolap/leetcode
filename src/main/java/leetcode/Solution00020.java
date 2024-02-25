@@ -1,4 +1,4 @@
-package leetcode.validParentheses;
+package leetcode;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -31,7 +31,7 @@ import java.util.LinkedList;
  * <p>
  * 1 <= s.length <= 104 s consists of parentheses only '()[]{}'.
  */
-public class Solution {
+public class Solution00020 {
 
     // Time: O(n)
     // Space: O(n)

@@ -1,4 +1,4 @@
-package leetcode.validSudoku;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/valid-sudoku/
@@ -48,7 +48,7 @@ package leetcode.validSudoku;
  * board[i].length == 9
  * board[i][j] is a digit 1-9 or '.'.
  */
-public class Solution0036 {
+public class Solution00036 {
 
     // Time: O(n^2)
     // Space: O(n)

@@ -1,11 +1,11 @@
-package leetcode.validParentheses;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00020Test {
 
     @ParameterizedTest
     @CsvSource({
@@ -16,7 +16,7 @@ class SolutionTest {
             "{[]}, true",
     })
     void isValid(String s, boolean expected) {
-        assertEquals(expected, new Solution().isValid(s));
+        assertEquals(expected, new Solution00020().isValid(s));
     }
 
 }

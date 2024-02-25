@@ -1,4 +1,4 @@
-package leetcode.validPalindrome;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/valid-palindrome/
@@ -29,7 +29,7 @@ package leetcode.validPalindrome;
  * 1 <= s.length <= 2 * 105
  * s consists only of printable ASCII characters.
  */
-public class Solution {
+public class Solution00125 {
 
     // Time: O(n)
     // Space: O(1)

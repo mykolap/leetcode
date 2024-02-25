@@ -1,4 +1,4 @@
-package leetcode.validSudoku;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0036Test {
+class Solution00036Test {
 
     static Stream<Arguments> getIsValidSudokuArgs() {
         return Stream.of(
@@ -40,13 +40,13 @@ class Solution0036Test {
     @ParameterizedTest
     @MethodSource("getIsValidSudokuArgs")
     void isValidSudoku(char[][] board, boolean expected) {
-        assertEquals(expected, new Solution0036().isValidSudoku(board));
+        assertEquals(expected, new Solution00036().isValidSudoku(board));
     }
 
     @ParameterizedTest
     @MethodSource("getIsValidSudokuArgs")
     void isValidSudokuSimplified(char[][] board, boolean expected) {
-        assertEquals(expected, new Solution0036().isValidSudokuSimplified(board));
+        assertEquals(expected, new Solution00036().isValidSudokuSimplified(board));
     }
 
 }

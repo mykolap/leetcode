@@ -44,6 +44,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00011.java) |
 [Test](src/test/java/leetcode/Solution00011Test.java)
 
+### 20. Valid Parentheses
+
+<a href="https://leetcode.com/problems/valid-parentheses">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00020.java)
+[Test](src/test/java/leetcode/Solution00020Test.java)
+
 ### 22. Generate Parentheses
 
 <a href="https://leetcode.com/problems/generate-parentheses">Web link</a> |
@@ -62,6 +68,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/remove-element">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00027.java)
 [Test](src/test/java/leetcode/Solution00027Test.java)
+
+### 36. Valid Sudoku
+
+<a href="https://leetcode.com/problems/valid-sudoku">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00036.java)
+[Test](src/test/java/leetcode/Solution00036Test.java)
 
 ### 39. Combination Sum - Backtracking
 
@@ -151,6 +163,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00121.java)
 [Test](src/test/java/leetcode/Solution00121Test.java)
+
+### 125. Valid Palindrome
+
+<a href="https://leetcode.com/problems/valid-palindrome">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00125.java)
+[Test](src/test/java/leetcode/Solution00125Test.java)
 
 ### 128. Longest Consecutive Sequence
 
@@ -584,6 +602,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=9pl1QiaGgmI">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution02610.java) |
 [Test](src/test/java/leetcode/Solution02610Test.java)
+
+### 2709. Greatest Common Divisor Traversal
+
+<a href="https://leetcode.com/problems/greatest-common-divisor-traversal">Web link</a> |
+<a href="https://www.youtube.com/watch?v=jZ-RVp5CVYY">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution02709.java) |
+[Test](src/test/java/leetcode/Solution02709Test.java)
 
 ### 2966. Divide Array Into Arrays With Max Difference
 
