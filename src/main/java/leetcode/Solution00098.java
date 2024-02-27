@@ -1,4 +1,4 @@
-package leetcode.validateBinarySearchTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 
@@ -25,7 +25,7 @@ import java.util.Queue;
  * The number of nodes in the tree is in the range [1, 10^4].
  * -2^31 <= Node.val <= 2^31 - 1
  */
-public class Solution0098 {
+public class Solution00098 {
 
     // Time O(n)
     // Space O(n)

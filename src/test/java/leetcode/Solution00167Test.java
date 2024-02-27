@@ -1,5 +1,6 @@
-package leetcode.TwoSums2InputArrayIsSorted;
+package leetcode;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -8,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-class SolutionTest {
+class Solution00167Test {
 
     static Stream<Arguments> getTwoSumArgs() {
         return Stream.of(
@@ -23,13 +24,13 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getTwoSumArgs")
     void twoSumBruteForce(int[] nums, int target, int[] expected) {
-        assertArrayEquals(expected, new Solution().twoSumBruteForce(nums, target));
+        Assertions.assertArrayEquals(expected, new Solution00167().twoSumBruteForce(nums, target));
     }
 
     @ParameterizedTest
     @MethodSource("getTwoSumArgs")
     void twoSum(int[] nums, int target, int[] expected) {
-        assertArrayEquals(expected, new Solution().twoSum(nums, target));
+        assertArrayEquals(expected, new Solution00167().twoSum(nums, target));
     }
 
 }

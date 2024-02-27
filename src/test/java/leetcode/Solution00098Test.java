@@ -1,4 +1,4 @@
-package leetcode.validateBinarySearchTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0098Test {
+class Solution00098Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -24,14 +24,14 @@ class Solution0098Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void isValidBstDfs(TreeNode root, boolean expected) {
-        boolean actual = new Solution0098().isValidBstDfs(root);
+        boolean actual = new Solution00098().isValidBstDfs(root);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void isValidBstBfs(TreeNode root, boolean expected) {
-        boolean actual = new Solution0098().isValidBstBfs(root);
+        boolean actual = new Solution00098().isValidBstBfs(root);
         assertEquals(expected, actual);
     }
 

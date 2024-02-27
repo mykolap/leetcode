@@ -1,4 +1,4 @@
-package leetcode.threeSum;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,7 +28,7 @@ import java.util.List;
  * <p>
  * 0 <= nums.length <= 3000 -105 <= nums[i] <= 105
  */
-public class Solution {
+public class Solution00015 {
 
     // Time: O(n^3)
     // Space: O(1)

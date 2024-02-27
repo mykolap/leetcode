@@ -1,5 +1,6 @@
-package leetcode.threeSum;
+package leetcode;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -9,7 +10,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00015Test {
 
     static Stream<Arguments> getThreeSumArgs() {
         return Stream.of(
@@ -34,13 +35,13 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getThreeSumArgs")
     void threeSumBrutforce(int[] nums, List<List<Integer>> expected) {
-        assertEquals(expected, new Solution().threeSumBrutforce(nums));
+        Assertions.assertEquals(expected, new Solution00015().threeSumBrutforce(nums));
     }
 
     @ParameterizedTest
     @MethodSource("getThreeSumArgs")
     void threeSum(int[] nums, List<List<Integer>> expected) {
-        assertEquals(expected, new Solution().threeSum(nums));
+        assertEquals(expected, new Solution00015().threeSum(nums));
     }
 
 }

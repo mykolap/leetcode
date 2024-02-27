@@ -1,4 +1,4 @@
-package leetcode.TwoSums2InputArrayIsSorted;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
@@ -27,7 +27,7 @@ package leetcode.TwoSums2InputArrayIsSorted;
  * <p>
  * 2 <= numbers.length <= 3 * 104 -1000 <= numbers[i] <= 1000 numbers is sorted in non-decreasing order. -1000 <= target <= 1000
  */
-public class Solution {
+public class Solution00167 {
 
     // Time: O(n^2)
     // Space: O(1)

@@ -44,6 +44,18 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00011.java) |
 [Test](src/test/java/leetcode/Solution00011Test.java)
 
+### 13. Roman to Integer
+
+<a href="https://leetcode.com/problems/roman-to-integer">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00013.java)
+[Test](src/test/java/leetcode/Solution00013Test.java)
+
+### 15. 3Sum
+
+<a href="https://leetcode.com/problems/3sum/">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00015.java) |
+[Test](src/test/java/leetcode/Solution00015Test.java)
+
 ### 20. Valid Parentheses
 
 <a href="https://leetcode.com/problems/valid-parentheses">Web link</a>
@@ -139,6 +151,18 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00084.java)
 [Test](src/test/java/leetcode/Solution00084Test.java)
 
+### 98. Validate Binary Search Tree
+
+<a href="https://leetcode.com/problems/validate-binary-search-tree">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00098.java)
+[Test](src/test/java/leetcode/Solution00098Test.java)
+
+### 100. Same Tree
+
+<a href="https://leetcode.com/problems/same-tree">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00100.java)
+[Test](src/test/java/leetcode/Solution00100Test.java)
+
 ### 102. Binary Tree Level Order Traversal
 
 <a href="https://leetcode.com/problems/binary-tree-level-order-traversal">Web link</a> |
@@ -214,6 +238,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00153.java)
 [Test](src/test/java/leetcode/Solution00153Test.java)
+
+### 167. Two Sum II - Input array is sorted
+
+<a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00167.java)
+[Test](src/test/java/leetcode/Solution00167Test.java)
 
 ### 169. Majority Element
 
@@ -298,6 +328,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00235.java)
 [Test](src/test/java/leetcode/Solution00235Test.java)
+
+### 242. Valid Anagram
+
+<a href="https://leetcode.com/problems/valid-anagram">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00242.java)
+[Test](src/test/java/leetcode/Solution00242Test.java)
 
 ### 268. Missing Number
 
@@ -476,6 +512,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/sum-of-subarray-minimums">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00907.java)
 [Test](src/test/java/leetcode/Solution00907Test.java)
+
+### 981. Time Based Key-Value Store
+
+<a href="https://leetcode.com/problems/time-based-key-value-store">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00981.java)
+[Test](src/test/java/leetcode/Solution00981Test.java)
 
 ### 997. Find the Town Judge
 

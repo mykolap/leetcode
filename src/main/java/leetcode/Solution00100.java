@@ -1,5 +1,6 @@
-package leetcode.sameTree;
+package leetcode;
 
+import javafx.util.Pair;
 import leetcode.common.TreeNode;
 
 import java.util.LinkedList;
@@ -34,24 +35,24 @@ import java.util.Queue;
  * The number of nodes in both trees is in the range [0, 100].
  * -104 <= Node.val <= 104
  */
-public class Solution0100 {
+public class Solution00100 {
 
     // Time: O(n)
     // Space: O(n)
     public boolean isSameTree(TreeNode p, TreeNode q) {
         // Create a queue to store the nodes that need to be compared.
-        Queue<TreeNode[]> queue = new LinkedList<>();
+        Queue<Pair<TreeNode, TreeNode>> queue = new LinkedList<>();
 
         // Add the root nodes of the two trees to the queue.
-        queue.add(new TreeNode[]{p, q});
+        queue.add(new Pair<>(p, q));
 
         // While the queue is not empty, do the following:
         while (!queue.isEmpty()) {
 
             // Remove the next pair of nodes from the queue.
-            TreeNode[] nodes = queue.poll();
-            p = nodes[0];
-            q = nodes[1];
+            Pair<TreeNode, TreeNode> nodes = queue.poll();
+            p = nodes.getKey();
+            q = nodes.getValue();
 
             // If both nodes are null, then the trees are the same.
             if (p == null && q == null) {
@@ -69,8 +70,8 @@ public class Solution0100 {
             }
 
             // Add the left and right subtrees of the current nodes to the queue.
-            queue.add(new TreeNode[]{p.left, q.left});
-            queue.add(new TreeNode[]{p.right, q.right});
+            queue.add(new Pair<>(p.left, q.left));
+            queue.add(new Pair<>(p.right, q.right));
         }
 
         // If the queue is empty, then the trees are the same.

@@ -1,4 +1,4 @@
-package leetcode.sameTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution0100Test {
+class Solution00100Test {
 
     static Stream<Arguments> getIsSameTreeArgs() {
         return Stream.of(
@@ -22,7 +22,7 @@ class Solution0100Test {
     @ParameterizedTest
     @MethodSource("getIsSameTreeArgs")
     void isSameTree(TreeNode first, TreeNode second, boolean expected) {
-        assertEquals(expected, new Solution0100().isSameTree(first, second));
+        assertEquals(expected, new Solution00100().isSameTree(first, second));
     }
 
 }

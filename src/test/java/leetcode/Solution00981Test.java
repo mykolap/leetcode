@@ -1,14 +1,14 @@
-package leetcode.timeBasedKeyValueStore;
+package leetcode;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class TimeMapTest {
+class Solution00981Test {
 
     @Test
     void keyValueStoreShouldReturnCorrectValue() {
-        TimeMap timeMap = new TimeMap();
+        Solution00981.TimeMap timeMap = new Solution00981.TimeMap();
         timeMap.set("foo", "bar", 1);
         assertEquals("bar", timeMap.get("foo", 1));
         assertEquals("bar", timeMap.get("foo", 3));
@@ -19,7 +19,7 @@ class TimeMapTest {
 
     @Test
     void keyValueStoreShouldReturnCorrectValue2() {
-        TimeMapListBased timeMap = new TimeMapListBased();
+        Solution00981.TimeMapListBased timeMap = new Solution00981.TimeMapListBased();
         timeMap.set("foo", "bar", 1);
         assertEquals("bar", timeMap.get("foo", 1));
         assertEquals("bar", timeMap.get("foo", 3));
@@ -30,13 +30,13 @@ class TimeMapTest {
 
     @Test
     void keyValueStoreShouldReturnEmptyStringForNonExistentKey() {
-        TimeMap solution = new TimeMap();
+        Solution00981.TimeMap solution = new Solution00981.TimeMap();
         assertEquals("", solution.get("nonExistentKey", 1));
     }
 
     @Test
     void keyValueStoreShouldReturnLatestValueForSameTimestamp() {
-        TimeMap solution = new TimeMap();
+        Solution00981.TimeMap solution = new Solution00981.TimeMap();
         solution.set("foo", "bar", 1);
         solution.set("foo", "baz", 1);
         assertEquals("baz", solution.get("foo", 1));
@@ -44,7 +44,7 @@ class TimeMapTest {
 
     @Test
     void keyValueStoreShouldReturnLatestValueBeforeTimestamp() {
-        TimeMap solution = new TimeMap();
+        Solution00981.TimeMap solution = new Solution00981.TimeMap();
         solution.set("foo", "bar", 1);
         solution.set("foo", "baz", 3);
         assertEquals("bar", solution.get("foo", 2));
@@ -52,7 +52,7 @@ class TimeMapTest {
 
     @Test
     void keyValueStoreShouldReturnLatestValueBeforeTimestamp2() {
-        TimeMap timeMap = new TimeMap();
+        Solution00981.TimeMap timeMap = new Solution00981.TimeMap();
         timeMap.set("love", "high", 10);
         timeMap.set("love", "low", 20);
         assertEquals("", timeMap.get("love", 5));

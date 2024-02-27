@@ -1,4 +1,4 @@
-package leetcode.validAnagram;
+package leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -22,7 +22,7 @@ import java.util.Map;
  * <p>
  * Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
  */
-public class Solution {
+public class Solution00242 {
 
     // Time: O(n log n)
     // Space: O(n)
