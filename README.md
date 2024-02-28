@@ -139,6 +139,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00076.java) |
 [Test](src/test/java/leetcode/Solution00076Test.java)
 
+### 78. Subsets
+
+<a href="https://leetcode.com/problems/subsets">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00078.java) |
+[Test](src/test/java/leetcode/Solution00078Test.java)
+
 ### 80. Remove Duplicates from Sorted Array II
 
 <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii">Web link</a>
@@ -381,6 +387,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00368.java) |
 [Test](src/test/java/leetcode/Solution00368Test.java)
 
+### 371. Sum of Two Integers
+
+<a href="https://leetcode.com/problems/sum-of-two-integers">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00371.java)
+[Test](src/test/java/leetcode/Solution00371Test.java)
+
 ### 387. First Unique Character in a String
 
 <a href="https://leetcode.com/problems/first-unique-character-in-a-string">Web link</a> |
@@ -414,6 +426,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00455.java)
 [Test](src/test/java/leetcode/Solution00455Test.java)
 
+### 513. Find Bottom Left Tree Value
+
+<a href="https://leetcode.com/problems/find-bottom-left-tree-value">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00513.java)
+[Test](src/test/java/leetcode/Solution00513Test.java)
+
 ### 543. Diameter of Binary Tree
 
 <a href="https://leetcode.com/problems/diameter-of-binary-tree">Web link</a> |
@@ -425,6 +443,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/permutation-in-string">Web link</a> |
 [Implementation](src/main/java/leetcode/Solution00567.java) |
 [Test](src/test/java/leetcode/Solution00567Test.java)
+
+### 572. Subtree of Another Tree
+
+<a href="https://leetcode.com/problems/subtree-of-another-tree">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00572.java)
+[Test](src/test/java/leetcode/Solution00572Test.java)
 
 ### 576. Out of Boundary Paths
 

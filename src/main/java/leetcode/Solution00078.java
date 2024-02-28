@@ -1,4 +1,4 @@
-package leetcode.subsets;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +27,7 @@ import java.util.List;
  * -10 <= nums[i] <= 10
  * All the numbers of nums are unique.
  */
-public class Solution0078 {
+public class Solution00078 {
 
     // Time: O(n * 2^n)
     // Space: O(n * 2^n)

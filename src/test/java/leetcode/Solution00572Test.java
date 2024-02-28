@@ -1,4 +1,4 @@
-package leetcode.subtreeOfAnotherTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Solution0572Test {
+class Solution00572Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -44,14 +44,14 @@ class Solution0572Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void isSubtreeDfsRecursive(TreeNode root, TreeNode subRoot, boolean expected) {
-        assertThat(new Solution0572().isSubtreeDfsRecursive(root, subRoot))
+        assertThat(new Solution00572().isSubtreeDfsRecursive(root, subRoot))
                 .isEqualTo(expected);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void isSubtreeBfsIterative(TreeNode root, TreeNode subRoot, boolean expected) {
-        assertThat(new Solution0572().isSubtreeBfsIterative(root, subRoot))
+        assertThat(new Solution00572().isSubtreeBfsIterative(root, subRoot))
                 .isEqualTo(expected);
     }
 }

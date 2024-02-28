@@ -1,4 +1,4 @@
-package leetcode.sumOfTwoIntegers;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/sum-of-two-integers/
@@ -22,14 +22,7 @@ package leetcode.sumOfTwoIntegers;
  *
  * -1000 <= a, b <= 1000
  */
-public class Solution {
-
-    public static void main(String[] args) {
-        int a = 2;
-        int b = 3;
-
-        System.out.println(new Solution().getSum(a, b));
-    }
+public class Solution00371 {
 
     // Time: O(1)
     // Space: O(1)

@@ -1,4 +1,4 @@
-package leetcode.subtreeOfAnotherTree;
+package leetcode;
 
 import leetcode.common.TreeNode;
 
@@ -32,7 +32,7 @@ import java.util.Queue;
  * -104 <= root.val <= 104
  * -104 <= subRoot.val <= 104
  */
-public class Solution0572 {
+public class Solution00572 {
 
     // Time: O(n * m)
     // Space: O(n + m)

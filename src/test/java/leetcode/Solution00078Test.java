@@ -1,4 +1,4 @@
-package leetcode.subsets;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Solution0078Test {
+class Solution00078Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -48,7 +48,7 @@ class Solution0078Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void subsets(final int[] nums, final List<List<Integer>> expected) {
-        final List<List<Integer>> subsets = new Solution0078().subsets(nums);
+        final List<List<Integer>> subsets = new Solution00078().subsets(nums);
         assertThat(subsets)
                 .containsExactlyElementsOf(expected);
     }
