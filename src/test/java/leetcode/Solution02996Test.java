@@ -1,4 +1,4 @@
-package leetcode.smallestMissingIntegerGreaterThanSequentialPrefixSum;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution10031Test {
+class Solution02996Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -24,7 +24,7 @@ class Solution10031Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void missingInteger(int[] ints, int expected) {
-        final int actual = new Solution10031().missingInteger(ints);
+        final int actual = new Solution02996().missingInteger(ints);
         assertEquals(expected, actual);
     }
 

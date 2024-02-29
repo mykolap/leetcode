@@ -1,11 +1,11 @@
-package leetcode.smallestMissingIntegerGreaterThanSequentialPrefixSum;
+package leetcode;
 
 import java.util.HashSet;
 import java.util.Set;
 
 /*
 * https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/description/
-* 10031. Smallest Missing Integer Greater Than Sequential Prefix Sum
+* 2996. Smallest Missing Integer Greater Than Sequential Prefix Sum
 *
 * You are given a 0-indexed array of integers nums.
 
@@ -30,7 +30,7 @@ Constraints:
 1 <= nums.length <= 50
 1 <= nums[i] <= 50
  */
-public class Solution10031 {
+public class Solution02996 {
 
     // Time: O(n)
     // Space: O(n)

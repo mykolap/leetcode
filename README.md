@@ -113,6 +113,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00053.java) |
 [Test](src/test/java/leetcode/Solution00053Test.java)
 
+### 54. Spiral Matrix
+
+<a href="https://leetcode.com/problems/spiral-matrix">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00054.java) |
+[Test](src/test/java/leetcode/Solution00054Test.java)
+
 ### 55. Jump Game
 
 <a href="https://leetcode.com/problems/jump-game">Web link</a> |
@@ -334,6 +340,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00235.java)
 [Test](src/test/java/leetcode/Solution00235Test.java)
+
+### 239. Sliding Window Maximum
+
+<a href="https://leetcode.com/problems/sliding-window-maximum">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00239.java) |
+[Test](src/test/java/leetcode/Solution00239Test.java)
 
 ### 242. Valid Anagram
 
@@ -621,6 +633,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution01481.java) |
 [Test](src/test/java/leetcode/Solution01481Test.java)
 
+### 1609. Even Odd Tree
+
+<a href="https://leetcode.com/problems/even-odd-tree">Web link</a>
+<a href="https://www.youtube.com/watch?v=FkNWN1Fj_TY">Needcode video</a>
+[Implementation](src/main/java/leetcode/Solution01609.java)
+[Test](src/test/java/leetcode/Solution01609Test.java)
+
 ### 1624. Largest Substring Between Two Equal Characters
 
 <a href="https://leetcode.com/problems/largest-substring-between-two-equal-characters">Web link</a> |
@@ -689,6 +708,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=Yk9Mor-Y488">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution02971.java) |
 [Test](src/test/java/leetcode/Solution02971Test.java)
+
+### 2996. Smallest Missing Integer Greater Than Sequential Prefix Sum
+
+<a href="https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution02996.java) |
+[Test](src/test/java/leetcode/Solution02996Test.java)
 
 ### 3010. Divide an Array Into Subarrays With Minimum Cost I
 

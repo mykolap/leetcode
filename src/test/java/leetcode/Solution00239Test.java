@@ -1,5 +1,6 @@
-package leetcode.slidingWindowMaximum;
+package leetcode;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -8,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-class SolutionTest {
+class Solution00239Test {
 
     static Stream<Arguments> getMaxSlidingWindowArgs() {
         return Stream.of(
@@ -26,13 +27,13 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getMaxSlidingWindowArgs")
     void maxSlidingWindow(int[] nums, int k, int[] expected) {
-        assertArrayEquals(expected, new Solution().maxSlidingWindow(nums, k));
+        Assertions.assertArrayEquals(expected, new Solution00239().maxSlidingWindow(nums, k));
     }
 
     @ParameterizedTest
     @MethodSource("getMaxSlidingWindowArgs")
     void maxSlidingWindowDeque(int[] nums, int k, int[] expected) {
-        assertArrayEquals(expected, new Solution().maxSlidingWindowDeque(nums, k));
+        assertArrayEquals(expected, new Solution00239().maxSlidingWindowDeque(nums, k));
     }
 
 }

@@ -1,4 +1,4 @@
-package leetcode.slidingWindowMaximum;
+package leetcode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -52,7 +52,7 @@ import java.util.Deque;
  * -104 <= nums[i] <= 104
  * 1 <= k <= nums.length
  */
-public class Solution {
+public class Solution00239 {
 
     // Time: O(n)
     // Space: O(n)

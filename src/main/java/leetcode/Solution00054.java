@@ -1,4 +1,4 @@
-package leetcode.spiralMatrix;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,26 +30,7 @@ import java.util.List;
  * 1 <= m, n <= 10
  * -100 <= matrix[i][j] <= 100
  */
-public class Solution {
-
-    public static void main(String[] args) {
-        int[][] matrix = {{1, 2, 3, 4},
-                {5, 6, 7, 8},
-                {9, 10, 11, 12}};
-
-        System.out.println(new Solution().spiralOrder(matrix));
-
-        int[][] matrix2 = {{7},
-                {9},
-                {6}};
-
-        System.out.println(new Solution().spiralOrder(matrix2));
-
-        int[][] matrix3 = {{2, 5, 8},
-                {4, 0, -1}};
-
-        System.out.println(new Solution().spiralOrder(matrix3));
-    }
+public class Solution00054 {
 
     // Time: O(n)
     // Space: O(n)
