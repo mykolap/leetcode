@@ -81,6 +81,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00027.java)
 [Test](src/test/java/leetcode/Solution00027Test.java)
 
+### 33. Search in Rotated Sorted Array
+
+<a href="https://leetcode.com/problems/search-in-rotated-sorted-array">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00033.java)
+[Test](src/test/java/leetcode/Solution00033Test.java)
+
 ### 36. Valid Sudoku
 
 <a href="https://leetcode.com/problems/valid-sudoku">Web link</a>
@@ -137,6 +143,18 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=Y0lT9Fck7qI">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00070.java) |
 [Test](src/test/java/leetcode/Solution00070Test.java)
+
+### 73. Set Matrix Zeroes
+
+<a href="https://leetcode.com/problems/set-matrix-zeroes">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00073.java) |
+[Test](src/test/java/leetcode/Solution00073Test.java)
+
+### 74. Search a 2D Matrix
+
+<a href="https://leetcode.com/problems/search-a-2d-matrix">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00074.java) |
+[Test](src/test/java/leetcode/Solution00074Test.java)
 
 ### 76. Minimum Window Substring - Sliding Window
 
@@ -694,6 +712,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=jZ-RVp5CVYY">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution02709.java) |
 [Test](src/test/java/leetcode/Solution02709Test.java)
+
+### 2864. Maximum Odd Binary Number
+
+<a href="https://leetcode.com/problems/maximum-odd-binary-number">Web link</a> |
+<a href="https://www.youtube.com/watch?v=EUKLOAv4-IQ">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution02864.java) |
+[Test](src/test/java/leetcode/Solution02864Test.java)
 
 ### 2966. Divide Array Into Arrays With Max Difference
 

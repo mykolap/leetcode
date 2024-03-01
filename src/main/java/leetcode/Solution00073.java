@@ -1,4 +1,4 @@
-package leetcode.setMatrixZeroes;
+package leetcode;
 
 import java.util.Arrays;
 
@@ -42,22 +42,7 @@ import java.util.Arrays;
  * A simple improvement uses O(m + n) space, but still not the best solution.
  * Could you devise a constant space solution?
  */
-public class Solution {
-
-    public static void main(String[] args) {
-        int[][] matrix = {{1, 1, 1},
-                {1, 0, 1},
-                {1, 1, 1}};
-
-        new Solution().setZeroes(matrix);
-
-        for (int[] row : matrix) {
-            for (int cell : row) {
-                System.out.print(cell + " ");
-            }
-            System.out.println();
-        }
-    }
+public class Solution00073 {
 
     // Time: O(m * n)
     // Space: O(1)

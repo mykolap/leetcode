@@ -1,4 +1,4 @@
-package leetcode.searchA2DMatrix;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00074Test {
 
     static Stream<Arguments> getSearchMatrixArgs() {
         return Stream.of(
@@ -28,7 +28,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("getSearchMatrixArgs")
     void searchMatrix(int[][] matrix, int target, boolean expected) {
-        assertEquals(expected, new Solution().searchMatrix(matrix, target));
+        assertEquals(expected, new Solution00074().searchMatrix(matrix, target));
     }
 
 }

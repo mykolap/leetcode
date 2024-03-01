@@ -1,4 +1,4 @@
-package leetcode.searchInRotatedSortedArray;
+package leetcode;
 
 /**
  * 33. Search in Rotated Sorted Array
@@ -28,7 +28,7 @@ package leetcode.searchInRotatedSortedArray;
  * 1 <= nums.length <= 5000 -104 <= nums[i] <= 104 All values of nums are unique. nums is guranteed to
  * be rotated at some pivot. -104 <= target <= 104
  */
-public class Solution {
+public class Solution00033 {
 
     // Time: O(logn)
     // Space: O(1)

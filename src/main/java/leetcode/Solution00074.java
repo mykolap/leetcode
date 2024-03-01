@@ -1,4 +1,4 @@
-package leetcode.searchA2DMatrix;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/search-a-2d-matrix/
@@ -22,7 +22,7 @@ package leetcode.searchA2DMatrix;
  * <p>
  * m == matrix.length n == matrix[i].length 0 <= m, n <= 100 -104 <= matrix[i][j], target <= 104
  */
-public class Solution {
+public class Solution00074 {
 
     // Time: O(logm + logn)
     // Space: O(1)
