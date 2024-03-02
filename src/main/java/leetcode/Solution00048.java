@@ -1,6 +1,4 @@
-package leetcode.rotateImage;
-
-import java.util.Arrays;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/rotate-image/
@@ -66,29 +64,7 @@ import java.util.Arrays;
  * <p>
  * First reverse up to down, then swap the symmetry
  */
-public class Solution {
-
-    public static void main(String[] args) {
-        int[][] matrix = {{1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}};
-        System.out.println("Before rotate:" + Arrays.deepToString(matrix));
-
-        new Solution().rotate(matrix);
-
-        System.out.println("After rotate:" + Arrays.deepToString(matrix));
-
-        int[][] matrix2 = {{5, 1, 9, 11},
-                {2, 4, 8, 10},
-                {13, 3, 6, 7},
-                {15, 14, 12, 16}};
-
-        System.out.println("Before rotate:" + Arrays.deepToString(matrix2));
-
-        new Solution().rotate(matrix2);
-
-        System.out.println("After rotate:" + Arrays.deepToString(matrix2));
-    }
+public class Solution00048 {
 
     // Time: O(n)
     // Space: O(1)

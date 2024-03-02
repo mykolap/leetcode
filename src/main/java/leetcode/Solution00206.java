@@ -1,4 +1,4 @@
-package leetcode.reverseLinkedList;
+package leetcode;
 
 import leetcode.common.ListNode;
 
@@ -30,7 +30,7 @@ import leetcode.common.ListNode;
  * <p>
  * Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
  */
-public class Solution {
+public class Solution00206 {
 
     // Time: O(n)
     // Space: O(1)

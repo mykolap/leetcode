@@ -69,6 +69,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00022.java) |
 [Test](src/test/java/leetcode/Solution00022Test.java)
 
+### 25. Reverse Nodes in k-Group
+
+<a href="https://leetcode.com/problems/reverse-nodes-in-k-group">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00025.java)
+[Test](src/test/java/leetcode/Solution00025Test.java)
+
 ### 26. Remove Duplicates from Sorted Array
 
 <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array">Web link</a>
@@ -105,6 +111,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/jump-game-ii">Web link</a> |
 [Implementation](src/main/java/leetcode/Solution00045.java) |
 [Test](src/test/java/leetcode/Solution00045Test.java)
+
+### 48. Rotate Image
+
+<a href="https://leetcode.com/problems/rotate-image">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00048.java)
+[Test](src/test/java/leetcode/Solution00048Test.java)
 
 ### 49. Group Anagrams - Arrays & Hashing
 
@@ -307,6 +319,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=R3T0olAhUq0">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00201.java) |
 [Test](src/test/java/leetcode/Solution00201Test.java)
+
+### 206. Reverse Linked List
+
+<a href="https://leetcode.com/problems/reverse-linked-list">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00206.java)
+[Test](src/test/java/leetcode/Solution00206Test.java)
 
 ### 207. Course Schedule
 
@@ -567,11 +585,24 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00907.java)
 [Test](src/test/java/leetcode/Solution00907Test.java)
 
+### 977. Squares of a Sorted Array
+
+<a href="https://leetcode.com/problems/squares-of-a-sorted-array">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00977.java)
+[Test](src/test/java/leetcode/Solution00977Test.java)
+
 ### 981. Time Based Key-Value Store
 
 <a href="https://leetcode.com/problems/time-based-key-value-store">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00981.java)
 [Test](src/test/java/leetcode/Solution00981Test.java)
+
+### 994. Rotting Oranges
+
+<a href="https://leetcode.com/problems/rotting-oranges">Web link</a> |
+<a href="https://www.youtube.com/watch?v=y704fEOx0s0">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00994.java) |
+[Test](src/test/java/leetcode/Solution00994Test.java)
 
 ### 997. Find the Town Judge
 

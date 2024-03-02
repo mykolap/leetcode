@@ -1,4 +1,4 @@
-package leetcode.reverseNodesInKGroup;
+package leetcode;
 
 import leetcode.common.ListNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Solution0025Test {
+class Solution00025Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -25,7 +25,7 @@ class Solution0025Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void reverseKGroupRecursive(ListNode head, int k, String expected) {
-        final ListNode actual = new Solution0025().reverseKGroupRecursive(head, k);
+        final ListNode actual = new Solution00025().reverseKGroupRecursive(head, k);
         if (expected == null) {
             assertThat(actual).isNull();
         } else {
@@ -36,7 +36,7 @@ class Solution0025Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void reverseKGroupIterative(ListNode head, int k, String expected) {
-        final ListNode actual = new Solution0025().reverseKGroupIterative(head, k);
+        final ListNode actual = new Solution00025().reverseKGroupIterative(head, k);
         if (expected == null) {
             assertThat(actual).isNull();
         } else {

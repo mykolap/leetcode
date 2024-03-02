@@ -1,4 +1,4 @@
-package leetcode.reverseNodesInKGroup;
+package leetcode;
 
 import leetcode.common.ListNode;
 
@@ -37,7 +37,7 @@ import leetcode.common.ListNode;
  * <strong>Output:</strong> [1]
  * </pre>
  */
-public class Solution0025 {
+public class Solution00025 {
 
     // Time: O(n)
     // Space: O(1)
