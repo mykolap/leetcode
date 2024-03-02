@@ -56,6 +56,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00015.java) |
 [Test](src/test/java/leetcode/Solution00015Test.java)
 
+### 19. Remove Nth Node From End of List
+
+<a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00019.java)
+[Test](src/test/java/leetcode/Solution00019Test.java)
+
 ### 20. Valid Parentheses
 
 <a href="https://leetcode.com/problems/valid-parentheses">Web link</a>
@@ -111,6 +117,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/jump-game-ii">Web link</a> |
 [Implementation](src/main/java/leetcode/Solution00045.java) |
 [Test](src/test/java/leetcode/Solution00045Test.java)
+
+### 46. Permutations
+
+<a href="https://leetcode.com/problems/permutations">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00046.java) |
+[Test](src/test/java/leetcode/Solution00046Test.java)
 
 ### 48. Rotate Image
 
@@ -262,6 +274,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00141.java)
 [Test](src/test/java/leetcode/Solution00141Test.java)
 
+### 143. Reorder List
+
+<a href="https://leetcode.com/problems/reorder-list">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00143.java)
+[Test](src/test/java/leetcode/Solution00143Test.java)
+
 ### 146. LRU Cache
 
 <a href="https://leetcode.com/problems/lru-cache">Web link</a> |
@@ -300,6 +318,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00189.java)
 [Test](src/test/java/leetcode/Solution00189Test.java)
 
+### 191. Number of 1 Bits
+
+<a href="https://leetcode.com/problems/number-of-1-bits">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00191.java)
+[Test](src/test/java/leetcode/Solution00191Test.java)
+
 ### 198. House Robber
 
 <a href="https://leetcode.com/problems/house-robber">Web link</a>
@@ -312,6 +336,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=d4zLyf32e3I">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00199.java) |
 [Test](src/test/java/leetcode/Solution00199Test.java)
+
+### 200. Number of Islands
+
+<a href="https://leetcode.com/problems/number-of-islands">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00200.java) |
+[Test](src/test/java/leetcode/Solution00200Test.java)
 
 ### 201. Bitwise AND of Numbers Range
 
@@ -377,6 +407,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00235.java)
 [Test](src/test/java/leetcode/Solution00235Test.java)
 
+### 238. Product of Array Except Self
+
+<a href="https://leetcode.com/problems/product-of-array-except-self">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00238.java) |
+[Test](src/test/java/leetcode/Solution00238Test.java)
+
 ### 239. Sliding Window Maximum
 
 <a href="https://leetcode.com/problems/sliding-window-maximum">Web link</a> |
@@ -428,6 +464,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00322.java) |
 [Test](src/test/java/leetcode/Solution00322Test.java)
 
+### 323. Number of Connected Components in an Undirected Graph
+
+<a href="https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00323.java)
+[Test](src/test/java/leetcode/Solution00323Test.java)
+
 ### 368. Largest Divisible Subset
 
 <a href="https://leetcode.com/problems/largest-divisible-subset">Web link</a> |
@@ -447,6 +489,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=rBENYgWy3xU">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00387.java) |
 [Test](src/test/java/leetcode/Solution00387Test.java)
+
+### 417. Pacific Atlantic Water Flow
+
+<a href="https://leetcode.com/problems/pacific-atlantic-water-flow">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00417.java) |
+[Test](src/test/java/leetcode/Solution00417Test.java)
 
 ### 424. Longest Repeating Character Replacement
 
@@ -585,6 +633,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00907.java)
 [Test](src/test/java/leetcode/Solution00907Test.java)
 
+### 938. Range Sum of BST
+
+<a href="https://leetcode.com/problems/range-sum-of-bst">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00938.java)
+[Test](src/test/java/leetcode/Solution00938Test.java)
+
 ### 977. Squares of a Sorted Array
 
 <a href="https://leetcode.com/problems/squares-of-a-sorted-array">Web link</a>
@@ -702,6 +756,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution01642.java) |
 [Test](src/test/java/leetcode/Solution01642Test.java)
 
+### 1897. Redistribute Characters to Make All Strings Equal
+
+<a href="https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution01897.java) |
+[Test](src/test/java/leetcode/Solution01897Test.java)
+
 ### 2092. Find All People With Secret
 
 <a href="https://leetcode.com/problems/find-all-people-with-secret">Web link</a> |
@@ -715,6 +775,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=4JA5MW772N0">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution02108.java) |
 [Test](src/test/java/leetcode/Solution02108Test.java)
+
+### 2125. Number of Laser Beams in a Bank
+
+<a href="https://leetcode.com/problems/number-of-laser-beams-in-a-bank">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution02125.java) |
+[Test](src/test/java/leetcode/Solution02125Test.java)
 
 ### 2149. Rearrange Array Elements by Sign
 
