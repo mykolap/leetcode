@@ -1,4 +1,4 @@
-package leetcode.minCostClimbingStairs;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/min-cost-climbing-stairs/
@@ -27,7 +27,7 @@ package leetcode.minCostClimbingStairs;
  * 2 <= cost.length <= 1000
  * 0 <= cost[i] <= 999
  */
-public class Solution0746 {
+public class Solution00746 {
 
     // Time: O(n)
     // Space: O(1)

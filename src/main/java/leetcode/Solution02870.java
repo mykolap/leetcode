@@ -1,4 +1,4 @@
-package leetcode.minimumNumberOfOperationsToMakeArrayEmpty;
+package leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -38,7 +38,7 @@ import java.util.Map;
  * 2 <= nums.length <= 105
  * 1 <= nums[i] <= 106
  */
-public class Solution2870 {
+public class Solution02870 {
 
     public int minOperations(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();

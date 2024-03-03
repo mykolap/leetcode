@@ -1,19 +1,19 @@
-package leetcode.minStack;
+package leetcode;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution00155Test {
 
     @Test
     void testMinStackImpl() {
-        Solution.MinStackImpl minStack = new Solution().new MinStackImpl();
+        Solution00155.MinStackImpl minStack = new Solution00155().new MinStackImpl();
 
         testStack(minStack);
     }
 
-    private static void testStack(Solution.MinStack minStackUsing2Deques) {
+    private static void testStack(Solution00155.MinStack minStackUsing2Deques) {
         minStackUsing2Deques.push(-2);
         // stack: [-2]
         minStackUsing2Deques.push(0);
@@ -32,7 +32,7 @@ class SolutionTest {
 
     @Test
     void testMinStackUsing2Dequeues() {
-        Solution.MinStack minStackUsing2Deques = new Solution().new MinStackUsing2Deques();
+        Solution00155.MinStack minStackUsing2Deques = new Solution00155().new MinStackUsing2Deques();
 
         testStack(minStackUsing2Deques);
     }

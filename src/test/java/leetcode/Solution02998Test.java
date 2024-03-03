@@ -1,4 +1,4 @@
-package leetcode.minimumNumberOfOperationsToMakeXAndYEqual;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution10033Test {
+class Solution02998Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -25,13 +25,13 @@ class Solution10033Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void minimumOperationsToMakeEqual(int x, int y, int expected) {
-        assertEquals(expected, new Solution10033().minimumOperationsToMakeEqual(x, y));
+        assertEquals(expected, new Solution02998().minimumOperationsToMakeEqual(x, y));
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void minimumOperationsToMakeEqualBfs(int x, int y, int expected) {
-        assertEquals(expected, new Solution10033().minimumOperationsToMakeEqualBfs(x, y));
+        assertEquals(expected, new Solution02998().minimumOperationsToMakeEqualBfs(x, y));
     }
 
 }

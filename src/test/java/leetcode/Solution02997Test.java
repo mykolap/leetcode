@@ -1,4 +1,4 @@
-package leetcode.minimumNumberOfOperationsToMakeArrayXorEqualToK;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution10032Test {
+class Solution02997Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -20,7 +20,7 @@ class Solution10032Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void minOperations(int[] A, int k, int expected) {
-        assertEquals(expected, new Solution10032().minOperations(A, k));
+        assertEquals(expected, new Solution02997().minOperations(A, k));
     }
 
 }

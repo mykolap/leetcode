@@ -1,10 +1,10 @@
-package leetcode.minimumNumberOfOperationsToMakeXAndYEqual;
+package leetcode;
 
 import java.util.*;
 
 /*
 * https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal/description/
-* 10033. Minimum Number of Operations to Make X and Y Equal
+* 2998. Minimum Number of Operations to Make X and Y Equal
 * Medium
 * You are given two positive integers x and y.
 
@@ -52,7 +52,7 @@ Constraints:
 
 1 <= x, y <= 104
  */
-public class Solution10033 {
+public class Solution02998 {
 
     // Time: O(n)
     // Space: O(n)

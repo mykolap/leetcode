@@ -1,4 +1,4 @@
-package leetcode.minStack;
+package leetcode;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -51,7 +51,7 @@ import java.util.LinkedList;
  * Methods pop, top and getMin operations will always be called on non-empty stacks.
  * At most 3 * 104 calls will be made to push, pop, top, and getMin.
  */
-public class Solution {
+public class Solution00155 {
 
     static class Node {
         int val;

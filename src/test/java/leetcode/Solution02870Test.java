@@ -1,4 +1,4 @@
-package leetcode.minimumNumberOfOperationsToMakeArrayEmpty;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution2870Test {
+class Solution02870Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -21,14 +21,14 @@ class Solution2870Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void minOperations(int[] nums, int expected) {
-        final int actual = new Solution2870().minOperations(nums);
+        final int actual = new Solution02870().minOperations(nums);
         assertEquals(expected, actual);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void minOperationsCeil(int[] nums, int expected) {
-        final int actual = new Solution2870().minOperationsCeil(nums);
+        final int actual = new Solution02870().minOperationsCeil(nums);
         assertEquals(expected, actual);
     }
 

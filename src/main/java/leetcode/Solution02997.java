@@ -1,8 +1,8 @@
-package leetcode.minimumNumberOfOperationsToMakeArrayXorEqualToK;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/description/
- * 10032. Minimum Number of Operations to Make Array XOR Equal to K
+ * 2997. Minimum Number of Operations to Make Array XOR Equal to K
  * <p>
  * You are given a 0-indexed integer array nums and a positive integer k.
  * <p>
@@ -35,7 +35,7 @@ package leetcode.minimumNumberOfOperationsToMakeArrayXorEqualToK;
  * 0 <= nums[i] <= 106
  * 0 <= k <= 106
  */
-public class Solution10032 {
+public class Solution02997 {
 
     // Time: O(n)
     // Space: O(1)

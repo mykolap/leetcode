@@ -299,6 +299,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00153.java)
 [Test](src/test/java/leetcode/Solution00153Test.java)
 
+### 155. Min Stack
+
+<a href="https://leetcode.com/problems/min-stack">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00155.java)
+[Test](src/test/java/leetcode/Solution00155Test.java)
+
 ### 167. Two Sum II - Input array is sorted
 
 <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted">Web link</a>
@@ -600,6 +606,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00739.java) |
 [Test](src/test/java/leetcode/Solution00739Test.java)
 
+### 746. Min Cost Climbing Stairs
+
+<a href="https://leetcode.com/problems/min-cost-climbing-stairs">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00746.java) |
+[Test](src/test/java/leetcode/Solution00746Test.java)
+
 ### 787. Cheapest Flights Within K Stops
 
 <a href="https://leetcode.com/problems/cheapest-flights-within-k-stops">Web link</a> |
@@ -817,6 +829,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution02864.java) |
 [Test](src/test/java/leetcode/Solution02864Test.java)
 
+### 2870. Minimum Number of Operations to Make Array Empty
+
+<a href="https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution02870.java) |
+[Test](src/test/java/leetcode/Solution02870Test.java)
+
 ### 2966. Divide Array Into Arrays With Max Difference
 
 <a href="https://leetcode.com/problems/divide-array-into-arrays-with-max-difference">Web link</a> |
@@ -836,6 +854,18 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum">Web link</a> |
 [Implementation](src/main/java/leetcode/Solution02996.java) |
 [Test](src/test/java/leetcode/Solution02996Test.java)
+
+### 2997. Minimum Number of Operations to Make Array XOR Equal to K
+
+<a href="https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution02997.java) |
+[Test](src/test/java/leetcode/Solution02997Test.java)
+
+### 2998. Minimum Number of Operations to Make X and Y Equal
+
+<a href="https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution02998.java) |
+[Test](src/test/java/leetcode/Solution02998Test.java)
 
 ### 3010. Divide an Array Into Subarrays With Minimum Cost I
 
@@ -878,3 +908,9 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/apply-operations-to-make-string-empty/">Web link</a>
 [Implementation](src/main/java/leetcode/Solution03039.java)
 [Test](src/test/java/leetcode/Solution03039Test.java)
+
+### 3065. Minimum Operations to Exceed Threshold Value I
+
+<a href="https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03065.java)
+[Test](src/test/java/leetcode/Solution03065Test.java)
