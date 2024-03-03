@@ -1,23 +1,23 @@
-package leetcode.mergeTwoSortedLists;
+package leetcode;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class SolutionTest {
+class Solution00021Test {
 
     @Test
     void mergeTwoLists() {
-        Solution.ListNode l1 = new Solution.ListNode(1,
-                new Solution.ListNode(2,
-                        new Solution.ListNode(4)));
+        Solution00021.ListNode l1 = new Solution00021.ListNode(1,
+                new Solution00021.ListNode(2,
+                        new Solution00021.ListNode(4)));
 
-        Solution.ListNode l2 = new Solution.ListNode(1,
-                new Solution.ListNode(3,
-                        new Solution.ListNode(4)));
+        Solution00021.ListNode l2 = new Solution00021.ListNode(1,
+                new Solution00021.ListNode(3,
+                        new Solution00021.ListNode(4)));
 
-        Solution.ListNode result = new Solution().mergeTwoLists(l1, l2);
+        Solution00021.ListNode result = new Solution00021().mergeTwoLists(l1, l2);
 
         // Assert that the result is not null
         assertNotNull(result, "The result should not be null");
@@ -39,13 +39,13 @@ class SolutionTest {
 
     @Test
     void mergeTwoLists_list1Null() {
-        Solution.ListNode l1 = null;
+        Solution00021.ListNode l1 = null;
 
-        Solution.ListNode l2 = new Solution.ListNode(1,
-                new Solution.ListNode(3,
-                        new Solution.ListNode(4)));
+        Solution00021.ListNode l2 = new Solution00021.ListNode(1,
+                new Solution00021.ListNode(3,
+                        new Solution00021.ListNode(4)));
 
-        Solution.ListNode result = new Solution().mergeTwoLists(l1, l2);
+        Solution00021.ListNode result = new Solution00021().mergeTwoLists(l1, l2);
 
         // Assert that the result is not null
         assertNotNull(result, "The result should not be null");
@@ -67,13 +67,13 @@ class SolutionTest {
 
     @Test
     void mergeTwoLists_list2Null() {
-        Solution.ListNode l1 = new Solution.ListNode(1,
-                new Solution.ListNode(2,
-                        new Solution.ListNode(4)));
+        Solution00021.ListNode l1 = new Solution00021.ListNode(1,
+                new Solution00021.ListNode(2,
+                        new Solution00021.ListNode(4)));
 
-        Solution.ListNode l2 = null;
+        Solution00021.ListNode l2 = null;
 
-        Solution.ListNode result = new Solution().mergeTwoLists(l1, l2);
+        Solution00021.ListNode result = new Solution00021().mergeTwoLists(l1, l2);
 
         // Assert that the result is not null
         assertNotNull(result, "The result should not be null");

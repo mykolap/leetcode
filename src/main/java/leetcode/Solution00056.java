@@ -1,4 +1,4 @@
-package leetcode.mergeIntervals;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -35,7 +35,7 @@ import java.util.List;
  * intervals[i].length == 2
  * 0 <= starti <= endi <= 10^4
  */
-public class Solution0056 {
+public class Solution00056 {
 
     // Time: O(n * log(n))
     // Space: O(n)

@@ -1,4 +1,4 @@
-package leetcode.mergeSortedArray;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class SolutionTest {
+class Solution00088Test {
 
     static Stream<Arguments> argumentsStream() {
         return Stream.of(
@@ -24,7 +24,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("argumentsStream")
     void testMerge(int[] nums1, int m, int[] nums2, int n, int[] expectedArray) {
-        new Solution().merge(nums1, m, nums2, n);
+        new Solution00088().merge(nums1, m, nums2, n);
 
         assertThat(nums1).isEqualTo(expectedArray);
     }
@@ -32,7 +32,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("argumentsStream")
     void testMergeSimpler(int[] nums1, int m, int[] nums2, int n, int[] expectedArray) {
-        new Solution().mergeSimpler(nums1, m, nums2, n);
+        new Solution00088().mergeSimpler(nums1, m, nums2, n);
 
         assertThat(nums1).isEqualTo(expectedArray);
     }

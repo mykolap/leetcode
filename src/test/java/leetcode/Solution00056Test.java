@@ -1,4 +1,4 @@
-package leetcode.mergeIntervals;
+package leetcode;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-class Solution0056Test {
+class Solution00056Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
@@ -28,7 +28,7 @@ class Solution0056Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void merge(int[][] intervals, int[][] expected) {
-        int[][] actual = new Solution0056().merge(intervals);
+        int[][] actual = new Solution00056().merge(intervals);
         assertArrayEquals(expected, actual);
     }
 

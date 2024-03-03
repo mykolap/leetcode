@@ -1,4 +1,4 @@
-package leetcode.mergeTwoSortedLists;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/merge-two-sorted-lists/
@@ -28,7 +28,7 @@ package leetcode.mergeTwoSortedLists;
  * -100 <= Node.val <= 100
  * Both l1 and l2 are sorted in non-decreasing order.
  */
-public class Solution {
+public class Solution00021 {
 
     // Time: O(n)
     // Space: O(1)

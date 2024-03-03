@@ -1,4 +1,4 @@
-package leetcode.mergeKSortedLists;
+package leetcode;
 
 import leetcode.common.ListNode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-class Solution0023Test {
+class Solution00023Test {
 
     static Object[][] casesProvider() {
         return new Object[][]{
@@ -36,7 +36,7 @@ class Solution0023Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void mergeKLists(ListNode[] lists, String expected) {
-        ListNode actual = new Solution0023().mergeKLists(lists);
+        ListNode actual = new Solution00023().mergeKLists(lists);
         if (expected == null) {
             assertNull(actual);
         } else {

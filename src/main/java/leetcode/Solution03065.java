@@ -21,4 +21,18 @@ public class Solution03065 {
         }
         return n;
     }
+
+    // Time: O(n)
+    // Space: O(n)
+    public int minOperationsCount(int[] nums, int k) {
+        int steps = 0;
+        for (int num : nums) {
+            if (num < k) {
+                steps++;
+            }
+        }
+
+        return steps;
+    }
+
 }

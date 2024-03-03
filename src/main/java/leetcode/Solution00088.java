@@ -1,4 +1,4 @@
-package leetcode.mergeSortedArray;
+package leetcode;
 
 /**
  * https://leetcode.com/problems/merge-sorted-array/
@@ -16,7 +16,7 @@ package leetcode.mergeSortedArray;
  * <p>
  * nums1.length == m + n nums2.length == n 0 <= m, n <= 200 -109 <= nums1[i], nums2[i] <= 109
  */
-public class Solution {
+public class Solution00088 {
 
     // Time: O(n)
     // Space: O(1)

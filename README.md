@@ -68,12 +68,24 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00020.java)
 [Test](src/test/java/leetcode/Solution00020Test.java)
 
+### 21. Merge Two Sorted Lists
+
+<a href="https://leetcode.com/problems/merge-two-sorted-lists">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00021.java)
+[Test](src/test/java/leetcode/Solution00021Test.java)
+
 ### 22. Generate Parentheses
 
 <a href="https://leetcode.com/problems/generate-parentheses">Web link</a> |
 <a href="https://www.youtube.com/watch?v=s9fokUqJ76A">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00022.java) |
 [Test](src/test/java/leetcode/Solution00022Test.java)
+
+### 23. Merge k Sorted Lists
+
+<a href="https://leetcode.com/problems/merge-k-sorted-lists">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00023.java)
+[Test](src/test/java/leetcode/Solution00023Test.java)
 
 ### 25. Reverse Nodes in k-Group
 
@@ -155,6 +167,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00055.java) |
 [Test](src/test/java/leetcode/Solution00055Test.java)
 
+### 56. Merge Intervals
+
+<a href="https://leetcode.com/problems/merge-intervals">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00056.java) |
+[Test](src/test/java/leetcode/Solution00056Test.java)
+
 ### 57. Insert Interval
 
 <a href="https://leetcode.com/problems/insert-interval">Web link</a> |
@@ -204,6 +222,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/largest-rectangle-in-histogram">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00084.java)
 [Test](src/test/java/leetcode/Solution00084Test.java)
+
+### 88. Merge Sorted Array
+
+<a href="https://leetcode.com/problems/merge-sorted-array">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00088.java)
+[Test](src/test/java/leetcode/Solution00088Test.java)
 
 ### 98. Validate Binary Search Tree
 
@@ -508,6 +532,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=gqXU1UyA8pk">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00424.java) |
 [Test](src/test/java/leetcode/Solution00424Test.java)
+
+### 435. Non-overlapping Intervals
+
+<a href="https://leetcode.com/problems/non-overlapping-intervals">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00435.java) |
+[Test](src/test/java/leetcode/Solution00435Test.java)
 
 ### 446. Arithmetic Slices II - Subsequence
 
@@ -914,3 +944,9 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i">Web link</a>
 [Implementation](src/main/java/leetcode/Solution03065.java)
 [Test](src/test/java/leetcode/Solution03065Test.java)
+
+### 3066. Minimum Operations to Exceed Threshold Value II
+
+<a href="https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03066.java)
+[Test](src/test/java/leetcode/Solution03066Test.java)

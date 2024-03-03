@@ -1,4 +1,4 @@
-package leetcode.mergeKSortedLists;
+package leetcode;
 
 import leetcode.common.ListNode;
 
@@ -37,7 +37,7 @@ import java.util.PriorityQueue;
  * lists[i] is sorted in ascending order.
  * The sum of lists[i].length won't exceed 10^4.
  */
-public class Solution0023 {
+public class Solution00023 {
 
     // Time: O(n * log(k))
     // Space: O(k)

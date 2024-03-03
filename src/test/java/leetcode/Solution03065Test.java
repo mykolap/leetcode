@@ -17,6 +17,13 @@ class Solution03065Test {
         assertEquals(expected, actual);
     }
 
+    @ParameterizedTest
+    @MethodSource("casesProvider")
+    void minOperationsCount(int[] nums, int k, int expected) {
+        final int actual = new Solution03065().minOperationsCount(nums, k);
+        assertEquals(expected, actual);
+    }
+
     static Stream<Arguments> casesProvider() {
         return Stream.of(
                 Arguments.of(new int[]{2, 11, 10, 1, 3}, 10, 3),
