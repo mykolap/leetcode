@@ -1,7 +1,6 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.List;
+import leetcode.common.ListNode;
 
 /**
  * 143. Reorder List
@@ -124,34 +123,6 @@ public class Solution00143 {
 
         // Add remaining nodes
         current.next = list1 == null ? list2 : list1;
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            var head = this;
-            List<Integer> values = new ArrayList<>();
-            while (head != null) {
-                values.add(head.val);
-                head = head.next;
-            }
-            return values.toString();
-        }
     }
 
 }

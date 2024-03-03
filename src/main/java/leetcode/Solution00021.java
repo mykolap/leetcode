@@ -1,5 +1,7 @@
 package leetcode;
 
+import leetcode.common.ListNode;
+
 /**
  * https://leetcode.com/problems/merge-two-sorted-lists/
  * 21. Merge Two Sorted Lists
@@ -62,23 +64,6 @@ public class Solution00021 {
 
         // Return the head of the merged list.
         return dummyHead.next;
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 
 }

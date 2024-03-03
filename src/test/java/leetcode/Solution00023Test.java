@@ -13,15 +13,15 @@ class Solution00023Test {
         return new Object[][]{
                 {
                         new ListNode[]{
-                                ListNode.fromVarArgArray(1, 4, 5),
-                                ListNode.fromVarArgArray(1, 3, 4),
-                                ListNode.fromVarArgArray(2, 6)
+                                ListNode.of(1, 4, 5),
+                                ListNode.of(1, 3, 4),
+                                ListNode.of(2, 6)
                         },
                         "[1, 1, 2, 3, 4, 4, 5, 6]"
                 },
                 {
                         new ListNode[]{
-                                ListNode.fromVarArgArray(1)
+                                ListNode.of(1)
                         },
                         "[1]"
                 },

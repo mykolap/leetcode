@@ -71,4 +71,35 @@ public class Solution00019 {
         return head;
     }
 
+    // Time: O(n)
+    // Space: O(1)
+    public ListNode removeNthFromEndAlt(ListNode head, int n) {
+        // Create a dummy node to store the head of the list
+        ListNode dummyHead = new ListNode(0, head);
+
+        // Initialize two pointers, left and right, to the dummyHead and head
+        // respectively
+        ListNode left = dummyHead;
+        ListNode right = head;
+
+        // Move the right pointer n nodes ahead in the list
+        for (int i = 0; i < n; i++) {
+            right = right.next;
+        }
+
+        // Move both left and right pointers one node at a time until right reaches the
+        // end of the list
+        while (right != null) {
+            left = left.next;
+            right = right.next;
+        }
+
+        // At this point, the left pointer is at the node before the node to be removed
+        // So, skip the next node of left pointer to remove the nth node from the end
+        left.next = left.next.next;
+
+        // Return the head of the modified list
+        return dummyHead.next;
+    }
+
 }

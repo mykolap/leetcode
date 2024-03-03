@@ -10,7 +10,7 @@ class Solution00206Test {
 
     @Test
     void reverseList_returnsCorrectOutput_forFiveNodes() {
-        ListNode head = ListNode.fromVarArgArray(1, 2, 3, 4, 5);
+        ListNode head = ListNode.of(1, 2, 3, 4, 5);
 
         ListNode result = new Solution00206().reverseList(head);
 
@@ -19,7 +19,7 @@ class Solution00206Test {
 
     @Test
     void reverseList_returnsCorrectOutputRecursive_forFiveNodes() {
-        ListNode head = ListNode.fromVarArgArray(1, 2, 3, 4, 5);
+        ListNode head = ListNode.of(1, 2, 3, 4, 5);
 
         ListNode result = new Solution00206().reverseListRecursive(head);
 
@@ -28,7 +28,7 @@ class Solution00206Test {
 
     @Test
     void reverseList_returnsCorrectOutput_forTwoNodes() {
-        ListNode head = ListNode.fromVarArgArray(1, 2);
+        ListNode head = ListNode.of(1, 2);
 
         ListNode result = new Solution00206().reverseList(head);
 
@@ -37,7 +37,7 @@ class Solution00206Test {
 
     @Test
     void reverseList_returnsCorrectOutputRecursive_forTwoNodes() {
-        ListNode head = ListNode.fromVarArgArray(1, 2);
+        ListNode head = ListNode.of(1, 2);
 
         ListNode result = new Solution00206().reverseListRecursive(head);
 

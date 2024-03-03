@@ -21,7 +21,7 @@ public class ListNode {
         this.next = next;
     }
 
-    public static ListNode fromVarArgArray(int... array) {
+    public static ListNode of(int... array) {
         ListNode head = new ListNode(array[0]);
         ListNode current = head;
 

@@ -58,7 +58,8 @@ This project is a collection of solutions for LeetCode problems.
 
 ### 19. Remove Nth Node From End of List
 
-<a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list">Web link</a>
+<a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list">Web link</a> |
+<a href="https://www.youtube.com/watch?v=XVuQxVej6y8">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution00019.java)
 [Test](src/test/java/leetcode/Solution00019Test.java)
 
@@ -228,6 +229,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/merge-sorted-array">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00088.java)
 [Test](src/test/java/leetcode/Solution00088Test.java)
+
+### 92. Reverse Linked List II
+
+<a href="https://leetcode.com/problems/reverse-linked-list-ii">Web link</a> |
+<a href="https://www.youtube.com/watch?v=RF_M9tX4Eag">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00092.java)
+[Test](src/test/java/leetcode/Solution00092Test.java)
 
 ### 98. Validate Binary Search Tree
 

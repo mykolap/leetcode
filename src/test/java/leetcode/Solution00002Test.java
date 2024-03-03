@@ -13,9 +13,9 @@ class Solution00002Test {
 
     static Stream<Arguments> getAddTwoNumbersArgs() {
         return Stream.of(
-                Arguments.of(ListNode.fromVarArgArray(2, 4, 3), ListNode.fromVarArgArray(5, 6, 4), "[7, 0, 8]"),
-                Arguments.of(ListNode.fromVarArgArray(0), ListNode.fromVarArgArray(0), "[0]"),
-                Arguments.of(ListNode.fromVarArgArray(9, 9, 9, 9, 9, 9, 9), ListNode.fromVarArgArray(9, 9, 9, 9), "[8, 9, 9, 9, 0, 0, 0, 1]")
+                Arguments.of(ListNode.of(2, 4, 3), ListNode.of(5, 6, 4), "[7, 0, 8]"),
+                Arguments.of(ListNode.of(0), ListNode.of(0), "[0]"),
+                Arguments.of(ListNode.of(9, 9, 9, 9, 9, 9, 9), ListNode.of(9, 9, 9, 9), "[8, 9, 9, 9, 0, 0, 0, 1]")
         );
     }
 
