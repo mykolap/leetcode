@@ -689,6 +689,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00938.java)
 [Test](src/test/java/leetcode/Solution00938Test.java)
 
+### 948. Bag of Tokens
+
+<a href="https://leetcode.com/problems/bag-of-tokens">Web link</a> |
+<a href="https://www.youtube.com/watch?v=prI82maTivg">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00948.java) |
+[Test](src/test/java/leetcode/Solution00948Test.java)
+
 ### 977. Squares of a Sorted Array
 
 <a href="https://leetcode.com/problems/squares-of-a-sorted-array">Web link</a>
