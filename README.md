@@ -813,6 +813,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution01642.java) |
 [Test](src/test/java/leetcode/Solution01642Test.java)
 
+### 1750. Minimum Length of String After Deleting Similar Ends
+
+<a href="https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends">Web link</a> |
+<a href="https://www.youtube.com/watch?v=318hrWVr_5U">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution01750.java) |
+[Test](src/test/java/leetcode/Solution01750Test.java)
+
 ### 1897. Redistribute Characters to Make All Strings Equal
 
 <a href="https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal">Web link</a> |
