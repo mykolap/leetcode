@@ -274,6 +274,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00121.java)
 [Test](src/test/java/leetcode/Solution00121Test.java)
 
+### 122. Best Time to Buy and Sell Stock II
+
+<a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii">Web link</a> |
+<a href="https://www.youtube.com/watch?v=3SJ3pUkPQMc">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00122.java) |
+[Test](src/test/java/leetcode/Solution00122Test.java)
+
 ### 125. Valid Palindrome
 
 <a href="https://leetcode.com/problems/valid-palindrome">Web link</a>
