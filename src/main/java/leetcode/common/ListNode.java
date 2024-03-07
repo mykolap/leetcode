@@ -49,4 +49,27 @@ public class ListNode {
         return values.toString();
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        ListNode other = (ListNode) obj;
+        ListNode current = this;
+        ListNode otherCurrent = other;
+        while (current != null && otherCurrent != null) {
+            if (current.val != otherCurrent.val) {
+                return false;
+            }
+            current = current.next;
+            otherCurrent = otherCurrent.next;
+        }
+        return current == null && otherCurrent == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return val;
+    }
+
 }

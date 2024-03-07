@@ -684,6 +684,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00875.java) |
 [Test](src/test/java/leetcode/Solution00875Test.java)
 
+### 876. Middle of the Linked List
+
+<a href="https://leetcode.com/problems/middle-of-the-linked-list">Web link</a> |
+<a href="https://www.youtube.com/watch?v=A2_ldqM4QcY">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00876.java) |
+[Test](src/test/java/leetcode/Solution00876Test.java)
+
 ### 907. Sum of Subarray Minimums
 
 <a href="https://leetcode.com/problems/sum-of-subarray-minimums">Web link</a>
