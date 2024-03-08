@@ -933,6 +933,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution02998.java) |
 [Test](src/test/java/leetcode/Solution02998Test.java)
 
+### 3005. Count Elements With Maximum Frequency
+
+<a href="https://leetcode.com/problems/count-elements-with-maximum-frequency">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution03005.java) |
+[Test](src/test/java/leetcode/Solution03005Test.java)
+
 ### 3010. Divide an Array Into Subarrays With Minimum Cost I
 
 <a href="https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i">Web link</a>
