@@ -874,6 +874,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution02402.java) |
 [Test](src/test/java/leetcode/Solution02402Test.java)
 
+### 2540. Minimum Common Value
+
+<a href="https://leetcode.com/problems/minimum-common-value">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution02540.java) |
+[Test](src/test/java/leetcode/Solution02540Test.java)
+
 ### 2610. Convert an Array Into a 2D Array With Conditions
 
 <a href="https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions">Web link</a> |
