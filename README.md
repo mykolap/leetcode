@@ -515,6 +515,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00323.java)
 [Test](src/test/java/leetcode/Solution00323Test.java)
 
+### 349. Intersection of Two Arrays
+
+<a href="https://leetcode.com/problems/intersection-of-two-arrays">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00349.java)
+[Test](src/test/java/leetcode/Solution00349Test.java)
+
 ### 368. Largest Divisible Subset
 
 <a href="https://leetcode.com/problems/largest-divisible-subset">Web link</a> |
