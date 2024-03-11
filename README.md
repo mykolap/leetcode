@@ -670,6 +670,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00787.java) |
 [Test](src/test/java/leetcode/Solution00787Test.java)
 
+### 791. Custom Sort String
+
+<a href="https://leetcode.com/problems/custom-sort-string">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00791.java) |
+[Test](src/test/java/leetcode/Solution00791Test.java)
+
 ### 853. Car Fleet - Stack
 
 <a href="https://leetcode.com/problems/car-fleet">Web link</a> |
