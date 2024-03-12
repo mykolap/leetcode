@@ -774,6 +774,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution01143.java)
 [Test](src/test/java/leetcode/Solution01143Test.java)
 
+### 1171. Remove Zero Sum Consecutive Nodes from Linked List
+
+<a href="https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list">Web link</a>
+[Implementation](src/main/java/leetcode/Solution01171.java)
+[Test](src/test/java/leetcode/Solution01171Test.java)
+
 ### 1235. Maximum Profit in Job Scheduling
 
 <a href="https://leetcode.com/problems/maximum-profit-in-job-scheduling">Web link</a> |
