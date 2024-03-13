@@ -892,6 +892,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution02402.java) |
 [Test](src/test/java/leetcode/Solution02402Test.java)
 
+### 2485. Find the Pivot Integer
+
+<a href="https://leetcode.com/problems/find-the-pivot-integer">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution02485.java) |
+[Test](src/test/java/leetcode/Solution02485Test.java)
+
 ### 2540. Minimum Common Value
 
 <a href="https://leetcode.com/problems/minimum-common-value">Web link</a> |
