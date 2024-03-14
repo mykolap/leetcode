@@ -709,6 +709,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00907.java)
 [Test](src/test/java/leetcode/Solution00907Test.java)
 
+### 930. Binary Subarrays With Sum
+
+<a href="https://leetcode.com/problems/binary-subarrays-with-sum">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00930.java)
+[Test](src/test/java/leetcode/Solution00930Test.java)
+
 ### 938. Range Sum of BST
 
 <a href="https://leetcode.com/problems/range-sum-of-bst">Web link</a>
