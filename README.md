@@ -482,6 +482,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00271.java)
 [Test](src/test/java/leetcode/Solution00271Test.java)
 
+### 274. H-Index
+
+<a href="https://leetcode.com/problems/h-index">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00274.java)
+[Test](src/test/java/leetcode/Solution00274Test.java)
+
 ### 279. Perfect Squares - Dynamic Programming
 
 <a href="https://leetcode.com/problems/perfect-squares">Web link</a> |
