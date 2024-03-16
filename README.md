@@ -591,6 +591,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00513.java)
 [Test](src/test/java/leetcode/Solution00513Test.java)
 
+### 525. Contiguous Array
+
+<a href="https://leetcode.com/problems/contiguous-array">Web link</a> |
+<a href="https://www.youtube.com/watch?v=agB1LyObUNE">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00525.java) |
+[Test](src/test/java/leetcode/Solution00525Test.java)
+
 ### 543. Diameter of Binary Tree
 
 <a href="https://leetcode.com/problems/diameter-of-binary-tree">Web link</a> |
