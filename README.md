@@ -37,6 +37,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00005.java) |
 [Test](src/test/java/leetcode/Solution00005Test.java)
 
+### 6. ZigZag Conversion
+
+<a href="https://leetcode.com/problems/zigzag-conversion">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00006.java)
+[Test](src/test/java/leetcode/Solution00006Test.java)
+
 ### 11. Container With Most Water - Two Pointers
 
 <a href="https://leetcode.com/problems/container-with-most-water">Web link</a> |
