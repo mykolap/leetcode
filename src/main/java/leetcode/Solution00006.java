@@ -51,12 +51,13 @@ public class Solution00006 {
 
         for (int row = 0; row < numRows; row++) {
             int diagDiff = diff - 2 * row;
+            boolean isDiagExist = diagDiff < diff && diagDiff > 0;
 
             for (int col = row; col < len; col += diff) {
                 arr[index] = s.charAt(col);
                 index++;
 
-                if (diagDiff > 0 && diagDiff < diff && col + diagDiff < len) {
+                if (isDiagExist && col + diagDiff < len) {
                     arr[index] = s.charAt(col + diagDiff);
                     index++;
                 }

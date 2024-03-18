@@ -585,6 +585,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00451.java) |
 [Test](src/test/java/leetcode/Solution00451Test.java)
 
+### 452. Minimum Number of Arrows to Burst Balloons
+
+<a href="https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00452.java)
+[Test](src/test/java/leetcode/Solution00452Test.java)
+
 ### 455. Assign Cookies
 
 <a href="https://leetcode.com/problems/assign-cookies">Web link</a>
