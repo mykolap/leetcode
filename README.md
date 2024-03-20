@@ -587,8 +587,9 @@ This project is a collection of solutions for LeetCode problems.
 
 ### 452. Minimum Number of Arrows to Burst Balloons
 
-<a href="https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons">Web link</a>
-[Implementation](src/main/java/leetcode/Solution00452.java)
+<a href="https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons">Web link</a> |
+<a href="https://www.youtube.com/watch?v=lPmkKnvNPrw">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00452.java) |
 [Test](src/test/java/leetcode/Solution00452Test.java)
 
 ### 455. Assign Cookies
@@ -633,6 +634,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/out-of-boundary-paths">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00576.java)
 [Test](src/test/java/leetcode/Solution00576Test.java)
+
+### 621. Task Scheduler
+
+<a href="https://leetcode.com/problems/task-scheduler">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution00621.java) |
+[Test](src/test/java/leetcode/Solution00621Test.java)
 
 ### 629. K Inverse Pairs Array
 
@@ -875,6 +882,13 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://www.youtube.com/watch?v=zyTeznvXCtg">Needcode video</a> |
 [Implementation](src/main/java/leetcode/Solution01642.java) |
 [Test](src/test/java/leetcode/Solution01642Test.java)
+
+### 1669. Merge In Between Linked Lists
+
+<a href="https://leetcode.com/problems/merge-in-between-linked-lists">Web link</a>
+<a href="https://www.youtube.com/watch?v=pI775VutBxg">Needcode video</a>
+[Implementation](src/main/java/leetcode/Solution01669.java)
+[Test](src/test/java/leetcode/Solution01669Test.java)
 
 ### 1750. Minimum Length of String After Deleting Similar Ends
 
