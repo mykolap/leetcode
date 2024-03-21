@@ -1073,3 +1073,9 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/find-the-sum-of-encrypted-integers">Web link</a>
 [Implementation](src/main/java/leetcode/Solution03079.java)
 [Test](src/test/java/leetcode/Solution03079Test.java)
+
+### 3080. Mark Elements on Array by Performing Queries
+
+<a href="https://leetcode.com/problems/mark-elements-on-array-by-performing-queries">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03080.java)
+[Test](src/test/java/leetcode/Solution03080Test.java)
