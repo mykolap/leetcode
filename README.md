@@ -1079,3 +1079,9 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/mark-elements-on-array-by-performing-queries">Web link</a>
 [Implementation](src/main/java/leetcode/Solution03080.java)
 [Test](src/test/java/leetcode/Solution03080Test.java)
+
+### 3081. Replace Question Marks in String to Minimize Its Value
+
+<a href="https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03081.java)
+[Test](src/test/java/leetcode/Solution03081Test.java)
