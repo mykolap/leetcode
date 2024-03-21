@@ -1067,3 +1067,9 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii">Web link</a>
 [Implementation](src/main/java/leetcode/Solution03066.java)
 [Test](src/test/java/leetcode/Solution03066Test.java)
+
+### 3079. Find the Sum of Encrypted Integers
+
+<a href="https://leetcode.com/problems/find-the-sum-of-encrypted-integers">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03079.java)
+[Test](src/test/java/leetcode/Solution03079Test.java)
