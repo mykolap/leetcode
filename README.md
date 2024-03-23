@@ -186,6 +186,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00057.java) |
 [Test](src/test/java/leetcode/Solution00057Test.java)
 
+### 58. Length of Last Word
+
+<a href="https://leetcode.com/problems/length-of-last-word">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00058.java)
+[Test](src/test/java/leetcode/Solution00058Test.java)
+
 ### 70. Climbing Stairs - Dynamic Programming
 
 <a href="https://leetcode.com/problems/climbing-stairs">Web link</a> |
