@@ -590,7 +590,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00435.java) |
 [Test](src/test/java/leetcode/Solution00435Test.java)
 
-### 446. Arithmetic Slices II - Subsequence
+### 442. Find All Duplicates in an Array
+
+<a href="https://leetcode.com/problems/find-all-duplicates-in-an-array">Web link</a> |
+<a href="https://www.youtube.com/watch?v=Y8x0iAVEITo">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00442.java) |
+[Test](src/test/java/leetcode/Solution00442Test.java)
 
 <a href="https://leetcode.com/problems/arithmetic-slices-ii-subsequence">Web link</a>
 [Implementation](src/main/java/leetcode/Solution00446.java)
