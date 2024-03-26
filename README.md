@@ -131,6 +131,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00039.java) |
 [Test](src/test/java/leetcode/Solution00039Test.java)
 
+### 41. First Missing Positive
+
+<a href="https://leetcode.com/problems/first-missing-positive">Web link</a> |
+<a href="https://www.youtube.com/watch?v=8g78yfzMlao">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00041.java) |
+[Test](src/test/java/leetcode/Solution00041Test.java)
+
 ### 45. Jump Game II
 
 <a href="https://leetcode.com/problems/jump-game-ii">Web link</a> |
