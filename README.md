@@ -712,6 +712,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00704.java) |
 [Test](src/test/java/leetcode/Solution00704Test.java)
 
+### 713. Subarray Product Less Than K
+
+<a href="https://leetcode.com/problems/subarray-product-less-than-k">Web link</a> |
+<a href="https://www.youtube.com/watch?v=Cg6_nF7YIks">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00713.java) |
+[Test](src/test/java/leetcode/Solution00713Test.java)
+
 ### 739. Daily Temperatures
 
 <a href="https://leetcode.com/problems/daily-temperatures">Web link</a> |
