@@ -1000,6 +1000,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution02709.java) |
 [Test](src/test/java/leetcode/Solution02709Test.java)
 
+### 2958. Length of Longest Subarray With at Most K Frequency
+
+<a href="https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency">Web link</a> |
+<a href="https://www.youtube.com/watch?v=W_KYZGp2QzU">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution02958.java) |
+[Test](src/test/java/leetcode/Solution02958Test.java)
+
 ### 2864. Maximum Odd Binary Number
 
 <a href="https://leetcode.com/problems/maximum-odd-binary-number">Web link</a> |
