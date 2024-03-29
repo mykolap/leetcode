@@ -1007,6 +1007,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution02958.java) |
 [Test](src/test/java/leetcode/Solution02958Test.java)
 
+### 2962. Count Subarrays Where Max Element Appears at Least K Times
+
+<a href="https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times">Web link</a> |
+<a href="https://www.youtube.com/watch?v=CZ-z1ViskzE">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution02962.java) |
+[Test](src/test/java/leetcode/Solution02962Test.java)
+
 ### 2864. Maximum Odd Binary Number
 
 <a href="https://leetcode.com/problems/maximum-odd-binary-number">Web link</a> |
