@@ -809,6 +809,13 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00981.java)
 [Test](src/test/java/leetcode/Solution00981Test.java)
 
+### 992. Subarrays with K Different Integers
+
+<a href="https://leetcode.com/problems/subarrays-with-k-different-integers">Web link</a> |
+<a href="https://www.youtube.com/watch?v=etI6HqWVa8U">Needcode video</a> |
+[Implementation](src/main/java/leetcode/Solution00992.java) |
+[Test](src/test/java/leetcode/Solution00992Test.java)
+
 ### 994. Rotting Oranges
 
 <a href="https://leetcode.com/problems/rotting-oranges">Web link</a> |
