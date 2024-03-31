@@ -1149,3 +1149,9 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value">Web link</a>
 [Implementation](src/main/java/leetcode/Solution03081.java)
 [Test](src/test/java/leetcode/Solution03081Test.java)
+
+### 3096. Minimum Levels to Gain More Points
+
+<a href="https://leetcode.com/problems/minimum-levels-to-gain-more-points">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03096.java)
+[Test](src/test/java/leetcode/Solution03096Test.java)
