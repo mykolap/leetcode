@@ -981,6 +981,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution02402.java) |
 [Test](src/test/java/leetcode/Solution02402Test.java)
 
+### 2444. Count Subarrays With Fixed Bounds
+
+<a href="https://leetcode.com/problems/count-subarrays-with-fixed-bounds">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution02444.java) |
+[Test](src/test/java/leetcode/Solution02444Test.java)
+
 ### 2485. Find the Pivot Integer
 
 <a href="https://leetcode.com/problems/find-the-pivot-integer">Web link</a> |
