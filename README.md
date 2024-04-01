@@ -56,6 +56,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00013.java)
 [Test](src/test/java/leetcode/Solution00013Test.java)
 
+### 14. Longest Common Prefix
+
+<a href="https://leetcode.com/problems/longest-common-prefix">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00014.java)
+[Test](src/test/java/leetcode/Solution00014Test.java)
+
 ### 15. 3Sum
 
 <a href="https://leetcode.com/problems/3sum/">Web link</a> |
