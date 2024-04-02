@@ -426,6 +426,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00201.java) |
 [Test](src/test/java/leetcode/Solution00201Test.java)
 
+### 205. Isomorphic Strings
+
+<a href="https://leetcode.com/problems/isomorphic-strings">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00205.java)
+[Test](src/test/java/leetcode/Solution00205Test.java)
+
 ### 206. Reverse Linked List
 
 <a href="https://leetcode.com/problems/reverse-linked-list">Web link</a>
