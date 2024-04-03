@@ -237,6 +237,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution00078.java) |
 [Test](src/test/java/leetcode/Solution00078Test.java)
 
+### 79. Word Search
+
+<a href="https://leetcode.com/problems/word-search">Web link</a>
+[Implementation](src/main/java/leetcode/Solution00079.java)
+[Test](src/test/java/leetcode/Solution00079Test.java)
+
 ### 80. Remove Duplicates from Sorted Array II
 
 <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii">Web link</a>
