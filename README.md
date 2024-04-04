@@ -932,6 +932,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution01609.java)
 [Test](src/test/java/leetcode/Solution01609Test.java)
 
+### 1614. Maximum Nesting Depth of the Parentheses
+
+<a href="https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses">Web link</a>
+[Implementation](src/main/java/leetcode/Solution01614.java)
+[Test](src/test/java/leetcode/Solution01614Test.java)
+
 ### 1624. Largest Substring Between Two Equal Characters
 
 <a href="https://leetcode.com/problems/largest-substring-between-two-equal-characters">Web link</a> |
