@@ -10,7 +10,7 @@ import java.util.PriorityQueue;
  * <a href="https://leetcode.com/problems/mark-elements-on-array-by-performing-queries">Web link</a>
  * Medium
  */
-public class Solution3080 {
+public class Solution03080 {
 
     public long[] unmarkedSumArray(int[] nums, int[][] queries) {
         Comparator<Pair<Integer, Integer>> pairComparator = (pair1, pair2) -> {

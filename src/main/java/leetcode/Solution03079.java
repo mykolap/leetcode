@@ -5,7 +5,7 @@ package leetcode;
  * https://leetcode.com/problems/find-the-sum-of-encrypted-integers/description/
  * Easy
  */
-public class Solution3079 {
+public class Solution03079 {
 
     public int sumOfEncryptedInt(int[] nums) {
         int sum = 0;

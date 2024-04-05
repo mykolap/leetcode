@@ -5,7 +5,7 @@ package leetcode;
  * <a href="https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value">Web link</a>
  * Medium
  */
-public class Solution3081 {
+public class Solution03081 {
 
     public String minimizeStringValue(String s) {
         int[] count = new int[26];

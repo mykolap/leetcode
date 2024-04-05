@@ -8,19 +8,19 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution3079Test {
+class Solution03079Test {
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void sumOfEncryptedInt(int[] nums, int expected) {
-        int result = new Solution3079().sumOfEncryptedInt(nums);
+        int result = new Solution03079().sumOfEncryptedInt(nums);
         assertEquals(expected, result);
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void sumOfEncryptedIntViaString(int[] nums, int expected) {
-        int result = new Solution3079().sumOfEncryptedIntViaString(nums);
+        int result = new Solution03079().sumOfEncryptedIntViaString(nums);
         assertEquals(expected, result);
     }
 

@@ -8,12 +8,12 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-class Solution3080Test {
+class Solution03080Test {
 
     @ParameterizedTest
     @MethodSource("casesProvider")
     void unmarkedSumArray(int[] nums, int[][] queries, long[] expected) {
-        long[] result = new Solution3080().unmarkedSumArray(nums, queries);
+        long[] result = new Solution03080().unmarkedSumArray(nums, queries);
         assertArrayEquals(expected, result);
     }
 

@@ -8,20 +8,21 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution3081Test {
+class Solution01544Test {
 
     @ParameterizedTest
     @MethodSource("casesProvider")
-    void minimizeStringValue(String s, String expected) {
-        String result = new Solution3081().minimizeStringValue(s);
+    void makeGood(String s, String expected) {
+        String result = new Solution01544().makeGood(s);
         assertEquals(expected, result);
     }
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
-                Arguments.of("???", "abc"),
-                Arguments.of("a?a?", "abac"),
-                Arguments.of("abcdefghijklmnopqrstuvwxy??", "abcdefghijklmnopqrstuvwxyaz")
+                Arguments.of("leEeetcode", "leetcode"),
+                Arguments.of("abBAcC", ""),
+                Arguments.of("s", "s")
         );
     }
+
 }

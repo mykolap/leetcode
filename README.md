@@ -925,6 +925,12 @@ This project is a collection of solutions for LeetCode problems.
 [Implementation](src/main/java/leetcode/Solution01481.java) |
 [Test](src/test/java/leetcode/Solution01481Test.java)
 
+### 1544. Make The String Great
+
+<a href="https://leetcode.com/problems/make-the-string-great">Web link</a> |
+[Implementation](src/main/java/leetcode/Solution01544.java) |
+[Test](src/test/java/leetcode/Solution01544Test.java)
+
 ### 1609. Even Odd Tree
 
 <a href="https://leetcode.com/problems/even-odd-tree">Web link</a>
@@ -1173,6 +1179,12 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value">Web link</a>
 [Implementation](src/main/java/leetcode/Solution03081.java)
 [Test](src/test/java/leetcode/Solution03081Test.java)
+
+### 3095. Shortest Subarray With OR at Least K I
+
+<a href="https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03095.java)
+[Test](src/test/java/leetcode/Solution03095Test.java)
 
 ### 3096. Minimum Levels to Gain More Points
 
