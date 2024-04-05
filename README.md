@@ -1191,3 +1191,9 @@ This project is a collection of solutions for LeetCode problems.
 <a href="https://leetcode.com/problems/minimum-levels-to-gain-more-points">Web link</a>
 [Implementation](src/main/java/leetcode/Solution03096.java)
 [Test](src/test/java/leetcode/Solution03096Test.java)
+
+### 3097. Shortest Subarray With OR at Least K II
+
+<a href="https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii">Web link</a>
+[Implementation](src/main/java/leetcode/Solution03097.java)
+[Test](src/test/java/leetcode/Solution03097Test.java)
