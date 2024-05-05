@@ -2,6 +2,7 @@ package leetcode.common;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ListNode {
 
@@ -19,6 +20,11 @@ public class ListNode {
     public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
+    }
+
+    public static ListNode of(String input) {
+        int[] intArr = ArrayUtils.stringToIntArray(input);
+        return of(intArr);
     }
 
     public static ListNode of(int... array) {
@@ -46,7 +52,7 @@ public class ListNode {
             values.add(head.val);
             head = head.next;
         }
-        return values.toString();
+        return "[" + values.stream().map(String::valueOf).collect(Collectors.joining(",")) + "]";
     }
 
     @Override

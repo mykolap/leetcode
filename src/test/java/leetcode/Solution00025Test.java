@@ -13,10 +13,10 @@ class Solution00025Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
-                Arguments.arguments(ListNode.of(1, 2, 3, 4, 5), 2, "[2, 1, 4, 3, 5]"),
-                Arguments.arguments(ListNode.of(1, 2, 3, 4, 5), 3, "[3, 2, 1, 4, 5]"),
-                Arguments.arguments(ListNode.of(1, 2, 3, 4, 5), 1, "[1, 2, 3, 4, 5]"),
-                Arguments.arguments(ListNode.of(1, 2, 3, 4, 5), 5, "[5, 4, 3, 2, 1]"),
+                Arguments.arguments(ListNode.of(1, 2, 3, 4, 5), 2, "[2,1,4,3,5]"),
+                Arguments.arguments(ListNode.of(1, 2, 3, 4, 5), 3, "[3,2,1,4,5]"),
+                Arguments.arguments(ListNode.of(1, 2, 3, 4, 5), 1, "[1,2,3,4,5]"),
+                Arguments.arguments(ListNode.of(1, 2, 3, 4, 5), 5, "[5,4,3,2,1]"),
                 Arguments.arguments(ListNode.of(1), 1, "[1]"),
                 Arguments.arguments(null, 1, null)
         );

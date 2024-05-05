@@ -28,13 +28,13 @@ class Solution00021Test {
         return Stream.of(
                 Arguments.of(ListNode.of(1, 2, 4),
                         ListNode.of(1, 3, 4),
-                        "[1, 1, 2, 3, 4, 4]"),
+                        "[1,1,2,3,4,4]"),
                 Arguments.of(ListNode.of(1, 2, 4),
                         null,
-                        "[1, 2, 4]"),
+                        "[1,2,4]"),
                 Arguments.of(null,
                         ListNode.of(1, 3, 4),
-                        "[1, 3, 4]"),
+                        "[1,3,4]"),
                 Arguments.of(null,
                         null,
                         null)

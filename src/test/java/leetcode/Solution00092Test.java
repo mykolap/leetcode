@@ -21,9 +21,9 @@ class Solution00092Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
-                Arguments.of(ListNode.of(1, 2, 3, 4, 5), 2, 4, "[1, 4, 3, 2, 5]"),
+                Arguments.of(ListNode.of(1, 2, 3, 4, 5), 2, 4, "[1,4,3,2,5]"),
                 Arguments.of(ListNode.of(5), 1, 1, "[5]"),
-                Arguments.of(ListNode.of(3, 5), 1, 2, "[5, 3]")
+                Arguments.of(ListNode.of(3, 5), 1, 2, "[5,3]")
         );
     }
 
