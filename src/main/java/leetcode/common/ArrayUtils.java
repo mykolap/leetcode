@@ -1,5 +1,8 @@
 package leetcode.common;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 public class ArrayUtils {
 
     public static int[] stringToIntArray(String str) {
@@ -13,6 +16,10 @@ public class ArrayUtils {
         }
 
         return intArray;
+    }
+
+    public static String stringArrayToString(String[] strArray) {
+        return Arrays.stream(strArray).map(Object::toString).collect(Collectors.joining("\",\"", "[\"", "\"]"));
     }
 
 }
