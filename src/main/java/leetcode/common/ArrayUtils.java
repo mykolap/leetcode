@@ -19,7 +19,11 @@ public class ArrayUtils {
     }
 
     public static String stringArrayToString(String[] strArray) {
-        return Arrays.stream(strArray).map(Object::toString).collect(Collectors.joining("\",\"", "[\"", "\"]"));
+        return Arrays.stream(strArray).collect(Collectors.joining("\",\"", "[\"", "\"]"));
+    }
+
+    public static String intArrayToString(int[] intArray) {
+        return Arrays.stream(intArray).mapToObj(String::valueOf).collect(Collectors.joining(",", "[", "]"));
     }
 
 }
