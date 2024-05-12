@@ -26,4 +26,23 @@ public class ArrayUtils {
         return Arrays.stream(intArray).mapToObj(String::valueOf).collect(Collectors.joining(",", "[", "]"));
     }
 
+    public static int[][] stringTo2DIntArray(String str) {
+        // Remove the outer brackets and split the string by "],["
+        String[] strRows = str.substring(1, str.length() - 1).split("\\],\\[");
+
+        // Convert each row string to an integer array
+        int[][] matrix = new int[strRows.length][];
+        for (int i = 0; i < strRows.length; i++) {
+            matrix[i] = ArrayUtils.stringToIntArray("[" + strRows[i] + "]");
+        }
+
+        return matrix;
+    }
+
+    public static String int2DArrayToString(int[][] matrix) {
+        return Arrays.stream(matrix)
+                .map(ArrayUtils::intArrayToString)
+                .collect(Collectors.joining(",", "[", "]"));
+    }
+
 }
