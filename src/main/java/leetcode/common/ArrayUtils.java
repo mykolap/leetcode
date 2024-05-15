@@ -1,6 +1,8 @@
 package leetcode.common;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class ArrayUtils {
@@ -43,6 +45,15 @@ public class ArrayUtils {
         return Arrays.stream(matrix)
                 .map(ArrayUtils::intArrayToString)
                 .collect(Collectors.joining(",", "[", "]"));
+    }
+
+    public static List<List<Integer>> stringToListOfLists(String str) {
+        int[][] matrix = stringTo2DIntArray(str);
+        List<List<Integer>> matrixList = new ArrayList<>(matrix.length);
+        for (int[] arr : matrix) {
+            matrixList.add(Arrays.stream(arr).boxed().toList());
+        }
+        return matrixList;
     }
 
 }
