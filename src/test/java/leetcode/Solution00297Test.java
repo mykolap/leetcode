@@ -13,21 +13,11 @@ class Solution00297Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
-                Arguments.of(TreeNode.of(1, 2, 3, null, null, 4, 5), """
-                               1       \s
-                           2       3   \s
-                                 4   5 \s
-                        """),
-                Arguments.of(TreeNode.of(), null),
-                Arguments.of(TreeNode.of(1), " 1  \n"),
-                Arguments.of(TreeNode.of(1, 2), """
-                           1   \s
-                         2     \s
-                        """),
-                Arguments.of(TreeNode.of(1, 2, 3), """
-                           1   \s
-                         2   3 \s
-                        """)
+                Arguments.of(TreeNode.of("[1,2,3,null,null,4,5]"), "[1,2,3,null,null,4,5]"),
+                Arguments.of(TreeNode.of(null), null),
+                Arguments.of(TreeNode.of("[1]"), "[1]"),
+                Arguments.of(TreeNode.of("[1,2]"), "[1,2]"),
+                Arguments.of(TreeNode.of("[1,2,3]"), "[1,2,3]")
         );
     }
 

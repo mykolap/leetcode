@@ -9,20 +9,20 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution02331Test {
+class Solution00979Test {
 
     @ParameterizedTest
     @MethodSource("casesProvider")
-    void evaluateTree(String treeStr, boolean expected) {
-        final TreeNode root = TreeNode.of(treeStr);
-        boolean result = new Solution02331().evaluateTree(root);
+    void distributeCoins(String treeNodeStr, int expected) {
+        int result = new Solution00979().distributeCoins(TreeNode.of(treeNodeStr));
         assertEquals(expected, result);
     }
 
     private static Stream<Arguments> casesProvider() {
         return Stream.of(
-                Arguments.of("[2,1,3,null,null,0,1]", true),
-                Arguments.of("[0]", false)
+                Arguments.of("[3,0,0]", 2),
+                Arguments.of("[0,3,0]", 3),
+                Arguments.of("[1,0,0,null,3]", 4)
         );
     }
 

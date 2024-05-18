@@ -1,5 +1,6 @@
 package leetcode;
 
+import leetcode.common.ArrayUtils;
 import leetcode.common.TreeNode;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -15,35 +16,30 @@ class Solution00199Test {
         return Stream.of(
                 Arguments.of(
                         null,
-                        new int[]{}
-                ),
+                        ""),
                 Arguments.of(
-                        TreeNode.of(1, 2, 3, null, 5, null, 4),
-                        new int[]{1, 3, 4}
-                ),
+                        "[1,2,3,null,5,null,4]",
+                        "[1,3,4]"),
+                Arguments.of("[1,null,3]",
+                        "[1,3]"),
                 Arguments.of(
-                        TreeNode.of(1, null, 3),
-                        new int[]{1, 3}
-                ),
+                        "[1,2,3,4]",
+                        "[1,3,4]"),
                 Arguments.of(
-                        TreeNode.of(1, 2, 3, 4),
-                        new int[]{1, 3, 4}
-                ),
+                        "[1,2,3,4,5,6,7,8,9]",
+                        "[1,3,7,9]"),
                 Arguments.of(
-                        TreeNode.of(1, 2, 3, 4, 5, 6, 7, 8, 9),
-                        new int[]{1, 3, 7, 9}
-                ),
-                Arguments.of(
-                        TreeNode.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15),
-                        new int[]{1, 3, 7, 15}
-                )
+                        "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]",
+                        "[1,3,7,15]")
         );
     }
 
     @ParameterizedTest
     @MethodSource("casesProvider")
-    void rightSideViewBfs(TreeNode root, int[] expected) {
+    void rightSideViewBfs(String rootStr, String expectedStr) {
+        TreeNode root = TreeNode.of(rootStr);
         int[] actual = new Solution00199().rightSideViewBfs(root).stream().mapToInt(i -> i).toArray();
+        int[] expected = ArrayUtils.stringToIntArray(expectedStr);
         assertArrayEquals(expected, actual);
     }
 

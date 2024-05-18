@@ -13,8 +13,8 @@ class Solution00543Test {
 
     static Stream<Arguments> getArgsDiameterOrBinaryTree() {
         return Stream.of(
-                Arguments.of(TreeNode.of(1, 2, 3, 4, 5), 3),
-                Arguments.of(TreeNode.of(1, 2), 1)
+                Arguments.of(TreeNode.of("[1,2,3,4,5]"), 3),
+                Arguments.of(TreeNode.of("[1,2]"), 1)
         );
     }
 

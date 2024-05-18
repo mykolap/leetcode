@@ -8,6 +8,10 @@ import java.util.stream.Collectors;
 public class ArrayUtils {
 
     public static int[] stringToIntArray(String str) {
+        if (str == null || str.isEmpty()) {
+            return new int[0];
+        }
+
         // Remove the brackets and split the string by comma
         String[] strArray = str.replace("[", "").replace("]", "").split(",");
 

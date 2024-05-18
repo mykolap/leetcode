@@ -13,10 +13,10 @@ class Solution00938Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
-                Arguments.of(TreeNode.of(10, 5, 15, 3, 7, null, 18),
+                Arguments.of(TreeNode.of("[10,5,15,3,7,null,18]"),
                         7, 15,
                         32),
-                Arguments.of(TreeNode.of(10, 5, 15, 3, 7, 13, 18, 1, null, 6),
+                Arguments.of(TreeNode.of("[10,5,15,3,7,13,18,1,null,6]"),
                         6, 10,
                         23)
         );

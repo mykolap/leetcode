@@ -14,9 +14,9 @@ class Solution00105Test {
     static Stream<Arguments> casesProvider() {
         return Stream.of(
                 Arguments.of(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7},
-                        TreeNode.of(3, 9, 20, null, null, 15, 7)),
+                        TreeNode.of("[3,9,20,null,null,15,7]")),
                 Arguments.of(new int[]{-1}, new int[]{-1},
-                        TreeNode.of(-1))
+                        TreeNode.of("[-1]"))
         );
     }
 

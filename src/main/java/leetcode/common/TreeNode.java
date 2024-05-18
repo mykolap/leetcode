@@ -1,7 +1,5 @@
 package leetcode.common;
 
-import leetcode.Solution00104;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -24,26 +22,31 @@ public class TreeNode {
         this.right = right;
     }
 
-    public static TreeNode of(Integer... values) {
-        if (values == null || values.length == 0 || values[0] == null) {
+    public static TreeNode of(String treeStr) {
+        if (treeStr == null || treeStr.isEmpty()) {
             return null;
         }
 
-        TreeNode root = new TreeNode(values[0]);
+        String[] values = treeStr.replace("[", "").replace("]", "").split(",");
+        if (values.length == 0 || values[0].equals("null")) {
+            return null;
+        }
+
+        TreeNode root = new TreeNode(Integer.parseInt(values[0]));
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
 
         for (int i = 1; i < values.length; i += 2) {
             TreeNode parent = queue.poll();
 
-            if (values[i] != null) {
-                TreeNode left = new TreeNode(values[i]);
+            if (!values[i].equals("null")) {
+                TreeNode left = new TreeNode(Integer.parseInt(values[i]));
                 parent.left = left;
                 queue.offer(left);
             }
 
-            if (i + 1 < values.length && values[i + 1] != null) {
-                TreeNode right = new TreeNode(values[i + 1]);
+            if (i + 1 < values.length && !values[i + 1].equals("null")) {
+                TreeNode right = new TreeNode(Integer.parseInt(values[i + 1]));
                 parent.right = right;
                 queue.offer(right);
             }
@@ -55,36 +58,30 @@ public class TreeNode {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        int height = new Solution00104().maxDepthRecursiveDfs(this);
-        int nodes = (int) Math.pow(2, height - 1);
+        sb.append("[");
         Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(this);
+        queue.offer(this);
 
-        for (int i = 0; i < height; i++) {
-            int nodeCount = queue.size();
-            boolean isAllNull = true;
-
-            while (nodeCount > 0) {
-                TreeNode node = queue.remove();
-                printNode(node, nodes, sb);
-                if (node != null) {
-                    queue.add(node.left);
-                    queue.add(node.right);
-                    if (isAllNull && (node.left != null || node.right != null)) {
-                        isAllNull = false;
-                    }
-                } else {
-                    queue.add(null);
-                    queue.add(null);
-                }
-                nodeCount--;
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            if (node != null) {
+                sb.append(node.val);
+                queue.offer(node.left);
+                queue.offer(node.right);
+            } else {
+                sb.append("null");
             }
-            sb.append("\n");
-            if (isAllNull) {
-                break;
+            if (!queue.isEmpty()) {
+                sb.append(",");
             }
-            nodes /= 2;
         }
+
+        // Remove trailing nulls
+        while (sb.length() >= 5 && sb.lastIndexOf(",null") == sb.length() - 5) {
+            sb.delete(sb.length() - 5, sb.length());
+        }
+
+        sb.append("]");
         return sb.toString();
     }
 

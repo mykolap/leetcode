@@ -13,10 +13,10 @@ class Solution00104Test {
 
     static Stream<Arguments> getMaxDepthArgs() {
         return Stream.of(
-                Arguments.of(TreeNode.of(3, 9, 20, null, null, 15, 7), 3),
-                Arguments.of(TreeNode.of(1, null, 2), 2),
+                Arguments.of(TreeNode.of("[3,9,20,null,null,15,7]"), 3),
+                Arguments.of(TreeNode.of("[1,null,2]"), 2),
                 Arguments.of(null, 0),
-                Arguments.of(TreeNode.of(0), 1)
+                Arguments.of(TreeNode.of("[0]"), 1)
         );
     }
 

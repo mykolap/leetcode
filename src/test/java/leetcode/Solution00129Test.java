@@ -20,8 +20,8 @@ class Solution00129Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
-                Arguments.of(TreeNode.of(1, 2, 3), 25),
-                Arguments.of(TreeNode.of(4, 9, 0, 5, 1), 1026)
+                Arguments.of(TreeNode.of("[1,2,3]"), 25),
+                Arguments.of(TreeNode.of("[4,9,0,5,1]"), 1026)
         );
     }
 }

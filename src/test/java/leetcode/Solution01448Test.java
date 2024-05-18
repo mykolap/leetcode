@@ -13,9 +13,9 @@ class Solution01448Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
-                Arguments.of(TreeNode.of(3, 1, 4, 3, null, 1, 5), 4),
-                Arguments.of(TreeNode.of(3, 3, null, 4, 2), 3),
-                Arguments.of(TreeNode.of(1), 1)
+                Arguments.of(TreeNode.of("[3,1,4,3,null,1,5]"), 4),
+                Arguments.of(TreeNode.of("[3,3,null,4,2]"), 3),
+                Arguments.of(TreeNode.of("[1]"), 1)
         );
     }
 

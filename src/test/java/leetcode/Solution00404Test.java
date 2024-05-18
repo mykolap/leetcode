@@ -13,7 +13,8 @@ class Solution00404Test {
 
     @ParameterizedTest
     @MethodSource("casesProvider")
-    void sumOfLeftLeaves(TreeNode root, int expected) {
+    void sumOfLeftLeaves(String rootStr, int expected) {
+        TreeNode root = TreeNode.of(rootStr);
         int result = new Solution00404().sumOfLeftLeaves(root);
         assertEquals(expected, result);
     }
@@ -21,19 +22,19 @@ class Solution00404Test {
     static Stream<Arguments> casesProvider() {
         return Stream.of(
                 Arguments.of(
-                        TreeNode.of(3, 9, 20, null, null, 15, 7),
+                        "[3,9,20,null,null,15,7]",
                         24
                 ),
                 Arguments.of(
-                        TreeNode.of(1),
+                        "[1]",
                         0
                 ),
                 Arguments.of(
-                        TreeNode.of(1, 2, 3, 4, 5),
+                        "[1,2,3,4,5]",
                         4
                 ),
                 Arguments.of(
-                        TreeNode.of(1, 2, 3, 4, 5, 6, 7),
+                        "[1,2,3,4,5,6,7]",
                         10
                 )
         );

@@ -20,10 +20,10 @@ class Solution01609Test {
 
     static Stream<Arguments> casesProvider() {
         return Stream.of(
-                Arguments.of(TreeNode.of(1, 10, 4, 3, null, 7, 9, 12, 8, 6, null, null, 2), true),
-                Arguments.of(TreeNode.of(5, 4, 2, 3, 3, 7), false),
-                Arguments.of(TreeNode.of(5, 9, 1, 3, 5, 7), false),
-                Arguments.of(TreeNode.of(1), true)
+                Arguments.of(TreeNode.of("[1,10,4,3,null,7,9,12,8,6,null,null,2]"), true),
+                Arguments.of(TreeNode.of("[5,4,2,3,3,7]"), false),
+                Arguments.of(TreeNode.of("[5,9,1,3,5,7]"), false),
+                Arguments.of(TreeNode.of("[1]"), true)
         );
     }
 

@@ -13,9 +13,9 @@ class Solution00100Test {
 
     static Stream<Arguments> getIsSameTreeArgs() {
         return Stream.of(
-                Arguments.of(TreeNode.of(1, 2, 3), TreeNode.of(1, 2, 3), true),
-                Arguments.of(TreeNode.of(1, 2), TreeNode.of(1, null, 2), false),
-                Arguments.of(TreeNode.of(1, 2, 1), TreeNode.of(1, 1, 2), false)
+                Arguments.of(TreeNode.of("[1,2,3]"), TreeNode.of("[1,2,3]"), true),
+                Arguments.of(TreeNode.of("[1,2]"), TreeNode.of("[1,null,2]"), false),
+                Arguments.of(TreeNode.of("[1,2,1]"), TreeNode.of("[1,1,2]"), false)
         );
     }
 
