@@ -25,14 +25,17 @@ public class ArrayUtils {
     }
 
     public static List<String> stringToStringList(String str) {
-        if (str == null || str.isEmpty() || str.equals("[]")) {
-            return List.of();
-        }
-
-        // Remove the brackets and split the string by comma
-        String[] strArray = str.replaceAll("[\\[\\]\"]", "").split(",");
+        String[] strArray = stringToStringArray(str);
 
         return Arrays.asList(strArray);
+    }
+
+    public static String[] stringToStringArray(String str) {
+        if (str == null || str.isEmpty() || str.equals("[]")) {
+            return new String[0];
+        }
+
+        return str.replaceAll("[\\[\\]\"]", "").split(",");
     }
 
     public static String stringArrayToString(String[] strArray) {
@@ -69,6 +72,10 @@ public class ArrayUtils {
             matrixList.add(Arrays.stream(arr).boxed().toList());
         }
         return matrixList;
+    }
+
+    public static char[] stringToCharArray(String lettersStr) {
+        return lettersStr.replaceAll("[\\[\\]\",]", "").toCharArray();
     }
 
 }
