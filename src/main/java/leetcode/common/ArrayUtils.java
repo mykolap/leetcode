@@ -24,6 +24,17 @@ public class ArrayUtils {
         return intArray;
     }
 
+    public static List<String> stringToStringList(String str) {
+        if (str == null || str.isEmpty() || str.equals("[]")) {
+            return List.of();
+        }
+
+        // Remove the brackets and split the string by comma
+        String[] strArray = str.replaceAll("[\\[\\]\"]", "").split(",");
+
+        return Arrays.asList(strArray);
+    }
+
     public static String stringArrayToString(String[] strArray) {
         return Arrays.stream(strArray).collect(Collectors.joining("\",\"", "[\"", "\"]"));
     }
