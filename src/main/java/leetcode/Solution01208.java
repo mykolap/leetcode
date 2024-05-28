@@ -1,0 +1,27 @@
+package leetcode;
+
+/**
+ * 1208. Get Equal Substrings Within Budget
+ * <a href="https://leetcode.com/problems/get-equal-substrings-within-budget">Web link</a>
+ * Medium
+ */
+
+public class Solution01208 {
+    public int equalSubstring(String s, String t, int maxCost) {
+        int n = s.length();
+        int maxLength = 0;
+        int currentCost = 0;
+        int start = 0;
+
+        for (int end = 0; end < n; end++) {
+            currentCost += Math.abs(s.charAt(end) - t.charAt(end));
+            while (currentCost > maxCost) {
+                currentCost -= Math.abs(s.charAt(start) - t.charAt(start));
+                start++;
+            }
+            maxLength = Math.max(maxLength, end - start + 1);
+        }
+
+        return maxLength;
+    }
+}
