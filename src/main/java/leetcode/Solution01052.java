@@ -28,4 +28,27 @@ public class Solution01052 {
         return res;
     }
 
+    public int maxSatisfiedAlternative(int[] customers, int[] grumpy, int minutes) {
+        final int n = customers.length;
+        int guaranteedSatisfied = 0;
+        int maxConditional = 0;
+        int currentConditional = 0;
+        int low = 0;
+        for (int high = 0; high < n; high++) {
+            if (grumpy[high] == 0) {
+                guaranteedSatisfied += customers[high];
+            } else {
+                currentConditional += customers[high];
+                while (high - low + 1 > minutes) {
+                    if (grumpy[low] == 1) {
+                        currentConditional -= customers[low];
+                    }
+                    low++;
+                }
+                maxConditional = Math.max(maxConditional, currentConditional);
+            }
+        }
+        return guaranteedSatisfied + maxConditional;
+    }
+
 }

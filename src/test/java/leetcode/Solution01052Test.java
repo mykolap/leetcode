@@ -20,6 +20,15 @@ class Solution01052Test {
         assertEquals(expected, result);
     }
 
+    @ParameterizedTest
+    @MethodSource("casesProvider")
+    void maxSatisfiedAlternative(String customersStr, String grumpyStr, int X, int expected) {
+        int[] customers = ArrayUtils.stringToIntArray(customersStr);
+        int[] grumpy = ArrayUtils.stringToIntArray(grumpyStr);
+        int result = new Solution01052().maxSatisfiedAlternative(customers, grumpy, X);
+        assertEquals(expected, result);
+    }
+
     private static Stream<Arguments> casesProvider() {
         return Stream.of(
                 Arguments.of("[1,0,1,2,1,1,7,5]", "[0,1,0,1,0,1,0,1]", 3, 16),
