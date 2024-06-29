@@ -74,6 +74,12 @@ public class ArrayUtils {
         return matrixList;
     }
 
+    public static String listOfListsToString(List<List<Integer>> matrixList) {
+        String standardToString = matrixList.toString();
+        return standardToString.replace(" ", "");
+    }
+
+
     public static char[] stringToCharArray(String lettersStr) {
         return lettersStr.replaceAll("[\\[\\]\",]", "").toCharArray();
     }
