@@ -23,7 +23,7 @@ public class Solution02751 {
             if (directions.charAt(index) == 'R') {
                 stack.push(index);
             } else {
-                while (!stack.isEmpty() && directions.charAt(stack.peek()) == 'R' && healths[index] > 0) {
+                while (!stack.isEmpty() && healths[index] > 0) {
                     int i2 = stack.pop();
                     if (healths[index] > healths[i2]) {
                         healths[i2] = 0;
@@ -36,9 +36,6 @@ public class Solution02751 {
                         healths[index] = 0;
                         healths[i2] = 0;
                     }
-                }
-                if (healths[index] > 0) {
-                    stack.push(index);
                 }
             }
         }
