@@ -84,4 +84,21 @@ public class ArrayUtils {
         return lettersStr.replaceAll("[\\[\\]\",]", "").toCharArray();
     }
 
+    public static double[] stringToDoubleArray(String str) {
+        if (str == null || str.isEmpty()) {
+            return new double[0];
+        }
+
+        // Remove the brackets and split the string by comma
+        String[] strArray = str.replace("[", "").replace("]", "").split(",");
+
+        // Convert each element to a double
+        double[] doubleArray = new double[strArray.length];
+        for (int i = 0; i < strArray.length; i++) {
+            doubleArray[i] = Double.parseDouble(strArray[i].trim());
+        }
+
+        return doubleArray;
+    }
+
 }
