@@ -48,7 +48,11 @@ public class ArrayUtils {
 
     public static int[][] stringTo2DIntArray(String str) {
         // Remove the outer brackets and split the string by "],["
-        String[] strRows = str.substring(1, str.length() - 1).split("\\],\\[");
+        final String strippedOuter = str.substring(1, str.length() - 1);
+        if (strippedOuter.isEmpty()) {
+            return new int[0][0];
+        }
+        String[] strRows = strippedOuter.split("\\],\\[");
 
         // Convert each row string to an integer array
         int[][] matrix = new int[strRows.length][];
