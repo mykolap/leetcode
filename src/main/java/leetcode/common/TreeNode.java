@@ -28,7 +28,7 @@ public class TreeNode {
         }
 
         String[] values = treeStr.replace("[", "").replace("]", "").split(",");
-        if (values.length == 0 || values[0].equals("null")) {
+        if (values.length == 0 || values[0].equals("null") || values[0].isEmpty()) {
             return null;
         }
 
