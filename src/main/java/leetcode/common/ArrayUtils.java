@@ -2,6 +2,7 @@ package leetcode.common;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -40,6 +41,10 @@ public class ArrayUtils {
 
     public static String stringArrayToString(String[] strArray) {
         return Arrays.stream(strArray).collect(Collectors.joining("\",\"", "[\"", "\"]"));
+    }
+
+    public static String stringCollectionToString(Collection<String> stringCollection) {
+        return stringCollection.stream().collect(Collectors.joining("\",\"", "[\"", "\"]"));
     }
 
     public static String intArrayToString(int[] intArray) {
