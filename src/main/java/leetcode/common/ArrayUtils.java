@@ -53,10 +53,11 @@ public class ArrayUtils {
 
     public static int[][] stringTo2DIntArray(String str) {
         // Remove the outer brackets and split the string by "],["
-        final String strippedOuter = str.substring(1, str.length() - 1);
+        String strippedOuter = str.substring(1, str.length() - 1);
         if (strippedOuter.isEmpty()) {
             return new int[0][0];
         }
+        strippedOuter = strippedOuter.replaceAll("\\s", "");
         String[] strRows = strippedOuter.split("\\],\\[");
 
         // Convert each row string to an integer array
