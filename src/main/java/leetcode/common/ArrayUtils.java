@@ -25,6 +25,18 @@ public class ArrayUtils {
         return intArray;
     }
 
+    public static List<Integer> stringToIntList(String str) {
+        final int[] ints = stringToIntArray(str);
+        if (ints.length == 0) {
+            return List.of();
+        }
+        List<Integer> list = new ArrayList<>(ints.length);
+        for (int anInt : ints) {
+            list.add(anInt);
+        }
+        return list;
+    }
+
     public static List<String> stringToStringList(String str) {
         String[] strArray = stringToStringArray(str);
 
