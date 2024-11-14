@@ -7,6 +7,7 @@
 package leetcode;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Solution02070 {
 
@@ -14,7 +15,7 @@ public class Solution02070 {
         int[] ans = new int[queries.length];
 
         // Sort and store max beauty
-        Arrays.sort(items, (a, b) -> a[0] - b[0]);
+        Arrays.sort(items, Comparator.comparingInt(a -> a[0]));
         int max = items[0][1];
         for (int i = 0; i < items.length; i++) {
             max = Math.max(max, items[i][1]);
