@@ -14,7 +14,7 @@ class Solution02373Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void largestLocal(String gridStr, String expectedStr) {
-        int[][] grid = ArrayUtils.stringTo2DIntArray(gridStr);
+        int[][] grid = ArrayUtils.stringToInt2DArray(gridStr);
         int[][] result = new Solution02373().largestLocal(grid);
         assertThat(ArrayUtils.int2DArrayToString(result)).isEqualTo(expectedStr);
     }

@@ -63,7 +63,7 @@ public class ArrayUtils {
         return Arrays.stream(intArray).mapToObj(String::valueOf).collect(Collectors.joining(",", "[", "]"));
     }
 
-    public static int[][] stringTo2DIntArray(String str) {
+    public static int[][] stringToInt2DArray(String str) {
         // Remove the outer brackets and split the string by "],["
         String strippedOuter = str.substring(1, str.length() - 1);
         if (strippedOuter.isEmpty()) {
@@ -88,7 +88,7 @@ public class ArrayUtils {
     }
 
     public static List<List<Integer>> stringToListOfLists(String str) {
-        int[][] matrix = stringTo2DIntArray(str);
+        int[][] matrix = stringToInt2DArray(str);
         List<List<Integer>> matrixList = new ArrayList<>(matrix.length);
         for (int[] arr : matrix) {
             matrixList.add(Arrays.stream(arr).boxed().toList());
@@ -104,6 +104,46 @@ public class ArrayUtils {
 
     public static char[] stringToCharArray(String lettersStr) {
         return lettersStr.replaceAll("[\\[\\]\",]", "").toCharArray();
+    }
+
+    public static String charArrayToString(char[] charArray) {
+        StringBuilder sb = new StringBuilder();
+        sb.append('[');
+        for (int i = 0; i < charArray.length; i++) {
+            if (i > 0) {
+                sb.append(',');
+            }
+            char c = charArray[i];
+            sb.append('"')
+                    .append(c)
+                    .append('"');
+        }
+        sb.append(']');
+        return sb.toString();
+    }
+
+    public static char[][] stringToChar2DArray(String str) {
+        // Remove the outer brackets and split the string by "],["
+        String strippedOuter = str.substring(1, str.length() - 1);
+        if (strippedOuter.isEmpty()) {
+            return new char[0][0];
+        }
+        strippedOuter = strippedOuter.replaceAll("\\s", "");
+        String[] strRows = strippedOuter.split("\\],\\[");
+
+        // Convert each row string to a char array
+        char[][] matrix = new char[strRows.length][];
+        for (int i = 0; i < strRows.length; i++) {
+            matrix[i] = ArrayUtils.stringToCharArray("[" + strRows[i] + "]");
+        }
+
+        return matrix;
+    }
+
+    public static String char2DArrayToString(char[][] matrix) {
+        return Arrays.stream(matrix)
+                .map(ArrayUtils::charArrayToString)
+                .collect(Collectors.joining(",", "[", "]"));
     }
 
     public static double[] stringToDoubleArray(String str) {

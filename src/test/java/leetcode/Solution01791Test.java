@@ -14,7 +14,7 @@ class Solution01791Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void findCenter(String edgesStr, int expected) {
-        int[][] edges = ArrayUtils.stringTo2DIntArray(edgesStr);
+        int[][] edges = ArrayUtils.stringToInt2DArray(edgesStr);
         assertEquals(expected, new Solution01791().findCenter(edges));
     }
 

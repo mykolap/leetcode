@@ -14,7 +14,7 @@ class Solution01937Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maxPoints(String pointsStr, long expected) {
-        int[][] points = ArrayUtils.stringTo2DIntArray(pointsStr);
+        int[][] points = ArrayUtils.stringToInt2DArray(pointsStr);
         final long result = new Solution01937().maxPoints(points);
         assertEquals(expected, result);
     }
@@ -22,7 +22,7 @@ class Solution01937Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maxPoints_TLE(String pointsStr, long expected) {
-        int[][] points = ArrayUtils.stringTo2DIntArray(pointsStr);
+        int[][] points = ArrayUtils.stringToInt2DArray(pointsStr);
         final long result = new Solution01937().maxPoints_TLE(points);
         assertEquals(expected, result);
     }

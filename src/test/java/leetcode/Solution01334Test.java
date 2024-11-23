@@ -14,7 +14,7 @@ class Solution01334Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void findTheCity(int n, String edgesStr, int distanceThreshold, int expected) {
-        int[][] edges = ArrayUtils.stringTo2DIntArray(edgesStr);
+        int[][] edges = ArrayUtils.stringToInt2DArray(edgesStr);
 
         int result = new Solution01334().findTheCity(n, edges, distanceThreshold);
         assertEquals(expected, result);

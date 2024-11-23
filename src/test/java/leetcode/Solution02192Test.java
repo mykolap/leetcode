@@ -15,7 +15,7 @@ class Solution02192Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void getAncestors(int n, String edgesStr, String expectedStr) {
-        int[][] edges = ArrayUtils.stringTo2DIntArray(edgesStr);
+        int[][] edges = ArrayUtils.stringToInt2DArray(edgesStr);
         final List<List<Integer>> ancestors = new Solution02192().getAncestors(n, edges);
         assertThat(ArrayUtils.listOfListsToString(ancestors))
                 .isEqualTo(expectedStr);

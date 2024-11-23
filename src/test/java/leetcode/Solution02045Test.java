@@ -14,7 +14,7 @@ class Solution02045Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void secondMinimum(int n, String edgesStr, int time, int change, int expected) {
-        int[][] edges = ArrayUtils.stringTo2DIntArray(edgesStr);
+        int[][] edges = ArrayUtils.stringToInt2DArray(edgesStr);
 
         int result = new Solution02045().secondMinimum(n, edges, time, change);
         assertEquals(expected, result);

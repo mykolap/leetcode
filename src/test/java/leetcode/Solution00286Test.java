@@ -14,7 +14,7 @@ class Solution00286Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void wallsAndGates(String roomsStr, String expectedStr) {
-        int[][] room = ArrayUtils.stringTo2DIntArray(roomsStr);
+        int[][] room = ArrayUtils.stringToInt2DArray(roomsStr);
         new Solution00286().wallsAndGates(room);
         assertThat(ArrayUtils.int2DArrayToString(room))
                 .isEqualTo(expectedStr);

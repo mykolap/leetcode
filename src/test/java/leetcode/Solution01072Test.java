@@ -14,7 +14,7 @@ class Solution01072Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maxEqualRowsAfterFlips(String matrixStr, int expected) {
-        int[][] matrix = ArrayUtils.stringTo2DIntArray(matrixStr);
+        int[][] matrix = ArrayUtils.stringToInt2DArray(matrixStr);
         int actual = new Solution01072().maxEqualRowsAfterFlips(matrix);
         assertEquals(expected, actual);
     }

@@ -14,7 +14,7 @@ class Solution02070Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maximumBeauty(String itemsStr, String queriesStr, String expectedStr) {
-        int[][] items = ArrayUtils.stringTo2DIntArray(itemsStr);
+        int[][] items = ArrayUtils.stringToInt2DArray(itemsStr);
         int[] queries = ArrayUtils.stringToIntArray(queriesStr);
         int[] result = new Solution02070().maximumBeauty(items, queries);
         assertThat(ArrayUtils.intArrayToString(result)).isEqualTo(expectedStr);

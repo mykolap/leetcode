@@ -14,7 +14,7 @@ class Solution02406Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void minGroups(String intervalsStr, int expected) {
-        int[][] intervals = ArrayUtils.stringTo2DIntArray(intervalsStr);
+        int[][] intervals = ArrayUtils.stringToInt2DArray(intervalsStr);
         int result = new Solution02406().minGroups(intervals);
         assertEquals(expected, result);
     }

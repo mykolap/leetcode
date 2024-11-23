@@ -15,7 +15,7 @@ class Solution02699Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void modifiedGraphEdges(int n, String edgesStr, int source, int destination, int target, String expectedStr) {
-        int[][] edges = ArrayUtils.stringTo2DIntArray(edgesStr);
+        int[][] edges = ArrayUtils.stringToInt2DArray(edgesStr);
         var actual = new Solution02699().modifiedGraphEdges(n, edges, source, destination, target);
         assertThat(Arrays.deepToString(actual).replace(" ", "")).isEqualTo(expectedStr);
     }

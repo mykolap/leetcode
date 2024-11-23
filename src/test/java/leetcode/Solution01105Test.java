@@ -14,7 +14,7 @@ class Solution01105Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void minHeightShelves(String booksStr, int shelfWidth, int expected) {
-        int[][] books = ArrayUtils.stringTo2DIntArray(booksStr);
+        int[][] books = ArrayUtils.stringToInt2DArray(booksStr);
         assertEquals(expected, new Solution01105().minHeightShelves(books, shelfWidth));
     }
 

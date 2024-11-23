@@ -15,7 +15,7 @@ class Solution02684Test {
     @MethodSource("casesProvider")
     void maxMoves(String gridStr, int expected) {
         Solution02684 solution02684 = new Solution02684();
-        int[][] grid = ArrayUtils.stringTo2DIntArray(gridStr);
+        int[][] grid = ArrayUtils.stringToInt2DArray(gridStr);
         int actual = solution02684.maxMoves(grid);
         assertEquals(expected, actual);
     }

@@ -14,7 +14,7 @@ class Solution00861Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void matrixScore(String gridStr, int expected) {
-        int[][] grid = ArrayUtils.stringTo2DIntArray(gridStr);
+        int[][] grid = ArrayUtils.stringToInt2DArray(gridStr);
         int result = new Solution00861().matrixScore(grid);
         assertEquals(expected, result);
     }

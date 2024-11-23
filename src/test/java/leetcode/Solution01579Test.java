@@ -14,7 +14,7 @@ class Solution01579Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maxNumEdgesToRemove(int n, String edgesStr, int expected) {
-        int[][] edges = ArrayUtils.stringTo2DIntArray(edgesStr);
+        int[][] edges = ArrayUtils.stringToInt2DArray(edgesStr);
         int actual = new Solution01579().maxNumEdgesToRemove(n, edges);
         assertEquals(expected, actual);
     }

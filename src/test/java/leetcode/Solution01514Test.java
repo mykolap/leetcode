@@ -14,7 +14,7 @@ class Solution01514Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maxProbability(int n, String edgesStr, String succProbStr, int start_node, int end_node, double expected) {
-        int[][] edges = ArrayUtils.stringTo2DIntArray(edgesStr);
+        int[][] edges = ArrayUtils.stringToInt2DArray(edgesStr);
         double[] succProb = ArrayUtils.stringToDoubleArray(succProbStr);
         double result = new Solution01514().maxProbabilityTLE(n, edges, succProb, start_node, end_node);
         assertEquals(expected, result, 1e-5);
@@ -23,7 +23,7 @@ class Solution01514Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maxProbabilityGreedyDijkstra(int n, String edgesStr, String succProbStr, int start_node, int end_node, double expected) {
-        int[][] edges = ArrayUtils.stringTo2DIntArray(edgesStr);
+        int[][] edges = ArrayUtils.stringToInt2DArray(edgesStr);
         double[] succProb = ArrayUtils.stringToDoubleArray(succProbStr);
         double result = new Solution01514().maxProbabilityGreedyDijkstra(n, edges, succProb, start_node, end_node);
         assertEquals(expected, result, 1e-5);

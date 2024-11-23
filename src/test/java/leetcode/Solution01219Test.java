@@ -14,7 +14,7 @@ class Solution01219Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void getMaximumGold(String gridStr, int expected) {
-        int[][] grid = ArrayUtils.stringTo2DIntArray(gridStr);
+        int[][] grid = ArrayUtils.stringToInt2DArray(gridStr);
         int result = new Solution01219().getMaximumGold(grid);
         assertEquals(expected, result);
     }

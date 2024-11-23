@@ -14,8 +14,8 @@ class Solution02392Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void buildMatrix(int k, String rowConditionsStr, String colConditionsStr, String expectedStr) {
-        int[][] rowConditions = ArrayUtils.stringTo2DIntArray(rowConditionsStr);
-        int[][] colConditions = ArrayUtils.stringTo2DIntArray(colConditionsStr);
+        int[][] rowConditions = ArrayUtils.stringToInt2DArray(rowConditionsStr);
+        int[][] colConditions = ArrayUtils.stringToInt2DArray(colConditionsStr);
 
         int[][] actual = new Solution02392().buildMatrix(k, rowConditions, colConditions);
 

@@ -14,8 +14,8 @@ class Solution01905Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void countSubIslands(String grid1Str, String grid2Str, int expected) {
-        int[][] grid1 = ArrayUtils.stringTo2DIntArray(grid1Str);
-        int[][] grid2 = ArrayUtils.stringTo2DIntArray(grid2Str);
+        int[][] grid1 = ArrayUtils.stringToInt2DArray(grid1Str);
+        int[][] grid2 = ArrayUtils.stringToInt2DArray(grid2Str);
         int result = new Solution01905().countSubIslands(grid1, grid2);
         assertEquals(expected, result);
     }

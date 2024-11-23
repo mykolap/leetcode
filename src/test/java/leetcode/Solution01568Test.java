@@ -14,7 +14,7 @@ class Solution01568Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void minDays(String gridStr, int expected) {
-        int[][] grid = ArrayUtils.stringTo2DIntArray(gridStr);
+        int[][] grid = ArrayUtils.stringToInt2DArray(gridStr);
         assertEquals(expected, new Solution01568().minDays(grid));
     }
 

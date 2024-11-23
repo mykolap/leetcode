@@ -16,7 +16,7 @@ class Solution01310Test {
     @MethodSource("casesProvider")
     void xorQueries(String arrStr, String queriesStr, String expectedStr) {
         int[] arr = ArrayUtils.stringToIntArray(arrStr);
-        int[][] queries = ArrayUtils.stringTo2DIntArray(queriesStr);
+        int[][] queries = ArrayUtils.stringToInt2DArray(queriesStr);
         int[] actual = new Solution01310().xorQueries(arr, queries);
         assertThat(Arrays.toString(actual).replace(" ", ""))
                 .isEqualTo(expectedStr);

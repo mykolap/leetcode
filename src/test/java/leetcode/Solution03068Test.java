@@ -15,7 +15,7 @@ class Solution03068Test {
     @MethodSource("casesProvider")
     void maximumValueSum(String numStr, int k, String edgesStr, long expected) {
         int[] nums = ArrayUtils.stringToIntArray(numStr);
-        int[][] edges = ArrayUtils.stringTo2DIntArray(edgesStr);
+        int[][] edges = ArrayUtils.stringToInt2DArray(edgesStr);
         assertEquals(expected, new Solution03068().maximumValueSum(nums, k, edges));
     }
 
@@ -23,7 +23,7 @@ class Solution03068Test {
     @MethodSource("casesProvider")
     void maximumValueSumOptimized(String numStr, int k, String edgesStr, long expected) {
         int[] nums = ArrayUtils.stringToIntArray(numStr);
-        int[][] edges = ArrayUtils.stringTo2DIntArray(edgesStr);
+        int[][] edges = ArrayUtils.stringToInt2DArray(edgesStr);
         assertEquals(expected, new Solution03068().maximumValueSumOptimized(nums, k, edges));
     }
 

@@ -14,7 +14,7 @@ class Solution01380Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void luckyNumbers(String matrixStr, String expected) {
-        int[][] matrix = ArrayUtils.stringTo2DIntArray(matrixStr);
+        int[][] matrix = ArrayUtils.stringToInt2DArray(matrixStr);
         Solution01380 solution = new Solution01380();
         var result = solution.luckyNumbers(matrix);
         assertThat(result.toString().replace(" ", "")).isEqualTo(expected);
@@ -23,7 +23,7 @@ class Solution01380Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void luckyNumbersOptimized(String matrixStr, String expected) {
-        int[][] matrix = ArrayUtils.stringTo2DIntArray(matrixStr);
+        int[][] matrix = ArrayUtils.stringToInt2DArray(matrixStr);
         Solution01380 solution = new Solution01380();
         var result = solution.luckyNumbersOptimized(matrix);
         assertThat(result.toString().replace(" ", "")).isEqualTo(expected);

@@ -14,7 +14,7 @@ class Solution00840Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void numMagicSquaresInside(String gridStr, int expected) {
-        int[][] grid = ArrayUtils.stringTo2DIntArray(gridStr);
+        int[][] grid = ArrayUtils.stringToInt2DArray(gridStr);
         int actual = new Solution00840().numMagicSquaresInside(grid);
         assertEquals(expected, actual);
     }

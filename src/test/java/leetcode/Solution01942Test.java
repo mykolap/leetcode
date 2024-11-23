@@ -14,7 +14,7 @@ class Solution01942Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void smallestChair(String timesStr, int targetFriend, int expected) {
-        int[][] times = ArrayUtils.stringTo2DIntArray(timesStr);
+        int[][] times = ArrayUtils.stringToInt2DArray(timesStr);
         int actual = new Solution01942().smallestChair(times, targetFriend);
         assertEquals(expected, actual);
     }

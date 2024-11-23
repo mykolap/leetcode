@@ -14,8 +14,8 @@ class Solution02257Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void countUnguarded(int m, int n, String guardsStr, String wallsStr, int expected) {
-        int[][] guards = ArrayUtils.stringTo2DIntArray(guardsStr);
-        int[][] walls = ArrayUtils.stringTo2DIntArray(wallsStr);
+        int[][] guards = ArrayUtils.stringToInt2DArray(guardsStr);
+        int[][] walls = ArrayUtils.stringToInt2DArray(wallsStr);
         int result = new Solution02257().countUnguarded(m, n, guards, walls);
         assertEquals(expected, result);
     }

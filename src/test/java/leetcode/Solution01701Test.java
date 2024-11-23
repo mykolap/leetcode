@@ -14,7 +14,7 @@ class Solution01701Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void averageWaitingTime(String customersStr, double expected) {
-        int[][] customers = ArrayUtils.stringTo2DIntArray(customersStr);
+        int[][] customers = ArrayUtils.stringToInt2DArray(customersStr);
         double result = new Solution01701().averageWaitingTime(customers);
         assertEquals(expected, result);
     }

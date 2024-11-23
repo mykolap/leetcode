@@ -15,7 +15,7 @@ class Solution00874Test {
     @MethodSource("casesProvider")
     void robotSim(String commandsStr, String obstaclesStr, int expected) {
         int[] commands = ArrayUtils.stringToIntArray(commandsStr);
-        int[][] obstacles = ArrayUtils.stringTo2DIntArray(obstaclesStr);
+        int[][] obstacles = ArrayUtils.stringToInt2DArray(obstaclesStr);
         int result = new Solution00874().robotSim(commands, obstacles);
         assertEquals(expected, result);
     }

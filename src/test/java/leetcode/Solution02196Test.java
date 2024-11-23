@@ -15,7 +15,7 @@ class Solution02196Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void createBinaryTree(String descriptionsStr, String expectedStr) {
-        int[][] descriptions = ArrayUtils.stringTo2DIntArray(descriptionsStr);
+        int[][] descriptions = ArrayUtils.stringToInt2DArray(descriptionsStr);
         TreeNode result = new Solution02196().createBinaryTree(descriptions);
         assertThat(result).hasToString(expectedStr);
     }

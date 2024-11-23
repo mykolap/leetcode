@@ -14,7 +14,7 @@ class Solution00947Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void removeStones(String stonesStr, int expected) {
-        int[][] stones = ArrayUtils.stringTo2DIntArray(stonesStr);
+        int[][] stones = ArrayUtils.stringToInt2DArray(stonesStr);
         int result = new Solution00947().removeStones(stones);
         assertEquals(expected, result);
     }

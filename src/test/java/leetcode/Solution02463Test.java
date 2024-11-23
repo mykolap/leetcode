@@ -17,7 +17,7 @@ class Solution02463Test {
     void minimumTotalDistance(String robotStr, String factoryStr, long expected) {
         Solution02463 solution = new Solution02463();
         List<Integer> robot = ArrayUtils.stringToIntList(robotStr);
-        int[][] factory = ArrayUtils.stringTo2DIntArray(factoryStr);
+        int[][] factory = ArrayUtils.stringToInt2DArray(factoryStr);
         var actual = solution.minimumTotalDistance(robot, factory);
         assertEquals(expected, actual);
     }
@@ -27,7 +27,7 @@ class Solution02463Test {
     void minimumTotalDistance2(String robotStr, String factoryStr, long expected) {
         Solution02463 solution = new Solution02463();
         List<Integer> robot = ArrayUtils.stringToIntList(robotStr);
-        int[][] factory = ArrayUtils.stringTo2DIntArray(factoryStr);
+        int[][] factory = ArrayUtils.stringToInt2DArray(factoryStr);
         var actual = solution.minimumTotalDistance2(robot, factory);
         assertEquals(expected, actual);
     }

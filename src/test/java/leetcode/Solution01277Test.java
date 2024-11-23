@@ -15,7 +15,7 @@ class Solution01277Test {
     @MethodSource("casesProvider")
     void countSquares(String matrixStr, int expected) {
         Solution01277 solution = new Solution01277();
-        int[][] matrix = ArrayUtils.stringTo2DIntArray(matrixStr);
+        int[][] matrix = ArrayUtils.stringToInt2DArray(matrixStr);
         assertEquals(expected, solution.countSquares(matrix));
     }
 

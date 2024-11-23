@@ -14,7 +14,7 @@ class Solution02285Test {
     @ParameterizedTest
     @MethodSource("casesProvider")
     void maximumImportance(int n, String roadsStr, long expected) {
-        int[][] roads = ArrayUtils.stringTo2DIntArray(roadsStr);
+        int[][] roads = ArrayUtils.stringToInt2DArray(roadsStr);
         assertEquals(expected, new Solution02285().maximumImportance(n, roads));
     }
 
