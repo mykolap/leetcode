@@ -56,6 +56,9 @@ public class ArrayUtils {
     }
 
     public static String stringCollectionToString(Collection<String> stringCollection) {
+        if (stringCollection.isEmpty()) {
+            return "[]";
+        }
         return stringCollection.stream().collect(Collectors.joining("\",\"", "[\"", "\"]"));
     }
 
